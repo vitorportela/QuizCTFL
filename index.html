@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Perguntas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .question-container {
+      margin-bottom: 20px;
+    }
+    .options-container {
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    .status {
+      margin-bottom: 20px;
+      font-size: 1.2em;
+    }
+    .correct{
+      font-weight: bold;
+      color: rgb(0, 130, 0);
+    }
+    .incorrect{
+      font-weight: bold;
+      color: rgb(130, 0, 0);
+    }
+  </style>
+  <title>Quiz AWS</title>
+</head>
+<body>
+  <h1>Quiz AWS</h1>
+  <div class="status">
+    <p>
+      <span id="answered-count">Perguntas respondidas: 0</span> | 
+      <span id="correct-count">Acertos: 0</span> |
+      <span id="percent-count">0%</span>
+    </p>
+  </div>
+  <div class="question-container">
+    <h2 id="question">Carregando pergunta...</h2>
+    <div class="options-container" id="options-container"></div>
+  </div>
+  <button id="submit-button" disabled>Responder</button>
+  <p class="correct" id="result" style="display: none;"> Resposta Correta!</p>
+  <div class="comments" id="comments" style="display: none;"></div>
+  <button id="next-button" style="display: none;">Continuar</button>
+  <script src="questions.js"></script>
+  <script src="quiz.js" defer></script>
+</body>
+</html>
