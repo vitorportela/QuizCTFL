@@ -4,42 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz de Perguntas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .question-container {
-      margin-bottom: 20px;
-    }
-    .options-container {
-      margin-top: 10px;
-    }
-    button {
-      margin-top: 10px;
-    }
-    .status {
-      margin-bottom: 20px;
-      font-size: 1.2em;
-    }
-    .correct{
-      font-weight: bold;
-      color: rgb(0, 130, 0);
-    }
-    .incorrect{
-      font-weight: bold;
-      color: rgb(130, 0, 0);
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
+
   <title>Quiz AWS</title>
 </head>
 <body>
-  <h1>Quiz AWS</h1>
+  <img class="imgtop"src="imagens/top1.png" alt=""></img>
+  <img class="imgbottom"src="imagens/bottom1.png" alt=""></img>
+  <div class="heading">
+    <div class="primeiro_hex">
+      <section class="container">
+          <div class="hexBack1"></div>
+          <div class="hexBack1" style="transform:rotate(60deg)"></div>
+          <div class="hexBack1" style="transform:rotate(-60deg)"></div>
+          <div class="logo">
+              <h1> <span>&nbsp;QUIZ&nbsp;</span>  <span>AWS</span>  </h1>
+          </div>
+      </section>
+    </div>
+  <div class="primeiro_hex">
+      <section class="container">
+          <div class="hexBack2"></div>
+          <div class="hexBack2" style="transform:rotate(60deg)"></div>
+          <div class="hexBack2" style="transform:rotate(-60deg)"></div>
+          <div class="perguntas">
+              <p>
+              <span id="questions-count">300</span>
+              <span>perguntas</span>
+              </p>
+          </div>
+      </section>
+  </div>
+  <div class="primeiro_hex">
+      <section class="container">
+          <div>
+              <div class="hexBack3">
+              <span class="one h6"></span>
+              <span class="two h3"></span>
+              </div>
+          </div>
+          <div>
+              <div class="hexBack3" style="transform:rotate(60deg)">
+                  <span class="timer">TIMER</span>
+              <span class="one h1"></span>
+              <span class="two h4"></span>
+              </div>
+          </div>
+          <div>
+              <div class="hexBack3" style="transform:rotate(-60deg)">
+              <span class="one h5"></span>
+              <span class="two h2"></span>
+              </div>
+          </div>
+          <div id="timer">00:00:00</div>
+      </section>
+  </div>
+  <div class="primeiro_hex">
+      <section class="container">
+          <div class="hexBack4"></div>
+          <div class="hexBack4" style="transform:rotate(60deg)"></div>
+          <div class="hexBack4" style="transform:rotate(-60deg)"></div>
+          <div class="taxa">
+              <p>
+              <span style="color: #ffffff00; font-size: 1px;">taxa de acerto</span>
+              <span id="percent-count">0</span>
+              <span>%</span>
+              </p>
+          </div>
+      </section>
+  </div>
+</div>
   <div class="status">
     <p>
       <span id="answered-count">Perguntas respondidas: 0</span> | 
-      <span id="correct-count">Acertos: 0</span> |
-      <span id="percent-count">0%</span>
+      <span id="correct-count">Acertos: 0</span>
     </p>
   </div>
   <div class="question-container">

@@ -8,6 +8,7 @@ let currentQuestion = null;
 const answeredCountEl = document.getElementById('answered-count');
 const correctCountEl = document.getElementById('correct-count');
 const percentCountEl = document.getElementById('percent-count');
+const questionsCountEl = document.getElementById('questions-count');
 const questionEl = document.getElementById('question');
 const optionsContainer = document.getElementById('options-container');
 const submitButton = document.getElementById('submit-button');
@@ -79,6 +80,7 @@ function displayQuestion(question) {
   });
 
   submitButton.disabled = true;
+  submitButton.style.display = "block"
 }
 
 // Configura o listener de mudança nas opções
@@ -106,11 +108,10 @@ function checkAnswer() {
   resultEl.style.display = "block";
   answeredCount++;
   usedQuestions.add(currentQuestion.id);
+
   //porcentagem de respostas corretas
   percentCount = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
   updateStatus();
-
-
 
   // Exibe os comentários, se houver
   if (currentQuestion.comments) {
@@ -125,13 +126,14 @@ function checkAnswer() {
   
   nextButton.style.display = "inline-block";
   submitButton.disabled = true;
+  submitButton.style.display = "none"
 }
 
 // Atualiza os contadores de status
 function updateStatus() {
   answeredCountEl.textContent = `Perguntas respondidas: ${answeredCount}`;
   correctCountEl.textContent = `Acertos: ${correctCount}`;
-  percentCountEl.textContent = ` ${percentCount}%`;
+  percentCountEl.textContent = ` ${percentCount}`;
 }
 
 // Carrega a próxima pergunta
@@ -140,11 +142,38 @@ function loadNextQuestion() {
   displayQuestion(question);
 }
 
+// Carregamentos iniciais
+function inicialLoad(){
+  questionsCountEl.textContent = ` ${quizData.questions.length}`;
+}
+
+
 // Evento do botão "Responder"
 submitButton.addEventListener('click', checkAnswer);
 
 // Evento do botão "Continuar"
 nextButton.addEventListener('click', loadNextQuestion);
 
-// Inicializa o quiz
+//contador de tempo
+
+let seconds = 0;
+    
+function formatTime(value) {
+  return String(value).padStart(2, '0');
+}
+
+function updateTimer() {
+  seconds++;
+  const hrs = Math.floor(seconds / 3600);
+  const mins = Math.floor((seconds % 3600) / 60);
+  const secs = seconds % 60;
+
+  document.getElementById('timer').textContent = 
+    `${formatTime(hrs)}:${formatTime(mins)}:${formatTime(secs)}`;
+}
+setInterval(updateTimer, 1000);
+
+// ------------------- Inicializa o quiz------------------------------
+
+inicialLoad();
 loadNextQuestion();
