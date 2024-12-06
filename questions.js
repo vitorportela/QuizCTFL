@@ -374,6 +374,607 @@ const quizData = {
           { "option": "Um Framewrok para facilitar a adoçao de serviços na nuvem AWS.", "isCorrect": false }
         ],
         comments: "O AWS Cloud Adoption Framework (AWS CAF) é um guia estruturado que ajuda organizações a planejar, adotar e operar com sucesso na nuvem, abrangendo aspectos técnicos, organizacionais e de governança.Ele organiza o processo de adoção da nuvem em seis perspectivas, cada uma com foco em uma área específica.● Negócios: Alinha a adoção da nuvem com os objetivos de negócios e o valor estratégico.● Pessoas: Gerencia mudanças organizacionais e capacitação de equipes para a nuvem.● Governança: Garante conformidade, gestão de riscos e alinhamento com políticas corporativas.● Plataforma: Define e provisiona a infraestrutura e ferramentas necessárias para operar na nuvem.● Segurança: Estabelece controles e práticas de proteção de dados e sistemas.● Operações: Otimiza a gestão de operações para manter a eficiência e a continuidade dos serviços."
+      },
+      //novas pergunta - 05/12/2024
+      {
+        "id": 32,
+        "isMultipleChoice": false,
+        "question": "Qual é uma característica essencial da computação em nuvem?",
+        "options": [
+          { "option": "Baixa disponibilidade", "isCorrect": false },
+          { "option": "Elasticidade", "isCorrect": true },
+          { "option": "Custos fixos", "isCorrect": false },
+          { "option": "Manutenção manual", "isCorrect": false }
+        ],
+        "comments": "Baixa disponibilidade significa que o serviço não está sempre disponível. Elasticidade permite que os recursos sejam ajustados automaticamente conforme a demanda. Custos fixos referem-se a despesas que não mudam com o uso. Manutenção manual requer intervenção humana para ajustes."
+      },
+      {
+        "id": 33,
+        "isMultipleChoice": false,
+        "question": "Qual modelo de implantação em nuvem combina nuvem pública e privada?",
+        "options": [
+          { "option": "Nuvem pública", "isCorrect": false },
+          { "option": "Nuvem privada", "isCorrect": false },
+          { "option": "Nuvem híbrida", "isCorrect": true },
+          { "option": "Nuvem comunitária", "isCorrect": false }
+        ],
+        "comments": "Nuvem pública é acessível ao público. Nuvem privada é restrita a uma organização. Nuvem híbrida combina nuvens públicas e privadas. Nuvem comunitária é compartilhada por várias organizações."
+      },
+      {
+        "id": 34,
+        "isMultipleChoice": false,
+        "question": "Qual é um exemplo de modelo de serviço SaaS?",
+        "options": [
+          { "option": "Amazon EC2", "isCorrect": false },
+          { "option": "Google Workspace", "isCorrect": true },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Microsoft Azure", "isCorrect": false }
+        ],
+        "comments": "Amazon EC2 é um serviço de IaaS. Google Workspace é um exemplo de SaaS. AWS Lambda é um serviço de FaaS. Microsoft Azure é uma plataforma de nuvem."
+      },
+      {
+        "id": 35,
+        "isMultipleChoice": false,
+        "question": "Qual é um benefício da computação em nuvem?",
+        "options": [
+          { "option": "Escalabilidade limitada", "isCorrect": false },
+          { "option": "Redução de custos de capital", "isCorrect": true },
+          { "option": "Manutenção complexa", "isCorrect": false },
+          { "option": "Dependência de hardware", "isCorrect": false }
+        ],
+        "comments": "Escalabilidade limitada significa que não pode crescer facilmente. Redução de custos de capital significa menos investimento inicial. Manutenção complexa requer muito esforço para manter. Dependência de hardware significa precisar de equipamentos físicos."
+      },
+      {
+        "id": 36,
+        "isMultipleChoice": false,
+        "question": "Qual dos seguintes é um modelo de serviço em nuvem?",
+        "options": [
+          { "option": "IaaS", "isCorrect": true },
+          { "option": "VPN", "isCorrect": false },
+          { "option": "LAN", "isCorrect": false },
+          { "option": "HTTP", "isCorrect": false }
+        ],
+        "comments": "IaaS é Infrastructure as a Service. VPN é uma rede privada virtual. LAN é uma rede local. HTTP é um protocolo de transferência de hipertexto."
+      },
+      {
+        "id": 37,
+        "isMultipleChoice": false,
+        "question": "Qual é a principal vantagem do modelo de nuvem pública?",
+        "options": [
+          { "option": "Controle total sobre a infraestrutura", "isCorrect": false },
+          { "option": "Custo reduzido", "isCorrect": true },
+          { "option": "Segurança máxima", "isCorrect": false },
+          { "option": "Personalização completa", "isCorrect": false }
+        ],
+        "comments": "Controle total sobre a infraestrutura é mais comum em nuvens privadas. Custo reduzido é uma vantagem da nuvem pública. Segurança máxima é mais associada a nuvens privadas. Personalização completa é mais fácil em nuvens privadas."
+      },
+      {
+        "id": 38,
+        "isMultipleChoice": false,
+        "question": "Qual é um exemplo de PaaS?",
+        "options": [
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "Google App Engine", "isCorrect": true },
+          { "option": "Microsoft OneDrive", "isCorrect": false },
+          { "option": "AWS IAM", "isCorrect": false }
+        ],
+        "comments": "Amazon S3 é um serviço de armazenamento. Google App Engine é um exemplo de PaaS. Microsoft OneDrive é um serviço de armazenamento em nuvem. AWS IAM é um serviço de gerenciamento de identidade."
+      },
+      {
+        "id": 39,
+        "isMultipleChoice": false,
+        "question": "Qual é uma característica do modelo de nuvem privada?",
+        "options": [
+          { "option": "Acesso público irrestrito", "isCorrect": false },
+          { "option": "Maior controle de segurança", "isCorrect": true },
+          { "option": "Custo mais baixo", "isCorrect": false },
+          { "option": "Escalabilidade ilimitada", "isCorrect": false }
+        ],
+        "comments": "Acesso público irrestrito é uma característica da nuvem pública. Maior controle de segurança é uma vantagem da nuvem privada. Custo mais baixo é geralmente associado à nuvem pública. Escalabilidade ilimitada é uma característica da nuvem pública."
+      },
+      {
+        "id": 40,
+        "isMultipleChoice": false,
+        "question": "Qual é um exemplo de IaaS?",
+        "options": [
+          { "option": "Amazon EC2", "isCorrect": true },
+          { "option": "Dropbox", "isCorrect": false },
+          { "option": "Salesforce", "isCorrect": false },
+          { "option": "Google Docs", "isCorrect": false }
+        ],
+        "comments": "Amazon EC2 é um exemplo de IaaS. Dropbox é um serviço de armazenamento. Salesforce é um exemplo de SaaS. Google Docs é um serviço de SaaS."
+      },
+      {
+        "id": 41,
+        "isMultipleChoice": false,
+        "question": "Qual é um benefício do uso de serviços em nuvem?",
+        "options": [
+          { "option": "Dependência de hardware", "isCorrect": false },
+          { "option": "Escalabilidade sob demanda", "isCorrect": true },
+          { "option": "Custos fixos elevados", "isCorrect": false },
+          { "option": "Manutenção complexa", "isCorrect": false }
+        ],
+        "comments": "Dependência de hardware significa precisar de equipamentos físicos. Escalabilidade sob demanda permite ajustar recursos conforme necessário. Custos fixos elevados são despesas que não mudam com o uso. Manutenção complexa requer muito esforço para manter."
+      },
+      {
+        "id": 42,
+        "isMultipleChoice": false,
+        "question": "Qual é uma vantagem do modelo de nuvem híbrida?",
+        "options": [
+          { "option": "Acesso irrestrito a todos os dados", "isCorrect": false },
+          { "option": "Flexibilidade para mover cargas de trabalho", "isCorrect": true },
+          { "option": "Custo fixo", "isCorrect": false },
+          { "option": "Dependência de um único fornecedor", "isCorrect": false }
+        ],
+        "comments": "Acesso irrestrito a todos os dados é uma característica da nuvem pública. Flexibilidade para mover cargas de trabalho é uma vantagem da nuvem híbrida. Custo fixo é uma característica de contratos tradicionais. Dependência de um único fornecedor é um risco em qualquer modelo."
+      },
+      {
+        "id": 43,
+        "isMultipleChoice": false,
+        "question": "Qual é um exemplo de serviço SaaS?",
+        "options": [
+          { "option": "Amazon RDS", "isCorrect": false },
+          { "option": "Microsoft Office 365", "isCorrect": true },
+          { "option": "AWS CloudFormation", "isCorrect": false },
+          { "option": "Google Cloud Storage", "isCorrect": false }
+        ],
+        "comments": "Amazon RDS é um serviço de banco de dados. Microsoft Office 365 é um exemplo de SaaS. AWS CloudFormation é um serviço de infraestrutura como código. Google Cloud Storage é um serviço de armazenamento."
+      },
+      {
+        "id": 44,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar permissões de acesso aos recursos?",
+        "options": [
+          { "option": "AWS Shield", "isCorrect": false },
+          { "option": "AWS IAM", "isCorrect": true },
+          { "option": "AWS WAF", "isCorrect": false },
+          { "option": "Amazon GuardDuty", "isCorrect": false }
+        ],
+        "comments": "AWS Shield protege contra DDoS. AWS IAM gerencia identidades e acessos. AWS WAF protege aplicações web. Amazon GuardDuty detecta ameaças."
+      },
+      {
+        "id": 45,
+        "isMultipleChoice": false,
+        "question": "Qual é o modelo de responsabilidade compartilhada da AWS?",
+        "options": [
+          { "option": "AWS é responsável por tudo", "isCorrect": false },
+          { "option": "O cliente é responsável por tudo", "isCorrect": false },
+          { "option": "AWS e o cliente compartilham responsabilidades", "isCorrect": true },
+          { "option": "Não há responsabilidades definidas", "isCorrect": false }
+        ],
+        "comments": "AWS é responsável pela segurança da nuvem. O cliente é responsável pela segurança na nuvem. Ambos compartilham responsabilidades. Não há responsabilidades definidas é incorreto."
+      },
+      {
+        "id": 46,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS ajuda a proteger contra ataques DDoS?",
+        "options": [
+          { "option": "AWS IAM", "isCorrect": false },
+          { "option": "AWS Shield", "isCorrect": true },
+          { "option": "AWS CloudTrail", "isCorrect": false },
+          { "option": "AWS Config", "isCorrect": false }
+        ],
+        "comments": "AWS IAM gerencia identidades. AWS Shield protege contra DDoS. AWS CloudTrail monitora ações. AWS Config gerencia configurações."
+      },
+      {
+        "id": 47,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS permite monitorar e auditar ações em sua conta?",
+        "options": [
+          { "option": "AWS CloudTrail", "isCorrect": true },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS EC2", "isCorrect": false }
+        ],
+        "comments": "AWS CloudTrail monitora ações. AWS Lambda executa código. Amazon S3 armazena dados. AWS EC2 fornece computação."
+      },
+      {
+        "id": 48,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS oferece criptografia de dados em repouso?",
+        "options": [
+          { "option": "AWS KMS", "isCorrect": true },
+          { "option": "AWS CloudWatch", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "AWS KMS gerencia chaves de criptografia. AWS CloudWatch monitora recursos. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 49,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para proteger aplicações web de ameaças comuns?",
+        "options": [
+          { "option": "AWS WAF", "isCorrect": true },
+          { "option": "AWS CloudFront", "isCorrect": false },
+          { "option": "AWS S3", "isCorrect": false },
+          { "option": "AWS EC2", "isCorrect": false }
+        ],
+        "comments": "AWS WAF protege aplicações web. AWS CloudFront entrega conteúdo. AWS S3 armazena dados. AWS EC2 fornece computação."
+      },
+      {
+        "id": 50,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS oferece detecção de ameaças e monitoramento contínuo?",
+        "options": [
+          { "option": "Amazon GuardDuty", "isCorrect": true },
+          { "option": "AWS CloudFormation", "isCorrect": false },
+          { "option": "AWS Elastic Beanstalk", "isCorrect": false },
+          { "option": "AWS CodeDeploy", "isCorrect": false }
+        ],
+        "comments": "Amazon GuardDuty detecta ameaças. AWS CloudFormation gerencia infraestrutura. AWS Elastic Beanstalk implanta aplicações. AWS CodeDeploy automatiza implantações."
+      },
+      {
+        "id": 51,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS permite gerenciar chaves de criptografia?",
+        "options": [
+          { "option": "AWS KMS", "isCorrect": true },
+          { "option": "AWS CloudWatch", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "AWS KMS gerencia chaves de criptografia. AWS CloudWatch monitora recursos. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 52,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS ajuda a proteger dados em trânsito?",
+        "options": [
+          { "option": "AWS Certificate Manager", "isCorrect": true },
+          { "option": "AWS CloudTrail", "isCorrect": false },
+          { "option": "AWS IAM", "isCorrect": false },
+          { "option": "AWS S3", "isCorrect": false }
+        ],
+        "comments": "AWS Certificate Manager gerencia certificados SSL/TLS. AWS CloudTrail monitora ações. AWS IAM gerencia identidades. AWS S3 armazena dados."
+      },
+      {
+        "id": 53,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS oferece proteção contra perda de dados?",
+        "options": [
+          { "option": "AWS Backup", "isCorrect": true },
+          { "option": "AWS CloudWatch", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "AWS Backup gerencia backups. AWS CloudWatch monitora recursos. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 54,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS permite criar políticas de segurança personalizadas?",
+        "options": [
+          { "option": "AWS IAM", "isCorrect": true },
+          { "option": "AWS CloudFormation", "isCorrect": false },
+          { "option": "AWS Elastic Beanstalk", "isCorrect": false },
+          { "option": "AWS CodeDeploy", "isCorrect": false }
+        ],
+        "comments": "AWS IAM gerencia identidades e acessos. AWS CloudFormation gerencia infraestrutura. AWS Elastic Beanstalk implanta aplicações. AWS CodeDeploy automatiza implantações."
+      },
+      {
+        "id": 55,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS oferece proteção contra ameaças de rede?",
+        "options": [
+          { "option": "AWS Shield", "isCorrect": true },
+          { "option": "AWS CloudFront", "isCorrect": false },
+          { "option": "AWS S3", "isCorrect": false },
+          { "option": "AWS EC2", "isCorrect": false }
+        ],
+        "comments": "AWS Shield protege contra DDoS. AWS CloudFront entrega conteúdo. AWS S3 armazena dados. AWS EC2 fornece computação."
+      },
+      {
+        "id": 56,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS permite auditar e monitorar o uso de recursos?",
+        "options": [
+          { "option": "AWS CloudTrail", "isCorrect": true },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS EC2", "isCorrect": false }
+        ],
+        "comments": "AWS CloudTrail monitora ações. AWS Lambda executa código. Amazon S3 armazena dados. AWS EC2 fornece computação."
+      },
+      {
+        "id": 57,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS oferece proteção contra ameaças de segurança?",
+        "options": [
+          { "option": "Amazon GuardDuty", "isCorrect": true },
+          { "option": "AWS CloudFormation", "isCorrect": false },
+          { "option": "AWS Elastic Beanstalk", "isCorrect": false },
+          { "option": "AWS CodeDeploy", "isCorrect": false }
+        ],
+        "comments": "Amazon GuardDuty detecta ameaças. AWS CloudFormation gerencia infraestrutura. AWS Elastic Beanstalk implanta aplicações. AWS CodeDeploy automatiza implantações."
+      },
+      {
+        "id": 58,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS permite gerenciar identidades e acessos?",
+        "options": [
+          { "option": "AWS IAM", "isCorrect": true },
+          { "option": "AWS CloudFormation", "isCorrect": false },
+          { "option": "AWS Elastic Beanstalk", "isCorrect": false },
+          { "option": "AWS CodeDeploy", "isCorrect": false }
+        ],
+        "comments": "AWS IAM gerencia identidades e acessos. AWS CloudFormation gerencia infraestrutura. AWS Elastic Beanstalk implanta aplicações. AWS CodeDeploy automatiza implantações."
+      },
+      {
+        "id": 59,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para armazenar objetos?",
+        "options": [
+          { "option": "Amazon EC2", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": true },
+          { "option": "Amazon RDS", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false }
+        ],
+        "comments": "Amazon EC2 fornece computação. Amazon S3 armazena objetos. Amazon RDS gerencia bancos de dados. AWS Lambda executa código."
+      },
+      {
+        "id": 60,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS permite executar código sem provisionar ou gerenciar servidores?",
+        "options": [
+          { "option": "Amazon EC2", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": true },
+          { "option": "Amazon RDS", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": false }
+        ],
+        "comments": "Amazon EC2 fornece computação. AWS Lambda executa código sem servidores. Amazon RDS gerencia bancos de dados. Amazon S3 armazena dados."
+      },
+      {
+        "id": 61,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar bancos de dados relacionais?",
+        "options": [
+          { "option": "Amazon EC2", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false }
+        ],
+        "comments": "Amazon EC2 fornece computação. Amazon RDS gerencia bancos de dados relacionais. Amazon S3 armazena dados. AWS Lambda executa código."
+      },
+      {
+        "id": 62,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para entrega de conteúdo global?",
+        "options": [
+          { "option": "Amazon CloudFront", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon CloudFront entrega conteúdo globalmente. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 63,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para criar e gerenciar máquinas virtuais?",
+        "options": [
+          { "option": "Amazon EC2", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon EC2 cria e gerencia máquinas virtuais. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 64,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para monitorar e gerenciar recursos?",
+        "options": [
+          { "option": "AWS CloudWatch", "isCorrect": true },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "AWS CloudWatch monitora recursos. AWS Lambda executa código. Amazon S3 armazena dados. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 65,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar contêineres?",
+        "options": [
+          { "option": "Amazon ECS", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon ECS gerencia contêineres. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 66,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para criar redes virtuais?",
+        "options": [
+          { "option": "Amazon VPC", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon VPC cria redes virtuais. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 67,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar filas de mensagens?",
+        "options": [
+          { "option": "Amazon SQS", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon SQS gerencia filas de mensagens. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 68,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar APIs?",
+        "options": [
+          { "option": "Amazon API Gateway", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon API Gateway gerencia APIs. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 69,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar bancos de dados NoSQL?",
+        "options": [
+          { "option": "Amazon DynamoDB", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon DynamoDB gerencia bancos de dados NoSQL. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados relacionais."
+      },
+      {
+        "id": 70,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar logs e eventos?",
+        "options": [
+          { "option": "AWS CloudWatch Logs", "isCorrect": true },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "AWS CloudWatch Logs gerencia logs e eventos. AWS Lambda executa código. Amazon S3 armazena dados. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 71,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar funções sem servidor?",
+        "options": [
+          { "option": "AWS Lambda", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false },
+          { "option": "Amazon EC2", "isCorrect": false }
+        ],
+        "comments": "AWS Lambda gerencia funções sem servidor. Amazon S3 armazena dados. Amazon RDS gerencia bancos de dados. Amazon EC2 fornece computação."
+      },
+      {
+        "id": 72,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar armazenamento em bloco?",
+        "options": [
+          { "option": "Amazon EBS", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon EBS gerencia armazenamento em bloco. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 73,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar balanceamento de carga?",
+        "options": [
+          { "option": "Elastic Load Balancing", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Elastic Load Balancing gerencia balanceamento de carga. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 74,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar redes de entrega de conteúdo?",
+        "options": [
+          { "option": "Amazon CloudFront", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon CloudFront gerencia redes de entrega de conteúdo. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 75,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS é usado para gerenciar armazenamento de arquivos?",
+        "options": [
+          { "option": "Amazon EFS", "isCorrect": true },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Lambda", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon EFS gerencia armazenamento de arquivos. Amazon S3 armazena dados. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+      },
+      {
+        "id": 76,
+        "isMultipleChoice": false,
+        "question": "Qual ferramenta da AWS é usada para visualizar e analisar os custos e o uso da AWS?",
+        "options": [
+          { "option": "AWS Budgets", "isCorrect": false },
+          { "option": "AWS Cost Explorer", "isCorrect": true },
+          { "option": "AWS Pricing Calculator", "isCorrect": false },
+          { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "AWS Budgets ajuda a prever custos. AWS Cost Explorer analisa custos. AWS Pricing Calculator estima custos. AWS Trusted Advisor oferece recomendações."
+      },
+      {
+        "id": 77,
+        "isMultipleChoice": false,
+        "question": "Qual modelo de precificação da AWS cobra com base no uso real dos recursos?",
+        "options": [
+          { "option": "Contrato anual", "isCorrect": false },
+          { "option": "Pagamento conforme o uso", "isCorrect": true },
+          { "option": "Taxa fixa mensal", "isCorrect": false },
+          { "option": "Licenciamento por usuário", "isCorrect": false }
+        ],
+        "comments": "Contrato anual é um compromisso de longo prazo. Pagamento conforme o uso cobra pelo uso real. Taxa fixa mensal é um custo constante. Licenciamento por usuário cobra por cada usuário."
+      },
+      {
+        "id": 78,
+        "isMultipleChoice": false,
+        "question": "Qual ferramenta da AWS ajuda a prever e controlar os custos futuros?",
+        "options": [
+          { "option": "AWS Budgets", "isCorrect": true },
+          { "option": "AWS Cost Explorer", "isCorrect": false },
+          { "option": "AWS Pricing Calculator", "isCorrect": false },
+          { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "AWS Budgets ajuda a prever custos. AWS Cost Explorer analisa custos. AWS Pricing Calculator estima custos. AWS Trusted Advisor oferece recomendações."
+      },
+      {
+        "id": 79,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS oferece recomendações para otimizar custos e desempenho?",
+        "options": [
+          { "option": "AWS Trusted Advisor", "isCorrect": true },
+          { "option": "AWS Cost Explorer", "isCorrect": false },
+          { "option": "AWS Budgets", "isCorrect": false },
+          { "option": "AWS Pricing Calculator", "isCorrect": false }
+        ],
+        "comments": "AWS Trusted Advisor oferece recomendações. AWS Cost Explorer analisa custos. AWS Budgets ajuda a prever custos. AWS Pricing Calculator estima custos."
+      },
+      {
+        "id": 80,
+        "isMultipleChoice": false,
+        "question": "Qual ferramenta da AWS é usada para calcular estimativas de custos para arquiteturas na AWS?",
+        "options": [
+          { "option": "AWS Pricing Calculator", "isCorrect": true },
+          { "option": "AWS Cost Explorer", "isCorrect": false },
+          { "option": "AWS Budgets", "isCorrect": false },
+          { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "AWS Pricing Calculator estima custos. AWS Cost Explorer analisa custos. AWS Budgets ajuda a prever custos. AWS Trusted Advisor oferece recomendações."
+      },
+      {
+        "id": 81,
+        "isMultipleChoice": false,
+        "question": "Qual plano de suporte da AWS oferece acesso a um gerente técnico de conta?",
+        "options": [
+          { "option": "Basic", "isCorrect": false },
+          { "option": "Developer", "isCorrect": false },
+          { "option": "Business", "isCorrect": false },
+          { "option": "Enterprise", "isCorrect": true }
+        ],
+        "comments": "Basic oferece suporte limitado; Developer é para desenvolvimento; Business oferece suporte técnico; Enterprise oferece um gerente técnico de conta."
       }
       /*
       {
