@@ -32,8 +32,12 @@ const quizData = {
         { "option": "Confiabilidade", "isCorrect": true },
         { "option": "Excelência operacional", "isCorrect": true },
         { "option": "Segurança", "isCorrect": true },
-        { "option": "Desempenho de baixo custo", "isCorrect": false },
-        { "option": "Acessibilidade", "isCorrect": false }
+        { "option": "Desempenho", "isCorrect": false },
+        { "option": "Acessibilidade", "isCorrect": false },
+        { "option": "Otimizaçao de custos", "isCorrect": true },
+        { "option": "Sustentabilidade", "isCorrect": true },
+        { "option": "Previsibilidade", "isCorrect": false },
+        { "option": "Governança", "isCorrect": false }
       ],
       comments: "O AWS Well-Architected Framework descreve os principais conceitos, princípios de projeto e práticas recomendadas para projetar e executar workloads na nuvem.-Excelência operacional.-Segurança.-Confiabilidade.-Eficiência de performance.-Otimização de custos.-Sustentabilidade."
     },
@@ -402,15 +406,15 @@ const quizData = {
       },
       {
         "id": 34,
+        "question": "Qual serviço da AWS permite adicionar autenticação, autorização e gerenciamento de usuários em aplicativos móveis e web?",
         "isMultipleChoice": false,
-        "question": "Qual é um exemplo de modelo de serviço SaaS?",
         "options": [
-          { "option": "Amazon EC2", "isCorrect": false },
-          { "option": "Google Workspace", "isCorrect": true },
-          { "option": "AWS Lambda", "isCorrect": false },
-          { "option": "Microsoft Azure", "isCorrect": false }
+          { "option": "Amazon Cognito", "isCorrect": true },
+          { "option": "AWS IAM", "isCorrect": false },
+          { "option": "Amazon S3", "isCorrect": false },
+          { "option": "AWS Directory Service", "isCorrect": false }
         ],
-        "comments": "Amazon EC2 é um serviço de IaaS. Google Workspace é um exemplo de SaaS. AWS Lambda é um serviço de FaaS. Microsoft Azure é uma plataforma de nuvem."
+        "comments": "Amazon Cognito: Permite gerenciar usuários, autenticação e autorização em aplicativos móveis e web.\nAWS IAM: Gerencia acesso a recursos da AWS para usuários e serviços, mas não é voltado para aplicativos móveis ou web.\nAmazon S3: Serviço de armazenamento, sem foco em autenticação de usuários.\nAWS Directory Service: Permite gerenciar diretórios, mas não adiciona autenticação diretamente a aplicativos móveis ou web."
       },
       {
         "id": 35,
@@ -482,7 +486,7 @@ const quizData = {
           { "option": "Salesforce", "isCorrect": false },
           { "option": "Google Docs", "isCorrect": false }
         ],
-        "comments": "Amazon EC2 é um exemplo de IaaS. Dropbox é um serviço de armazenamento. Salesforce é um exemplo de SaaS. Google Docs é um serviço de SaaS."
+        "comments": "IaaS (infraestrutura como serviço) fornece recursos de infraestrutura de TI sob demanda, como computação, armazenamento, rede e virtualização.Amazon EC2 é um exemplo de IaaS. Dropbox é um serviço de armazenamento, é classificado como SaaS. Salesforce é um exemplo de SaaS. Google Docs é um serviço de SaaS."
       },
       {
         "id": 41,
@@ -498,15 +502,15 @@ const quizData = {
       },
       {
         "id": 42,
-        "isMultipleChoice": false,
-        "question": "Qual é uma vantagem do modelo de nuvem híbrida?",
+        "isMultipleChoice": true,
+        "question": "Quais dos seguintes serviços da AWS são projetados para oferecer soluções em nuvem híbrida, facilitando a integração entre a infraestrutura local e a nuvem AWS?",
         "options": [
-          { "option": "Acesso irrestrito a todos os dados", "isCorrect": false },
-          { "option": "Flexibilidade para mover cargas de trabalho", "isCorrect": true },
-          { "option": "Custo fixo", "isCorrect": false },
-          { "option": "Dependência de um único fornecedor", "isCorrect": false }
+          { "option": "AWS Outposts", "isCorrect": true },
+          { "option": "AWS Wavelength", "isCorrect": true },
+          { "option": "AWS DataSync", "isCorrect": true },
+          { "option": "AWS Basic Support", "isCorrect": false }
         ],
-        "comments": "Acesso irrestrito a todos os dados é uma característica da nuvem pública. Flexibilidade para mover cargas de trabalho é uma vantagem da nuvem híbrida. Custo fixo é uma característica de contratos tradicionais. Dependência de um único fornecedor é um risco em qualquer modelo."
+        "comments": "AWS Outposts: Proporciona infraestrutura e serviços AWS no ambiente local do cliente, oferecendo uma solução híbrida robusta e de fácil integração com a nuvem.\n\nAWS Wavelength: Integra a AWS diretamente com provedores de rede de telecomunicações, oferecendo latência ultrabaixa para aplicações híbridas e de edge computing.\n\nAWS DataSync: Facilita a transferência rápida e eficiente de grandes volumes de dados entre a infraestrutura local e a nuvem AWS, facilitando a integração híbrida.\n\nAWS Basic Support: É um plano básico de suporte que oferece acesso a recursos limitados, mas não inclui funcionalidades específicas para integração híbrida entre a nuvem e a infraestrutura local."
       },
       {
         "id": 43,
@@ -518,7 +522,7 @@ const quizData = {
           { "option": "AWS CloudFormation", "isCorrect": false },
           { "option": "Google Cloud Storage", "isCorrect": false }
         ],
-        "comments": "Amazon RDS é um serviço de banco de dados. Microsoft Office 365 é um exemplo de SaaS. AWS CloudFormation é um serviço de infraestrutura como código. Google Cloud Storage é um serviço de armazenamento."
+        "comments": "SaaS (Software as a Service) é um modelo de computação em nuvem que permite aos usuários acessar aplicativos baseados em nuvem pela internet. Microsoft Office 365 é um exemplo de SaaS. AWS CloudFormation é um serviço de infraestrutura como código. Google Cloud Storage é um serviço de armazenamento.Amazon RDS é um serviço de banco de dados."
       },
       {
         "id": 44,
@@ -578,7 +582,7 @@ const quizData = {
           { "option": "AWS Lambda", "isCorrect": false },
           { "option": "Amazon RDS", "isCorrect": false }
         ],
-        "comments": "AWS KMS gerencia chaves de criptografia. AWS CloudWatch monitora recursos. AWS Lambda executa código. Amazon RDS gerencia bancos de dados."
+        "comments": "AWS KMS (Key Management Service): É o serviço responsável por gerenciar e controlar chaves de criptografia, garantindo que os dados em repouso sejam criptografados de maneira segura. \nAWS CloudWatch: É um serviço de monitoramento e gerenciamento de recursos e aplicativos na AWS, mas não está relacionado à criptografia de dados.\nAWS Lambda: Permite executar código em resposta a eventos, mas não gerencia a criptografia de dados em repouso. \nAmazon RDS: É um serviço gerenciado de banco de dados que armazena dados, mas a criptografia em repouso deve ser configurada explicitamente utilizando chaves do AWS KMS."
       },
       {
         "id": 49,
@@ -590,7 +594,7 @@ const quizData = {
           { "option": "AWS S3", "isCorrect": false },
           { "option": "AWS EC2", "isCorrect": false }
         ],
-        "comments": "AWS WAF protege aplicações web. AWS CloudFront entrega conteúdo. AWS S3 armazena dados. AWS EC2 fornece computação."
+        "comments": "AWS WAF (Web Application Firewall): Protege aplicações web contra ameaças e ataques comuns, garantindo a segurança do tráfego.AWS CloudFront: Content Delivery Network (CDN) que distribui e entrega conteúdo de forma rápida e segura em todo o mundo.AWS S3 (Simple Storage Service): Armazena dados de forma escalável, durável e com alta disponibilidade.AWS EC2 (Elastic Compute Cloud): Oferece instâncias de computação flexíveis e escaláveis para atender às demandas das aplicações."
       },
       {
         "id": 50,
@@ -626,7 +630,7 @@ const quizData = {
           { "option": "AWS IAM", "isCorrect": false },
           { "option": "AWS S3", "isCorrect": false }
         ],
-        "comments": "AWS Certificate Manager gerencia certificados SSL/TLS. AWS CloudTrail monitora ações. AWS IAM gerencia identidades. AWS S3 armazena dados."
+        "comments": "O AWS Certificate Manager é responsável por gerenciar e fornecer certificados SSL/TLS, garantindo a criptografia dos dados em trânsito entre clientes e servidores.\nVamos entender as outras opções:\n -AWS CloudTrail: É um serviço de auditoria que registra atividades e solicitações feitas na AWS, mas não está diretamente relacionado à proteção dos dados em trânsito.\n -AWS IAM (Identity and Access Management): Garante o controle de acesso e gerenciamento das identidades dos usuários, mas não criptografa os dados em trânsito.\n -AWS S3: É um serviço de armazenamento em nuvem e não é responsável pela criptografia dos dados em trânsito, mas apenas em repouso, caso configurado para tal.\n Para assegurar a proteção dos dados em trânsito, é fundamental utilizar o AWS Certificate Manager, que configura os certificados SSL/TLS necessários para a comunicação segura entre os serviços e os clientes."
       },
       {
         "id": 53,
@@ -703,14 +707,14 @@ const quizData = {
       {
         "id": 59,
         "isMultipleChoice": false,
-        "question": "Qual serviço da AWS é usado para armazenar objetos?",
+        "question": "Qual serviço da AWS facilita a orquestração e o gerenciamento de contêineres usando Kubernetes?",
         "options": [
-          { "option": "Amazon EC2", "isCorrect": false },
-          { "option": "Amazon S3", "isCorrect": true },
-          { "option": "Amazon RDS", "isCorrect": false },
-          { "option": "AWS Lambda", "isCorrect": false }
+          { "option": "Amazon ECS", "isCorrect": false },
+          { "option": "Amazon EKS", "isCorrect": true },
+          { "option": "AWS KMS", "isCorrect": false },
+          { "option": "Amazon RDS", "isCorrect": false }
         ],
-        "comments": "Amazon EC2 fornece computação. Amazon S3 armazena objetos. Amazon RDS gerencia bancos de dados. AWS Lambda executa código."
+        "comments": "-Amazon EKS (Elastic Kubernetes Service): É o serviço da AWS que facilita a orquestração e o gerenciamento de contêineres Kubernetes na nuvem, oferecendo alta escalabilidade e segurança.-Amazon ECS: Orquestração de contêineres usando o AWS Fargate e ECS, mas não é baseado no Kubernetes.-AWS KMS (Key Management Service): Gerencia chaves de criptografia, mas não é usado para orquestração de contêineres.-Amazon RDS: Serviço de banco de dados gerenciado e não relacionado ao Kubernetes."
       },
       {
         "id": 60,
@@ -974,8 +978,370 @@ const quizData = {
           { "option": "Business", "isCorrect": false },
           { "option": "Enterprise", "isCorrect": true }
         ],
-        "comments": "Basic oferece suporte limitado; Developer é para desenvolvimento; Business oferece suporte técnico; Enterprise oferece um gerente técnico de conta."
-      }
+        "comments": "-AWS Basic Support: Oferece suporte básico com acesso apenas a recursos de autoatendimento e documentação. Não inclui suporte técnico individualizado.-AWS Developer Support: Ideal para desenvolvimento e testes. Permite enviar solicitações de suporte por e-mail e tem um tempo de resposta de menos de 12 horas.-AWS Business Support: Fornece suporte técnico 24 horas por dia e inclui suporte por telefone com um tempo de resposta de até 4 horas caso o sistema em produção esteja danificado e 1 hora caso o sistema esteja parado. Inclui acesso total ao AWS Trusted Advisor.-AWS Enterprise Support: Oferece suporte prioritário com tempos de resposta extremamente rápidos (15 minutos para cargas essenciais), Inclui acesso designado a um Technical Account Manager (TAM), que ajuda no gerenciamento e otimização das cargas de trabalho críticas. Os planos AWS Enterprise On-Ramp e os planos Empresarial Rápido e Empresarial de Grande Porte também incluem acesso ao Technical Account Manager (TAM). Estes planos são projetados para empresas que necessitam de suporte robusto e escalável para seus ambientes essenciais e complexos."
+      },
+      {
+        "id": 82,
+        "isMultipleChoice": false,
+        "question": "Sua empresa está enfrentando dificuldades para escalar a infraestrutura de TI rapidamente para atender a picos de demanda. Qual solução em nuvem pode ajudar?",
+        "options": [
+            { "option": "IaaS", "isCorrect": true },
+            { "option": "PaaS", "isCorrect": false },
+            { "option": "SaaS", "isCorrect": false },
+            { "option": "FaaS", "isCorrect": false }
+        ],
+        "comments": "IaaS (Infrastructure as a Service): É a opção correta, pois fornece recursos de infraestrutura escaláveis, como servidores, armazenamento e redes, que podem ser ajustados rapidamente para atender a picos de demanda. Exemplos incluem Amazon EC2 e Google Compute Engine.\nPaaS (Platform as a Service): Oferece plataformas para desenvolvimento e implantação de aplicativos, mas não fornece controle direto sobre a infraestrutura subjacente, o que limita sua capacidade de escalar diretamente a infraestrutura de TI.\nSaaS (Software as a Service): Fornece aplicativos prontos para uso, como e-mail ou ferramentas de produtividade, mas não é voltado para escalar infraestrutura de TI.\nFaaS (Function as a Service): Permite executar funções específicas em resposta a eventos, mas não substitui a necessidade de infraestrutura para lidar com cargas de trabalho gerais."
+      },
+    {
+        "id": 83,
+        "isMultipleChoice": false,
+        "question": "Uma aplicação web está enfrentando problemas de segurança devido a ataques de injeção de SQL. Qual serviço pode ajudar a mitigar esse risco?",
+        "options": [
+            { "option": "AWS WAF", "isCorrect": true },
+            { "option": "AWS IAM", "isCorrect": false },
+            { "option": "Amazon GuardDuty", "isCorrect": false },
+            { "option": "AWS Shield", "isCorrect": false }
+        ],
+        "comments": "AWS WAF (Web Application Firewall) ajuda a proteger aplicações web de explorações comuns, como injeção de SQL, ao permitir que você crie regras personalizadas para bloquear padrões de tráfego malicioso."
+    },
+    {
+        "id": 84,
+        "isMultipleChoice": false,
+        "question": "Sua equipe de desenvolvimento está gastando muito tempo gerenciando servidores para executar código. Qual serviço pode simplificar esse processo?",
+        "options": [
+            { "option": "AWS Lambda", "isCorrect": true },
+            { "option": "Amazon EC2", "isCorrect": false },
+            { "option": "Amazon RDS", "isCorrect": false },
+            { "option": "Amazon S3", "isCorrect": false }
+        ],
+        "comments": "AWS Lambda permite executar código em resposta a eventos sem a necessidade de provisionar ou gerenciar servidores, facilitando o desenvolvimento de aplicações serverless."
+    },
+    {
+        "id": 85,
+        "isMultipleChoice": false,
+        "question": "Uma empresa precisa de uma solução para armazenar grandes quantidades de dados não estruturados de forma econômica. Qual serviço é mais adequado?",
+        "options": [
+            { "option": "Amazon S3", "isCorrect": true },
+            { "option": "Amazon RDS", "isCorrect": false },
+            { "option": "Amazon DynamoDB", "isCorrect": false },
+            { "option": "Amazon EBS", "isCorrect": false }
+        ],
+        "comments": "Amazon S3 (Simple Storage Service) é ideal para armazenar e recuperar qualquer quantidade de dados a qualquer momento, oferecendo escalabilidade, disponibilidade e durabilidade elevadas a um custo acessível."
+    },
+    {
+        "id": 86,
+        "isMultipleChoice": false,
+        "question": "Uma organização precisa garantir que apenas usuários autorizados possam acessar seus recursos na nuvem. Qual serviço pode ajudar a gerenciar essas permissões?",
+        "options": [
+            { "option": "AWS IAM", "isCorrect": true },
+            { "option": "AWS Shield", "isCorrect": false },
+            { "option": "AWS WAF", "isCorrect": false },
+            { "option": "Amazon GuardDuty", "isCorrect": false }
+        ],
+        "comments": "AWS IAM (Identity and Access Management) permite gerenciar o acesso aos serviços e recursos da AWS de forma segura, definindo quem pode acessar o quê."
+    },
+    {
+        "id": 87,
+        "isMultipleChoice": false,
+        "question": "Uma empresa está enfrentando altos custos com servidores subutilizados. Qual modelo de computação pode ajudar a otimizar os custos?",
+        "options": [
+            { "option": "Computação sob demanda", "isCorrect": true },
+            { "option": "Computação reservada", "isCorrect": false },
+            { "option": "Computação dedicada", "isCorrect": false },
+            { "option": "Computação spot", "isCorrect": false }
+        ],
+        "comments": "A computação sob demanda permite que as empresas paguem apenas pelos recursos que realmente utilizam, evitando custos com capacidade ociosa."
+    },
+    {
+        "id": 88,
+        "isMultipleChoice": false,
+        "question": "Uma aplicação precisa de um banco de dados que ofereça baixa latência e alta escalabilidade. Qual serviço é mais adequado?",
+        "options": [
+            { "option": "Amazon DynamoDB", "isCorrect": true },
+            { "option": "Amazon RDS", "isCorrect": false },
+            { "option": "Amazon Redshift", "isCorrect": false },
+            { "option": "Amazon Aurora", "isCorrect": false }
+        ],
+        "comments": "Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado que oferece baixa latência e alta escalabilidade, ideal para aplicações que exigem respostas rápidas."
+    },
+    {
+        "id": 89,
+        "isMultipleChoice": false,
+        "question": "Uma empresa precisa de uma solução para monitorar e gerenciar o uso de recursos na nuvem. Qual serviço pode ajudar?",
+        "options": [
+            { "option": "Amazon CloudWatch", "isCorrect": true },
+            { "option": "AWS CloudTrail", "isCorrect": false },
+            { "option": "AWS Config", "isCorrect": false },
+            { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "Amazon CloudWatch é um serviço de monitoramento que fornece dados e insights acionáveis para monitorar o uso de recursos, desempenho de aplicações e integridade operacional."
+    },
+    {
+        "id": 90,
+        "isMultipleChoice": false,
+        "question": "Uma organização precisa garantir a conformidade com regulamentos de proteção de dados. Qual serviço pode ajudar a auditar e monitorar atividades na nuvem?",
+        "options": [
+            { "option": "AWS CloudTrail", "isCorrect": true },
+            { "option": "Amazon CloudWatch", "isCorrect": false },
+            { "option": "AWS Config", "isCorrect": false },
+            { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "AWS CloudTrail registra todas as chamadas de API para sua conta da AWS, permitindo auditoria e monitoramento de atividades para garantir conformidade com regulamentos de proteção de dados."
+    },
+    {
+        "id": 91,
+        "isMultipleChoice": false,
+        "question": "Uma equipe de TI precisa de uma solução para automatizar a implantação de infraestrutura na nuvem. Qual serviço pode ser utilizado?",
+        "options": [
+            { "option": "AWS CloudFormation", "isCorrect": true },
+            { "option": "AWS Elastic Beanstalk", "isCorrect": false },
+            { "option": "AWS OpsWorks", "isCorrect": false },
+            { "option": "AWS CodeDeploy", "isCorrect": false }
+        ],
+        "comments": "AWS CloudFormation permite modelar e provisionar recursos de infraestrutura de forma automatizada e segura, usando templates para descrever a infraestrutura desejada."
+    },
+    {
+        "id": 92,
+        "isMultipleChoice": false,
+        "question": "Uma empresa deseja melhorar a segurança de suas aplicações web contra ataques DDoS. Qual serviço pode ser utilizado?",
+        "options": [
+            { "option": "AWS Shield", "isCorrect": true },
+            { "option": "AWS IAM", "isCorrect": false },
+            { "option": "AWS WAF", "isCorrect": false },
+            { "option": "Amazon GuardDuty", "isCorrect": false }
+        ],
+        "comments": "AWS Shield é um serviço gerenciado de proteção contra DDoS que protege aplicações executadas na AWS."
+    },
+    {
+        "id": 93,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para gerenciar chaves de criptografia?",
+        "options": [
+            { "option": "AWS KMS", "isCorrect": true },
+            { "option": "AWS IAM", "isCorrect": false },
+            { "option": "AWS Shield", "isCorrect": false },
+            { "option": "AWS WAF", "isCorrect": false }
+        ],
+        "comments": "AWS KMS (Key Management Service) permite criar e controlar chaves de criptografia usadas para proteger dados."
+    },
+    {
+        "id": 94,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para criar e gerenciar contêineres?",
+        "options": [
+            { "option": "Amazon ECS", "isCorrect": true },
+            { "option": "AWS Lambda", "isCorrect": false },
+            { "option": "Amazon RDS", "isCorrect": false },
+            { "option": "Amazon S3", "isCorrect": false }
+        ],
+        "comments": "Amazon ECS (Elastic Container Service) é um serviço de gerenciamento de contêineres altamente escalável e de alto desempenho."
+    },
+    {
+        "id": 95,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para criar redes privadas virtuais?",
+        "options": [
+            { "option": "Amazon VPC", "isCorrect": true },
+            { "option": "AWS Direct Connect", "isCorrect": false },
+            { "option": "Amazon CloudFront", "isCorrect": false },
+            { "option": "AWS VPN", "isCorrect": false }
+        ],
+        "comments": "Amazon VPC (Virtual Private Cloud) permite provisionar uma seção logicamente isolada da nuvem AWS onde você pode lançar recursos da AWS em uma rede virtual que você define."
+    },
+    {
+        "id": 96,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para distribuir conteúdo globalmente com baixa latência?",
+        "options": [
+            { "option": "Amazon CloudFront", "isCorrect": true },
+            { "option": "Amazon S3", "isCorrect": false },
+            { "option": "AWS Lambda", "isCorrect": false },
+            { "option": "Amazon RDS", "isCorrect": false }
+        ],
+        "comments": "Amazon CloudFront é uma rede de entrega de conteúdo (CDN) que distribui conteúdo globalmente com baixa latência e alta velocidade de transferência."
+    },
+    {
+        "id": 97,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para gerenciar logs de aplicações e sistemas?",
+        "options": [
+            { "option": "Amazon CloudWatch Logs", "isCorrect": true },
+            { "option": "AWS CloudTrail", "isCorrect": false },
+            { "option": "AWS Config", "isCorrect": false },
+            { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "Amazon CloudWatch Logs permite monitorar, armazenar e acessar arquivos de log de suas instâncias do Amazon EC2, AWS CloudTrail, e outras fontes."
+    },
+    {
+        "id": 98,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para criar pipelines de integração e entrega contínuas?",
+        "options": [
+            { "option": "AWS CodePipeline", "isCorrect": true },
+            { "option": "AWS CodeBuild", "isCorrect": false },
+            { "option": "AWS CodeDeploy", "isCorrect": false },
+            { "option": "AWS CodeCommit", "isCorrect": false }
+        ],
+        "comments": "AWS CodePipeline é um serviço de integração e entrega contínuas para atualizações rápidas e confiáveis de aplicações e infraestrutura."
+    },
+    {
+        "id": 99,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para gerenciar a configuração de recursos da AWS?",
+        "options": [
+            { "option": "AWS Config", "isCorrect": true },
+            { "option": "AWS CloudTrail", "isCorrect": false },
+            { "option": "Amazon CloudWatch", "isCorrect": false },
+            { "option": "AWS Trusted Advisor", "isCorrect": false }
+        ],
+        "comments": "AWS Config fornece um inventário de recursos da AWS, histórico de configuração e notificações de alterações de configuração para habilitar a segurança e a governança."
+    },
+    {
+        "id": 100,
+        "isMultipleChoice": false,
+        "question": "Qual serviço da AWS pode ser usado para criar e gerenciar bancos de dados relacionais?",
+        "options": [
+            { "option": "Amazon RDS", "isCorrect": true },
+            { "option": "Amazon DynamoDB", "isCorrect": false },
+            { "option": "Amazon Redshift", "isCorrect": false },
+            { "option": "Amazon Aurora", "isCorrect": false }
+        ],
+        "comments": "Amazon RDS (Relational Database Service) facilita a configuração, operação e escalabilidade de bancos de dados relacionais na nuvem."
+    },
+    {
+      "id": 101,
+      "question": "Qual serviço da AWS permite acessar relatórios de conformidade e outros documentos relacionados a auditorias e certificações?",
+      "isMultipleChoice": false,
+      "options": [
+        { "option": "AWS Artifact", "isCorrect": true },
+        { "option": "AWS Config", "isCorrect": false },
+        { "option": "AWS Trusted Advisor", "isCorrect": false },
+        { "option": "AWS CloudTrail", "isCorrect": false }
+      ],
+      "comments": "O AWS Artifact é um portal que fornece acesso a relatórios de conformidade e outros documentos relacionados a auditorias, ajudando a atender requisitos regulatórios."
+    },
+    {
+      "id": 102,
+      "question": "Qual serviço da AWS é usado para criar e gerenciar chaves de criptografia usadas para proteger dados?",
+      "isMultipleChoice": false,
+      "options": [
+        { "option": "AWS KMS", "isCorrect": true },
+        { "option": "AWS Secrets Manager", "isCorrect": false },
+        { "option": "AWS ACM", "isCorrect": false },
+        { "option": "AWS IAM", "isCorrect": false }
+      ],
+      "comments": "AWS Key Management Service (KMS): Usado para criar e gerenciar chaves de criptografia para proteger dados na nuvem.\nAWS Secrets Manager: Serviço projetado para gerenciar segredos como senhas e credenciais de banco de dados, mas não para criptografia de dados diretamente.\nAWS Certificate Manager (ACM): Facilita a criação, implantação e gerenciamento de certificados SSL/TLS para proteger sites e aplicativos web.\nAWS Identity and Access Management (IAM): Gerencia acesso e permissões para recursos da AWS, mas não lida diretamente com criptografia ou gerenciamento de chaves."
+    },
+    {
+      "id": 103,
+      "question": "Qual é a principal função do AWS Macie?",
+      "isMultipleChoice": false,
+      "options": [
+        { "option": "Identificar e proteger dados confidenciais usando aprendizado de máquina", "isCorrect": true },
+        { "option": "Gerenciar chaves de criptografia para proteger dados armazenados na AWS", "isCorrect": false },
+        { "option": "Proteger contra ataques distribuídos de negação de serviço (DDoS)", "isCorrect": false },
+        { "option": "Monitorar e registrar ações realizadas nos recursos da AWS", "isCorrect": false }
+      ],
+      "comments": "Identificar e proteger dados confidenciais usando aprendizado de máquina: Esta é a função principal do AWS Macie, que ajuda a localizar e proteger informações sensíveis, como dados pessoais ou financeiros.\nGerenciar chaves de criptografia para proteger dados armazenados na AWS: É a função do AWS Key Management Service (KMS).\nProteger contra ataques distribuídos de negação de serviço (DDoS): É a função do AWS Shield.\nMonitorar e registrar ações realizadas nos recursos da AWS: Esta é a função do AWS CloudTrail."
+    },
+    {
+      "id": 104,
+      "question": "Qual serviço da AWS pode ajudar a proteger aplicações contra ataques de força bruta tentando acessar senhas ou credenciais?",
+      "isMultipleChoice": false,
+      "options": [
+        { "option": "AWS WAF (Web Application Firewall)", "isCorrect": true },
+        { "option": "AWS Shield", "isCorrect": false },
+        { "option": "Amazon GuardDuty", "isCorrect": false },
+        { "option": "AWS IAM", "isCorrect": false }
+      ],
+      "comments": "AWS WAF (Web Application Firewall): Permite criar regras personalizadas para bloquear solicitações maliciosas, como ataques de força bruta em aplicativos web.\nAWS Shield: Protege contra ataques DDoS, mas não é específico para ataques de força bruta.\nAmazon GuardDuty: Detecta atividades suspeitas e ameaças de segurança, mas não bloqueia diretamente ataques de força bruta.\nAWS IAM: Gerencia acesso e permissões na AWS, mas não protege diretamente contra ataques de força bruta em aplicativos."
+    },
+    
+    {
+      "id": 105,
+      "isMultipleChoice": false,
+      "question": "Sua empresa precisa garantir a conformidade e a governança das configurações dos recursos na AWS, verificando se todos os recursos estão em conformidade com as políticas internas e os padrões de segurança. Qual serviço da AWS deve ser usado para auditar e rastrear essas configurações de maneira contínua?",
+      "options": [
+        { "option": "AWS Config", "isCorrect": true },
+        { "option": "Amazon CloudWatch", "isCorrect": false },
+        { "option": "AWS CloudTrail", "isCorrect": false },
+        { "option": "AWS Trusted Advisor", "isCorrect": false },
+      ],
+      "comments": "AWS Config: Monitora e registra continuamente todas as configurações dos recursos na AWS, garantindo conformidade e rastreabilidade das mudanças. Ele fornece visibilidade das configurações e ajuda a identificar recursos que não seguem as políticas definidas.\n\nAmazon CloudWatch: Principalmente usado para monitoramento e logs, mas não para rastrear configurações e compliance dos recursos da AWS.\n\nAWS CloudTrail: Registra e audita chamadas feitas à API da AWS, mas não fornece visibilidade detalhada das configurações e compliance dos recursos.\n\nAWS Trusted Advisor: Fornece recomendações para otimizar custos, melhorar o desempenho, aumentar a segurança e verificar a conformidade, mas não rastreia a configuração detalhada dos recursos como o AWS Config."
+    },
+    {
+      "id": 106,
+      "isMultipleChoice": false,
+      "question": "O que é o AWS Transit Gateway e qual é sua principal função?",
+      "options": [
+        { "option": "Um serviço que conecta múltiplas VPCs e redes locais em uma única gateway central", "isCorrect": true },
+        { "option": "Um serviço de armazenamento em nuvem com alta durabilidade", "isCorrect": false },
+        { "option": "Um serviço de análise em tempo real para logs e métricas", "isCorrect": false },
+        { "option": "Um serviço de monitoramento e alerta em tempo real", "isCorrect": false }
+      ],
+      "comments": "AWS Transit Gateway: Facilita a conectividade centralizada entre várias Virtual Private Clouds (VPCs) e redes locais. Ele simplifica o gerenciamento das conexões, garantindo escalabilidade e desempenho otimizado.\n\nAWS Transit Gateway conecta todos os recursos em um único gateway central, facilitando a arquitetura e a comunicação entre VPCs, VPNs e redes on-premises, tornando a rede mais ágil e segura.\n\nAs outras opções:\n\n- Armazenamento em nuvem: não relacionado ao Transit Gateway.\n- Análise em tempo real para logs: AWS CloudWatch e outros serviços, mas não Transit Gateway.\n- Monitoramento e alerta em tempo real: AWS CloudWatch, mas não é a funcionalidade principal do Transit Gateway."
+    },
+    {
+      "id": 107,
+      "isMultipleChoice": false,
+      "question": "Sua empresa armazena arquivos que são acessados com menos frequência, mas ainda precisa de acesso rápido. Qual classe de armazenamento da AWS é recomendada para esse cenário?",
+      "options": [
+        { "option": "S3 Standard-IA", "isCorrect": true },
+        { "option": "S3 Standard", "isCorrect": false },
+        { "option": "S3 Glacier", "isCorrect": false },
+        { "option": "S3 Intelligent-Tiering", "isCorrect": false }
+      ],
+      "comments": "S3 Standard-IA: Ideal para arquivos acessados de forma menos frequente, mas com acesso rápido. Oferece uma combinação entre custo reduzido e desempenho eficiente.\nS3 Standard: Para acesso frequente a arquivos. Ideal para dados em que a velocidade de acesso é crítica.\nS3 Glacier: Projetado para arquivos que são acessados raramente e possuem longos prazos de recuperação, mas com custos mais baixos.\nS3 Intelligent-Tiering: Movimenta automaticamente os objetos entre diferentes classes de armazenamento (Standard, Standard-IA e Glacier) para otimizar custos."
+    },
+    {
+      "id": 108,
+      "isMultipleChoice": false,
+      "question": "Sua empresa precisa armazenar arquivos históricos que são raramente acessados e requerem um prazo de recuperação de várias horas. Qual solução da AWS é a mais econômica e adequada para esse cenário?",
+      "options": [
+        { "option": "S3 Glacier Deep Archive", "isCorrect": true },
+        { "option": "S3 Standard-IA", "isCorrect": false },
+        { "option": "S3 Standard", "isCorrect": false },
+        { "option": "S3 Intelligent-Tiering", "isCorrect": false }
+      ],
+      "comments": "S3 Glacier Deep Archive: A solução mais econômica para arquivos de longo prazo e raramente acessados, com prazos de recuperação de 12 horas ou mais.\nS3 Standard-IA: Adequado para arquivos acessados com baixa frequência, mas a recuperação é mais rápida do que o Glacier Deep Archive.\nS3 Standard: Ideal para acesso frequente a arquivos, mas não é adequado para arquivos históricos ou de longo prazo.\nS3 Intelligent-Tiering: Otimiza custos ao mover automaticamente objetos entre várias classes de armazenamento conforme os padrões de acesso, mas não é a melhor solução para arquivos de longo prazo."
+    },
+    {
+      "id": 109,
+      "isMultipleChoice": false,
+      "question": "Qual serviço da AWS pode ajudar sua empresa a visualizar, entender e gerenciar os gastos e custos na nuvem?",
+      "options": [
+        { "option": "AWS Cost Explorer", "isCorrect": true },
+        { "option": "AWS CloudFormation", "isCorrect": false },
+        { "option": "AWS Route 53", "isCorrect": false },
+        { "option": "AWS SNS", "isCorrect": false }
+      ],
+      "comments": "AWS Cost Explorer: Ferramenta que permite aos clientes visualizar e analisar os gastos e os padrões de uso na AWS. Ele oferece relatórios detalhados, previsões de custos e insights essenciais para otimizar o orçamento e identificar oportunidades de economia.\nAWS CloudFormation: Usado para provisionamento e gerenciamento de recursos de infraestrutura como código, mas não para controle de custos.\nAWS Route 53: Um serviço de registro de nomes de domínio e roteamento de tráfego, sem relação direta ao controle de custos.\nAWS SNS (Simple Notification Service): Usado para envio de notificações e alertas, mas não está relacionado ao gerenciamento dos custos na nuvem."
+    },
+    {
+      "id": 110,
+      "isMultipleChoice": false,
+      "question": "O que é uma Zona de Disponibilidade (Availability Zone) na AWS?",
+      "options": [
+        { "option": "Um datacenter físico independente", "isCorrect": true },
+        { "option": "Uma rede global de servidores", "isCorrect": false },
+        { "option": "Um serviço de monitoramento em nuvem", "isCorrect": false },
+        { "option": "Um conjunto de regiões interconectadas", "isCorrect": false }
+      ],
+      "comments": "Zona de Disponibilidade (Availability Zone): É um datacenter físico independente em uma região específica da AWS, Cada AZ é projetada para ser isolada das falhas em outras AZs, garantindo alta disponibilidade e resiliência das aplicações.\n\n-Datacenter físico independente: Cada AZ tem seu próprio hardware e infraestrutura.-Rede global de servidores: Não se aplica à definição das AZs.-Serviço de monitoramento: Não estão relacionados diretamente ao conceito das Zonas de Disponibilidade.-Um conjunto de regiões interconectadas: está incorreto, um conjunto de AZ interconectadas seria uma Região."
+    },
+    {
+      "id": 111,
+      "isMultipleChoice": false,
+      "question": "O que é uma Região na AWS?",
+      "options": [
+        { "option": "Um datacenter físico independente", "isCorrect": false },
+        { "option": "Um servidor único em um único local", "isCorrect": false },
+        { "option": "Um serviço de armazenamento temporário", "isCorrect": false },
+        { "option": "Um conjunto de Zonas de Disponibilidade interconectadas", "isCorrect": true }
+      ],
+      "comments": "Região na AWS: Uma região é composta por um conjunto de Zonas de Disponibilidade (AZs) interconectadas, garantindo alta disponibilidade e resiliência das aplicações na nuvem.\n-Um conjunto de Zonas interconectadas: Proporciona redundância e distribuição das aplicações.-Datacenter físico, armazenamento temporário, e rede distribuída não são elementos das Regiões."
+    }
+    
       /*
       {
         "id": 33 //numero sequencial,

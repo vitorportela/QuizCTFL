@@ -49,7 +49,7 @@ function displayQuestion(question) {
 
   // Adiciona um comentário no HTML com o ID da pergunta
   const questionComment = document.createComment(`ID da pergunta: ${question.id}`);
-  questionEl.parentNode.insertBefore(questionComment, questionEl);
+  document.documentElement.insertBefore(questionComment, document.documentElement.firstChild);
 
   questionEl.textContent = question.question;
   optionsContainer.innerHTML = '';
