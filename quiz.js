@@ -48,8 +48,9 @@ function displayQuestion(question) {
   });
 
   // Adiciona um comentário no HTML com o ID da pergunta
-  const questionComment = document.createComment(`ID da pergunta: ${question.id}`);
-  document.documentElement.insertBefore(questionComment, document.documentElement.firstChild);
+  const questionComment = document.createComment(`Pergunta: ${question.id}`);
+  document.documentElement.appendChild(questionComment);
+
 
   questionEl.textContent = question.question;
   optionsContainer.innerHTML = '';
@@ -96,10 +97,12 @@ function checkAnswer() {
                     selectedOptions.length === currentQuestion.options.filter(opt => opt.isCorrect).length;
   //contador de respostas corretas
   if (isCorrect) {
+    document.documentElement.appendChild(document.createComment("Correta"));
     correctCount++;
     resultEl.textContent = "Resposta Correta!";
     resultEl.className = 'correct';
   } else {
+    document.documentElement.appendChild(document.createComment("Errada"));
     resultEl.textContent = "Resposta Incorreta!";
     resultEl.className = 'incorrect';
   }
