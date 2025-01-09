@@ -1676,7 +1676,7 @@ const quizData = {
       "question": "Uma empresa executa instâncias do Amazon EC2 em um laboratório de pesquisa. As instâncias funcionam por 3 horas a cada semana e não podem ser interrompidas. Qual é a opção de compra de instância mais econômica para atender a esses requisitos?",
       "options": [
         {
-          "option": "Plano de Economia de Computação",
+          "option": "Compute Savings Plans",
           "isCorrect": false
         },
         {
@@ -1684,7 +1684,7 @@ const quizData = {
           "isCorrect": true
         },
         {
-          "option": "Instâncias Reservadas Convertíveis",
+          "option": "Instâncias Reservadas Conversíveis",
           "isCorrect": false
         },
         {
@@ -1755,15 +1755,15 @@ const quizData = {
           "isCorrect": false
         },
         {
-          "option": "Hosts Dedicados",
+          "option": "Instâncias Dedicadas",
           "isCorrect": false
         },
         {
-          "option": "Planos de Economia",
+          "option": "Savings Plans",
           "isCorrect": true
         },
         {
-          "option": "Instâncias Sob Demanda",
+          "option": "Instâncias On-Demand",
           "isCorrect": false
         }
       ],
@@ -1888,7 +1888,7 @@ const quizData = {
     
     {
       "id": 577,
-      "isMultipleChoice": true,
+      "isMultipleChoice": false,
       "question": "Qual equipe ou oferta da AWS ajuda os usuários a acelerar a adoção da nuvem por meio de engajamentos pagos em qualquer uma das várias áreas de prática especializadas?",
       "options": [
         {
@@ -2468,7 +2468,347 @@ const quizData = {
         }
       ],
       "comments": "O AWS Outposts é ideal para aplicações que exigem baixa latência, pois permite que os serviços da AWS sejam executados fisicamente próximos aos equipamentos que estão sendo controlados, reduzindo assim a latência de comunicação."
+    },
+
+    {
+      "id": 600,
+      "isMultipleChoice": false,
+      "question": "Uma empresa possui aplicações que controlam equipamentos de fábrica no local. Qual serviço da AWS a empresa deve usar para executar essas aplicações com a MENOR latência?",
+      "options": [
+        {
+          "option": "AWS Outposts",
+          "isCorrect": true
+        },
+        {
+          "option": "Amazon EC2",
+          "isCorrect": false
+        },
+        {
+          "option": "AWS Lambda",
+          "isCorrect": false
+        },
+        {
+          "option": "AWS Fargate",
+          "isCorrect": false
+        }
+      ],
+      "comments": "O AWS Outposts é ideal para aplicações que exigem baixa latência, pois permite que os serviços da AWS sejam executados fisicamente próximos aos equipamentos que estão sendo controlados, reduzindo assim a latência de comunicação."
+    },
+    
+    {
+      "id": 601,
+      "isMultipleChoice": false,
+      "question": "Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) se concentra em organizar um inventário de produtos de dados em um catálogo de dados?",
+      "options": [
+        {
+          "option": "Governança",
+          "isCorrect": true
+        },
+        {
+          "option": "Operações",
+          "isCorrect": false
+        },
+        {
+          "option": "Negócios",
+          "isCorrect": false
+        },
+        {
+          "option": "Plataforma",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A perspectiva de Governança foca na organização e gerenciamento de dados, incluindo a criação de catálogos de dados. A perspectiva de Operações está mais relacionada à execução e monitoramento de serviços e infraestrutura. A perspectiva de Negócios se concentra em alinhar a estratégia de TI com os objetivos de negócios. A perspectiva de Plataforma trata da infraestrutura e tecnologias necessárias para suportar soluções na nuvem."
+    },
+    
+    {
+      "id": 602,
+      "isMultipleChoice": false,
+      "question": "Uma empresa executa sua carga de trabalho de produção na Nuvem AWS. A empresa precisa escolher um dos Planos de Suporte da AWS. Qual dos Planos de Suporte da AWS atenderá a esses requisitos com o MENOR custo?",
+      "options": [
+        {
+          "option": "Developer",
+          "isCorrect": true
+        },
+        {
+          "option": "Enterprise On-Ramp",
+          "isCorrect": false
+        },
+        {
+          "option": "Enterprise",
+          "isCorrect": false
+        },
+        {
+          "option": "Business",
+          "isCorrect": false
+        }
+      ],
+      "comments": "O plano Developer é o mais econômico, adequado para cargas de trabalho de produção com suporte básico. O plano Enterprise On-Ramp oferece suporte avançado, mas a um custo mais alto. O plano Enterprise é o mais caro, oferecendo suporte completo e personalizado. O plano Business oferece suporte técnico 24/7, mas é mais caro que o Developer."
+    },
+    
+    {
+      "id": 603,
+      "isMultipleChoice": false,
+      "question": "Qual é o principal caso de uso do Amazon GuardDuty?",
+      "options": [
+        { "option": "Monitoramento automático de ameaças para cargas de trabalho AWS", "isCorrect": true },
+        { "option": "Prevenção de ataques DDoS", "isCorrect": false },
+        { "option": "Proteção contra ataques de injeção SQL", "isCorrect": false },
+        { "option": "Provisionamento automático de recursos AWS", "isCorrect": false }
+      ],
+      "comments": "O Amazon GuardDuty é projetado para monitorar automaticamente ameaças em cargas de trabalho AWS. A prevenção de ataques DDoS é geralmente tratada pelo AWS Shield. A proteção contra injeção SQL requer medidas específicas de segurança de aplicação. O provisionamento automático de recursos é uma função de serviços como o AWS CloudFormation."
+    },
+    
+    {
+      "id": 604,
+      "isMultipleChoice": false,
+      "question": "Qual componente do VPC uma empresa pode usar para configurar um firewall virtual no nível da instância Amazon EC2?",
+      "options": [
+        { "option": "Grupo de segurança", "isCorrect": true },
+        { "option": "ACL de rede", "isCorrect": false },
+        { "option": "Tabela de rotas", "isCorrect": false },
+        { "option": "Gateway NAT", "isCorrect": false }
+      ],
+      "comments": "O grupo de segurança atua como um firewall virtual para instâncias EC2, controlando o tráfego de entrada e saída. A ACL de rede é usada para controlar o tráfego em sub-redes inteiras. A tabela de rotas define como o tráfego é direcionado dentro da VPC. O gateway NAT permite que instâncias em uma sub-rede privada acessem a internet."
+    },
+    
+    {
+      "id": 605,
+      "isMultipleChoice": false,
+      "question": "Um desenvolvedor precisa interagir com a AWS usando o AWS CLI. Qual recurso de segurança ou serviço da AWS deve ser provisionado na conta do desenvolvedor para atender a esse requisito?",
+      "options": [
+        { "option": "Chave de acesso da AWS", "isCorrect": true },
+        { "option": "Nome de usuário e senha", "isCorrect": false },
+        { "option": "AWS Systems Manager", "isCorrect": false },
+        { "option": "Acesso com senha root", "isCorrect": false }
+      ],
+      "comments": "A chave de acesso da AWS é necessária para autenticar e interagir com a AWS CLI. Nome de usuário e senha são usados para acessar o console da AWS. O AWS Systems Manager é uma ferramenta de gerenciamento de recursos. O acesso com senha root é altamente desaconselhado para operações diárias."
+    },
+    
+    {
+      "id": 606,
+      "isMultipleChoice": false,
+      "question": "Uma empresa de entrega de alimentos precisa bloquear usuários em certos países de acessar seu site. Qual serviço da AWS a empresa deve usar para atender a esse requisito?",
+      "options": [
+        { "option": "AWS WAF", "isCorrect": true },
+        { "option": "AWS Control Tower", "isCorrect": false },
+        { "option": "Amazon Fraud Detector", "isCorrect": false },
+        { "option": "Amazon Pinpoint", "isCorrect": false }
+      ],
+      "comments": "O AWS WAF permite criar regras para bloquear acessos de determinados países. O AWS Control Tower é usado para gerenciar contas AWS. O Amazon Fraud Detector é para detectar fraudes. O Amazon Pinpoint é usado para campanhas de marketing e comunicação."
+    },
+    
+    {
+      "id": 607,
+      "isMultipleChoice": false,
+      "question": "Uma empresa precisa usar o Amazon S3 para armazenar arquivos de áudio de 5 megabytes. A empresa raramente acessará os arquivos, mas deve ser capaz de recuperá-los imediatamente. Qual classe de armazenamento S3 atenderá a esses requisitos de forma mais econômica?",
+      "options": [
+        { "option": "S3 Standard-Infrequent Access (S3 Standard-IA)", "isCorrect": true },
+        { "option": "S3 Standard", "isCorrect": false },
+        { "option": "S3 Glacier Flexible Retrieval", "isCorrect": false },
+        { "option": "S3 Glacier Deep Archive", "isCorrect": false }
+      ],
+      "comments": "O S3 Standard-IA é ideal para dados acessados raramente, mas que precisam de recuperação imediata. O S3 Standard é mais caro para dados raramente acessados. O S3 Glacier Flexible Retrieval é para dados que podem esperar para serem recuperados. O S3 Glacier Deep Archive é o mais econômico, mas não oferece recuperação imediata."
+    },
+    
+    {
+      "id": 608,
+      "isMultipleChoice": false,
+      "question": "Uma empresa deseja configurar uma conexão de rede segura do local para a AWS Cloud dentro de uma semana. Qual solução atenderá a esses requisitos?",
+      "options": [
+        { "option": "AWS Site-to-Site VPN", "isCorrect": true },
+        { "option": "AWS Direct Connect", "isCorrect": false },
+        { "option": "Amazon VPC", "isCorrect": false },
+        { "option": "Edge location", "isCorrect": false }
+      ],
+      "comments": "O AWS Site-to-Site VPN pode ser configurado rapidamente para conexões seguras. O AWS Direct Connect leva mais tempo para ser configurado. O Amazon VPC é uma rede virtual, mas não uma solução de conexão direta. O Edge location é usado para entrega de conteúdo, não para conexões de rede seguras."
+    },
+    
+    {
+      "id": 609,
+      "isMultipleChoice": false,
+      "question": "Qual é a responsabilidade do cliente sob o modelo de responsabilidade compartilhada da AWS ao usar o AWS Lambda?",
+      "options": [
+        { "option": "O código e as bibliotecas que executam nas funções Lambda.", "isCorrect": true },
+        { "option": "Manutenção do hardware subjacente do Lambda.", "isCorrect": false },
+        { "option": "Manutenção da infraestrutura de rede do Lambda.", "isCorrect": false },
+        { "option": "O software do servidor Lambda.", "isCorrect": false }
+      ],
+      "comments": "O cliente é responsável pelo código e bibliotecas nas funções Lambda. A AWS gerencia o hardware subjacente. A infraestrutura de rede é mantida pela AWS. O software do servidor é responsabilidade da AWS."
+    },
+    
+    {
+      "id": 610,
+      "isMultipleChoice": true,
+      "question": "Quais tarefas são responsabilidade da AWS de acordo com o modelo de responsabilidade compartilhada da AWS? (Escolha duas.)",
+      "options": [
+        {
+          "option": "Proteger o acesso às instalações físicas da AWS.",
+          "isCorrect": true
+        },
+        {
+          "option": "Realizar patching e manutenção da infraestrutura.",
+          "isCorrect": true
+        },
+        {
+          "option": "Configurar o AWS Identity and Access Management (IAM).",
+          "isCorrect": false
+        },
+        {
+          "option": "Configurar grupos de segurança em instâncias Amazon EC2.",
+          "isCorrect": false
+        },
+        {
+          "option": "Aplicar patches em aplicações que rodam em instâncias Amazon EC2.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A AWS é responsável por proteger o acesso físico às suas instalações. A AWS também realiza patching e manutenção da infraestrutura. Configurar o IAM é responsabilidade do cliente. Grupos de segurança em EC2 são configurados pelo cliente. Aplicar patches em aplicações é responsabilidade do cliente."
+    },
+    
+    {
+      "id": 611,
+      "isMultipleChoice": false,
+      "question": "O responsável pela conformidade de uma empresa deseja revisar os relatórios do AWS Service Organization Control (SOC). Qual serviço ou recurso da AWS o responsável pela conformidade deve usar para concluir essa tarefa?",
+      "options": [
+        { "option": "AWS Artifact", "isCorrect": true },
+        { "option": "AWS Concierge Support", "isCorrect": false },
+        { "option": "AWS Support", "isCorrect": false },
+        { "option": "AWS Trusted Advisor", "isCorrect": false }
+      ],
+      "comments": "O AWS Artifact fornece acesso a relatórios de conformidade, incluindo os relatórios SOC. O AWS Concierge Support é um serviço de suporte premium. O AWS Support oferece suporte técnico, mas não acesso direto a relatórios SOC. O AWS Trusted Advisor fornece recomendações de otimização, não relatórios de conformidade."
+    },
+    
+    {
+      "id": 612,
+      "isMultipleChoice": false,
+      "question": "Uma empresa tem um requisito de conformidade para registrar e avaliar alterações de configuração, bem como realizar ações de remediação em recursos da AWS. Qual serviço da AWS a empresa deve usar?",
+      "options": [
+        { "option": "AWS Config", "isCorrect": true },
+        { "option": "AWS Secrets Manager", "isCorrect": false },
+        { "option": "AWS CloudTrail", "isCorrect": false },
+        { "option": "AWS Trusted Advisor", "isCorrect": false }
+      ],
+      "comments": "O AWS Config é ideal para registrar e avaliar alterações de configuração e realizar ações de remediação. O AWS Secrets Manager é usado para gerenciar segredos e credenciais. O AWS CloudTrail registra atividades de API, mas não avalia configurações. O AWS Trusted Advisor fornece recomendações de otimização, não registro de configurações."
+    },
+    
+    {
+      "id": 613,
+      "isMultipleChoice": false,
+      "question": "Uma empresa planeja realizar uma migração única de um grande conjunto de dados com milhões de arquivos de seu data center local para a AWS Cloud. Qual serviço da AWS a empresa deve usar para a migração?",
+      "options": [
+        { "option": "AWS DataSync", "isCorrect": true },
+        { "option": "AWS Database Migration Service (AWS DMS)", "isCorrect": false },
+        { "option": "AWS Migration Hub", "isCorrect": false },
+        { "option": "AWS Application Migration Service", "isCorrect": false }
+      ],
+      "comments": "O AWS DataSync é ideal para transferir grandes volumes de dados de forma eficiente e segura. O AWS DMS é mais adequado para migrações de bancos de dados. O AWS Migration Hub ajuda a monitorar migrações, mas não realiza a transferência de dados. O AWS Application Migration Service é voltado para migração de aplicações, não de dados em massa."
+    },
+    
+    {
+      "id": 614,
+      "isMultipleChoice": true,
+      "question": "Quais serviços ou recursos de rede da AWS permitem a notação CIDR ao fornecer um intervalo de endereços IP? (Escolha dois.)",
+      "options": [
+        {
+          "option": "Network access control list (network ACL)",
+          "isCorrect": true
+        },
+        {
+          "option": "Security groups",
+          "isCorrect": false
+        },
+        {
+          "option": "Amazon Machine Image (AMI)",
+          "isCorrect": false
+        },
+        {
+          "option": "AWS Budgets",
+          "isCorrect": false
+        },
+        {
+          "option": "Amazon Virtual Private Cloud (VPC)",
+          "isCorrect": true
+        }
+      ],
+      "comments": "Network ACLs permitem a definição de intervalos de IP usando notação CIDR. Amazon VPC é usado para configurar redes virtuais, onde intervalos de IP também são definidos usando CIDR. Security groups utilizam regras de segurança, mas não diretamente a notação CIDR para intervalos de IP. AMIs são imagens de máquina e não lidam com endereços IP. AWS Budgets é para controle de custos, não relacionado a IPs."
+    },
+    
+    {
+      "id": 615,
+      "isMultipleChoice": false,
+      "question": "Uma empresa deseja desenvolver um aplicativo de acessibilidade que converterá texto em fala audível. Qual serviço da AWS atenderá a esse requisito?",
+      "options": [
+        {
+          "option": "Amazon Polly",
+          "isCorrect": true
+        },
+        {
+          "option": "Amazon MQ",
+          "isCorrect": false
+        },
+        {
+          "option": "Amazon Neptune",
+          "isCorrect": false
+        },
+        {
+          "option": "Amazon Timestream",
+          "isCorrect": false
+        }
+      ],
+      "comments": "Amazon Polly é o serviço da AWS que converte texto em fala audível. Amazon MQ é um serviço de mensagens, não de conversão de texto em fala. Amazon Neptune é um banco de dados gráfico, não relacionado a áudio. Amazon Timestream é um banco de dados de séries temporais, não de áudio."
+    },
+    
+    {
+      "id": 616,
+      "isMultipleChoice": false,
+      "question": "Uma empresa precisa configurar conectividade de rede dedicada entre seu data center local e a AWS Cloud. A rede não pode usar a internet pública. Qual serviço ou recurso da AWS atenderá a esses requisitos?",
+      "options": [
+        {
+          "option": "AWS Direct Connect",
+          "isCorrect": true
+        },
+        {
+          "option": "AWS Transit Gateway",
+          "isCorrect": false
+        },
+        {
+          "option": "AWS VPN",
+          "isCorrect": false
+        },
+        {
+          "option": "Amazon CloudFront",
+          "isCorrect": false
+        }
+      ],
+      "comments": "AWS Direct Connect fornece conectividade de rede dedicada sem usar a internet pública. AWS Transit Gateway é usado para conectar VPCs e redes locais, mas não oferece conectividade dedicada. AWS VPN usa a internet pública para conexões seguras. Amazon CloudFront é um serviço de entrega de conteúdo, não de conectividade de rede dedicada."
+    },
+    
+    {
+      "id": 617,
+      "isMultipleChoice": false,
+      "question": "Uma empresa precisa usar painéis e gráficos para analisar insights a partir de dados de negócios. Qual serviço da AWS fornecerá os painéis e gráficos para esses insights?",
+      "options": [
+        { "option": "Amazon QuickSight", "isCorrect": true },
+        { "option": "Amazon Macie", "isCorrect": false },
+        { "option": "Amazon Aurora", "isCorrect": false },
+        { "option": "AWS CloudTrail", "isCorrect": false }
+      ],
+      "comments": "Amazon QuickSight é um serviço de BI que fornece painéis e gráficos para análise de dados. Amazon Macie é usado para segurança de dados, não para visualização. Amazon Aurora é um banco de dados relacional, não uma ferramenta de visualização. AWS CloudTrail é usado para auditoria de atividades, não para criar painéis e gráficos."
+    },
+
+    {
+      "id": 618,
+      "isMultipleChoice": false,
+      "question": "Uma empresa deseja migrar sua infraestrutura local para a AWS Cloud. Qual vantagem da computação em nuvem ajudará a empresa a reduzir os custos iniciais?",
+      "options": [
+        { "option": "Trocar despesa fixa por despesa variável", "isCorrect": true },
+        { "option": "Ir global em minutos", "isCorrect": false },
+        { "option": "Aumentar a velocidade e agilidade", "isCorrect": false },
+        { "option": "Beneficiar-se de economias de escala massivas", "isCorrect": false }
+      ],
+      "comments": "Trocar despesa fixa por despesa variável permite reduzir custos iniciais, pagando apenas pelo que é usado. Ir global em minutos é sobre alcance geográfico, não custos. Aumentar a velocidade e agilidade refere-se à rapidez de implementação. Economias de escala massivas reduzem custos a longo prazo, não iniciais."
     }
+    
     
       /*
       {
