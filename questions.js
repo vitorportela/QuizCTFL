@@ -43,19 +43,6 @@ const quizData = {
       comments: "A ferramenta da AWS usada para monitorar recursos e aplicações é o Amazon CloudWatch. Ela coleta e monitora métricas, logs e eventos, permitindo a criação de alarmes e automação para responder a mudanças em recursos e aplicações.AWS RedShift: É um serviço de data warehouse para análise de dados em grande escala, não é uma ferramenta de monitoramento.AWS Config: Monitora a configuração de recursos, mas não é especificamente para monitorar desempenho e métricas.AWS Artifact: Fornece acesso a relatórios de conformidade e segurança, não é uma ferramenta de monitoramento de recursos."
     },
     {
-      "id": 6,
-      "isMultipleChoice": true,
-      "question": "Quais serviços da AWS são suportados pelo Savings Plans? (Escolha dois.)",
-      "options": [
-        { "option": "Amazon RDS", "isCorrect": false },
-        { "option": "Amazon DynamoDB", "isCorrect": false },
-        { "option": "Amazon Redshift", "isCorrect": true },
-        { "option": "Amazon SageMaker", "isCorrect": true },
-        { "option": "Amazon EC2", "isCorrect": true }
-      ],
-      "comments": "Savings Plans oferecem preços mais baixos em troca de um compromisso de uso de longo prazo em serviços específicos. Amazon EC2, Amazon Redshift e Amazon SageMaker são suportados. Amazon RDS e Amazon DynamoDB não fazem parte do Savings Plans."
-    },
-    {
       "id": 8,
       "isMultipleChoice": false,
       "question": "Qual serviço AWS facilita a migração de bancos de dados para a nuvem?",
@@ -70,7 +57,7 @@ const quizData = {
     {
       "id": 9,
       "isMultipleChoice": true,
-      "question": "Quais serviços podem ser usados para entrega de conteúdo globalmente?(escolha dois)",
+      "question": "Quais serviços podem ser usados para entrega de conteúdo globalmente?(Selecione DOIS)",
       "options": [
         { "option": "Amazon CloudFront", "isCorrect": true },
         { "option": "AWS Global Accelerator", "isCorrect": true },
@@ -93,7 +80,7 @@ const quizData = {
     },
     {
       "id": 11,
-      "isMultipleChoice": true,
+      "isMultipleChoice": false,
       "question": "Qual serviço da AWS ajudará uma empresa a planejar uma migração para a AWS coletando dados de configuração, uso e comportamento de data centers locais?",
       "options": [
         { "option": "AWS Service Catalog", "isCorrect": false },
@@ -142,7 +129,7 @@ const quizData = {
     {
       "id": 15,
       "isMultipleChoice": true,
-      "question": "Quais das alternativas a seguir são pilares do AWS Well-Architected Framework? (Escolha dois.)",
+      "question": "Quais das alternativas a seguir são pilares do AWS Well-Architected Framework?(Selecione DOIS)",
       "options": [
         { "option": "Elasticidade do sistema", "isCorrect": false },
         { "option": "Eficiência de desempenho", "isCorrect": true },
@@ -155,7 +142,7 @@ const quizData = {
     {
       "id": 16,
       "isMultipleChoice": false,
-      "question": "Quais recursos do AWS Cloud Adoption Framework (AWS CAF) pertencem à perspectiva de Governança? (Escolha dois.)",
+      "question": "Quais recursos do AWS Cloud Adoption Framework (AWS CAF) pertencem à perspectiva de Governança?(Selecione DOIS)",
       "options": [
         { "option": "Gerenciamento de riscos", "isCorrect": true },
         { "option": "Gerenciamento de programas e projetos", "isCorrect": false },
@@ -194,7 +181,7 @@ const quizData = {
       {
         "id": 19,
         "isMultipleChoice": true,
-        "question": "Quais serviços da AWS são usados para armazenamento de objetos?(escolha dois)",
+        "question": "Quais serviços da AWS são usados para armazenamento de objetos?(Selecione DOIS)",
         "options": [
           { "option": "Amazon S3", "isCorrect": true },
           { "option": "Amazon EBS", "isCorrect": false },
@@ -229,7 +216,7 @@ const quizData = {
       },
       {
         "id": 21,
-        "isMultipleChoice": true,
+        "isMultipleChoice": false,
         "question": "Qual serviço da AWS é usados para computação sem servidor?",
         "options": [
           { "option": "AWS Lambda", "isCorrect": true },
@@ -242,7 +229,7 @@ const quizData = {
       {
         "id": 22,
         "isMultipleChoice": true,
-        "question": "Qual item abaixo não faz parte dos pilares do Well-Architected Framework? (Escolha dois)",
+        "question": "Qual item abaixo não faz parte dos pilares do Well-Architected Framework?(Selecione DOIS)",
         "options": [
           {
             "option": "Segurança",
@@ -480,7 +467,7 @@ const quizData = {
       {
         "id": 42,
         "isMultipleChoice": true,
-        "question": "Quais dos seguintes serviços da AWS são projetados para oferecer soluções em nuvem híbrida, facilitando a integração entre a infraestrutura local e a nuvem AWS?",
+        "question": "Quais dos seguintes serviços da AWS são projetados para oferecer soluções em nuvem híbrida, facilitando a integração entre a infraestrutura local e a nuvem AWS?(selecione DOIS)f",
         "options": [
           { "option": "AWS Outposts", "isCorrect": true },
           { "option": "AWS Wavelength", "isCorrect": true },
@@ -3730,23 +3717,23 @@ const quizData = {
         "question": "Quais das seguintes afirmações estão corretas sobre os benefícios do AWS Direct Connect? (Selecione DUAS)",
         "options": [
             {
-                "option": "Quick to implement",
+                "option": "Rápida implementação",
                 "isCorrect": false
             },
             {
-                "option": "Increased reliability (predictable performance)",
+                "option": "Maior confiabilidade (desempenho previsível)",
                 "isCorrect": true
             },
             {
-                "option": "Lower cost than a VPN",
+                "option": "Custo menor que uma VPN",
                 "isCorrect": false
             },
             {
-                "option": "Increased bandwidth (predictable bandwidth)",
+                "option": "Maior largura de banda (largura de banda previsível)",
                 "isCorrect": true
             },
             {
-                "option": "Uses redundant paths across the Internet",
+                "option": "Utiliza caminhos redundantes através da Internet",
                 "isCorrect": false
             }
         ],
@@ -7248,7 +7235,7 @@ const quizData = {
         { "option": "Amazon ElastiCache", "isCorrect": false },
         { "option": "Amazon CloudFront", "isCorrect": true }
       ],
-      "comments": "O Amazon S3 é um sistema de armazenamento baseado em objetos. Ele pode ser usado para armazenar dados como arquivos e imagens que precisam ser servidos. Opcionalmente, um bucket S3 pode ser configurado como um site estático. O Amazon CloudFront é uma rede de entrega de conteúdo (CDN) que armazena conteúdo em cache em Localizações de Borda ao redor do mundo. Esses dois serviços podem trabalhar juntos com um bucket S3 configurado como uma origem para a distribuição do CloudFront. Usuários ao redor do mundo poderão então acessar o conteúdo da Localização de Borda local com menor latência e melhor desempenho. CORRETO: 'Amazon S3' é uma resposta correta. CORRETO: 'Amazon CloudFront' também é uma resposta correta. INCORRETO: 'Amazon ECS' é incorreto. O Elastic Container Service (ECS) é usado para executar contêineres Docker na AWS. Isso não vai ajudar a reduzir a latência ou aumentar o desempenho para usuários globais. INCORRETO: 'Amazon AppStream 2.0' é incorreto. Este é um serviço de streaming de aplicativos para transmitir aplicativos para computadores. É inadequado para esses requisitos. INCORRETO: 'Amazon ElastiCache' é incorreto. O ElastiCache armazena dados de um banco de dados na memória. É inadequado para esses requisitos."
+      "comments": "O Amazon S3 é um sistema de armazenamento baseado em objetos. Ele pode ser usado para armazenar dados como arquivos e imagens que precisam ser servidos. Opcionalmente, um bucket S3 pode ser configurado como um site estático. O Amazon CloudFront é uma rede de entrega de conteúdo (CDN) que armazena conteúdo em cache em Localizações de Borda ao redor do mundo. Esses dois serviços podem trabalhar juntos com um bucket S3 configurado como uma origem para a distribuição do CloudFront. Usuários ao redor do mundo poderão então acessar o conteúdo da Localização de Borda local com menor latência e melhor desempenho. CORRETO: 'Amazon S3' é uma resposta correta. CORRETO: 'Amazon CloudFront' também é uma resposta correta. INCORRETO: 'Amazon ECS' é incorreto. O Elastic Container Service (ECS) é usado para executar contêineres Docker na AWS. Isso não vai ajudar a reduzir a latência ou aumentar o desempenho para usuários globais. INCORRETO: 'Amazon AppStream 2,0' é incorreto. Este é um serviço de streaming de aplicativos para transmitir aplicativos para computadores. É inadequado para esses requisitos. INCORRETO: 'Amazon ElastiCache' é incorreto. O ElastiCache armazena dados de um banco de dados na memória. É inadequado para esses requisitos."
     },
     {
       "id": 804,
@@ -9781,12 +9768,12 @@ const quizData = {
         "isMultipleChoice": false,
         "question": "Como você pode implantar suas instâncias EC2 para que, se um único data center falhar, você ainda tenha instâncias disponíveis?",
         "options": [
-            { "option": "Across regions", "isCorrect": false },
-            { "option": "Across subnets", "isCorrect": false },
-            { "option": "Across Availability Zones", "isCorrect": true },
-            { "option": "Across VPCs", "isCorrect": false }
+            { "option": "Entre regiões", "isCorrect": false },
+            { "option": "Entre subnets", "isCorrect": false },
+            { "option": "Entre Zonas de Disponibilidade", "isCorrect": true },
+            { "option": "Entre VPCs", "isCorrect": false }
         ],
-        "comments": "Uma Zona de Disponibilidade (AZ) abrange um ou mais data centers e cada AZ é fisicamente isolada de outras AZs e conectada por redes de alta velocidade. Se você deseja implantar uma aplicação altamente disponível, deve distribuir suas instâncias entre AZs, tornando-as resilientes à falha de um único data center. CORRETO: 'Across Availability Zones' é a resposta correta. INCORRETO: 'Across regions' é incorreto. Você poderia implantar suas instâncias em regiões separadas, mas isso não é necessário para criar uma aplicação altamente disponível e introduz complexidade e custo. INCORRETO: 'Across subnets' é incorreto. Subnets são criadas dentro de AZs. Portanto, se você implantar recursos em várias subnets dentro de uma AZ e um data center falhar, você pode perder todas as suas instâncias. INCORRETO: 'Across VPCs' é incorreto. Você deve implantar entre AZs dentro de um VPC."
+        "comments": "Uma Zona de Disponibilidade (AZ) abrange um ou mais data centers e cada AZ é fisicamente isolada de outras AZs e conectada por redes de alta velocidade. Se você deseja implantar uma aplicação altamente disponível, deve distribuir suas instâncias entre AZs, tornando-as resilientes à falha de um único data center. CORRETO: 'Entre Zonas de Disponibilidade' é a resposta correta. INCORRETO: 'Entre regiões' é incorreto. Você poderia implantar suas instâncias em regiões separadas, mas isso não é necessário para criar uma aplicação altamente disponível e introduz complexidade e custo. INCORRETO: 'Entre subnets' é incorreto. Subnets são criadas dentro de AZs. Portanto, se você implantar recursos em várias subnets dentro de uma AZ e um data center falhar, você pode perder todas as suas instâncias. INCORRETO: 'Entre VPCs' é incorreto. Você deve implantar entre AZs dentro de um VPC."
     },
     {
         "id": 950,
@@ -9806,13 +9793,13 @@ const quizData = {
         "isMultipleChoice": true,
         "question": "Quais dos seguintes são pilares dos cinco pilares do AWS Well-Architected Framework? (Selecione DUAS)",
         "options": [
-            { "option": "Resilience", "isCorrect": false },
-            { "option": "Operational excellence", "isCorrect": true },
-            { "option": "Confidentiality", "isCorrect": false },
-            { "option": "Economics", "isCorrect": false },
-            { "option": "Performance efficiency", "isCorrect": true }
+            { "option": "Resiliência", "isCorrect": false },
+            { "option": "Excelência operacional", "isCorrect": true },
+            { "option": "Confidencialidade", "isCorrect": false },
+            { "option": "Economia", "isCorrect": false },
+            { "option": "Eficiência de performance", "isCorrect": true }
         ],
-        "comments": "Os cinco pilares do AWS Well-Architected Framework são excelência operacional, segurança, confiabilidade, eficiência de desempenho e otimização de custos. CORRETO: 'Operational excellence' é uma resposta correta. CORRETO: 'Performance efficiency' também é uma resposta correta. INCORRETO: 'Resilience' é incorreto, pois não é um dos cinco pilares. INCORRETO: 'Confidentiality' é incorreto, pois não é um dos cinco pilares. INCORRETO: 'Economics' é incorreto, pois não é um dos cinco pilares."
+        "comments": "Os cinco pilares do AWS Well-Architected Framework são excelência operacional, segurança, confiabilidade, eficiência de desempenho e otimização de custos. CORRETO: 'Excelência operacional' é uma resposta correta. CORRETO: 'Eficiência de performance' também é uma resposta correta."
     },
     {
         "id": 952,
