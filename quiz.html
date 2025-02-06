@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Quiz</title>
+</head>
+<body>
+  <h1> QUIZ </h1>
+  <div class="status">
+    <p> <span class="timer">Tempo:</span><span id="timer">00:00:00</span></p> 
+    <p><span>Taxa de acerto: </span><span id="percent-count">0</span><span>%</span></p>
+    <p> Total de perguntas: <span id="questions-count">000</span></p>
+    <p><span id="answered-count">Perguntas respondidas: 0</span></p>
+    <p><span id="correct-count">Acertos: 0</span></p>
+  </div>
+  <!-- perguntas------------------------------------------------------------------------------------------------------- -->
+  <div class="question-container">
+    <h2 id="question">Carregando pergunta...</h2>
+    <div class="options-container" id="options-container"></div>
+  </div>
+  <button id="submit-button" disabled>Responder</button>
+  <p class="correct" id="result" style="display: none;"> Resposta Correta!</p>
+  <div class="comments" id="comments" style="display: none;"></div>
+  <button id="next-button" style="display: none;">Continuar</button>
+  <script src="questions.js"></script>
+  <script src="quiz.js" defer></script>
+</body>
+</html>

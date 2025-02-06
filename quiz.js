@@ -15,16 +15,38 @@ const submitButton = document.getElementById('submit-button');
 const commentsEl = document.getElementById('comments');
 const nextButton = document.getElementById('next-button');
 const resultEl = document.getElementById('result');
+const selectedTags = getSelectedTagsFromURL();
 
+// Pega a TAG na URL
+function getSelectedTagsFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("tag") ? params.get("tag").split(",") : [];
+}
 // Função para sortear uma pergunta
-function getRandomQuestion() {
-  if (usedQuestions.size === quizData.questions.length) {
+function getRandomQuestion(selectedTags) {
+  const filteredQuestions = quizData.questions.filter(q => q.tag.some(tag => selectedTags.includes(tag)));
+  
+  if (usedQuestions.size === filteredQuestions.length) {
     usedQuestions.clear();
     alert("Reiniciando o quiz com novas perguntas!");
   }
-  const availableQuestions = quizData.questions.filter(q => !usedQuestions.has(q.id));
+  
+  const availableQuestions = filteredQuestions.filter(q => !usedQuestions.has(q.id));
+  
+  if (availableQuestions.length === 0) {
+    return null;
+  }
   const randomIndex = Math.floor(Math.random() * availableQuestions.length);
   return availableQuestions[randomIndex];
+}
+
+// Contar Perguntas
+function getTotalQuestion(selectedTags) {
+  const filteredQuestions = quizData.questions.filter(q => q.tag.some(tag => selectedTags.includes(tag)));
+
+  const availableQuestions = filteredQuestions.filter(q => !usedQuestions.has(q.id));
+
+  return availableQuestions.length;
 }
 
 // Função para embaralhar um array
@@ -50,7 +72,6 @@ function displayQuestion(question) {
   // Adiciona um comentário no HTML com o ID da pergunta
   const questionComment = document.createComment(`Pergunta: ${question.id}`);
   document.documentElement.appendChild(questionComment);
-
 
   questionEl.textContent = question.question;
   optionsContainer.innerHTML = '';
@@ -141,15 +162,14 @@ function updateStatus() {
 
 // Carrega a próxima pergunta
 function loadNextQuestion() {
-  const question = getRandomQuestion();
+  const question = getRandomQuestion(selectedTags);
   displayQuestion(question);
 }
 
 // Carregamentos iniciais
 function inicialLoad(){
-  questionsCountEl.textContent = ` ${quizData.questions.length}`;
+  questionsCountEl.textContent = getTotalQuestion(selectedTags);
 }
-
 
 // Evento do botão "Responder"
 submitButton.addEventListener('click', checkAnswer);
