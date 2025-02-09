@@ -22,6 +22,7 @@ function getSelectedTagsFromURL() {
   const params = new URLSearchParams(window.location.search);
   return params.get("tag") ? params.get("tag").split(",") : [];
 }
+
 // Função para sortear uma pergunta
 function getRandomQuestion(selectedTags) {
   const filteredQuestions = quizData.questions.filter(q => q.tag.some(tag => selectedTags.includes(tag)));
@@ -43,10 +44,7 @@ function getRandomQuestion(selectedTags) {
 // Contar Perguntas
 function getTotalQuestion(selectedTags) {
   const filteredQuestions = quizData.questions.filter(q => q.tag.some(tag => selectedTags.includes(tag)));
-
-  const availableQuestions = filteredQuestions.filter(q => !usedQuestions.has(q.id));
-
-  return availableQuestions.length;
+  return filteredQuestions.filter(q => !usedQuestions.has(q.id)).length;
 }
 
 // Função para embaralhar um array
@@ -61,25 +59,21 @@ function shuffleArray(array) {
 // Exibe a pergunta sorteada
 function displayQuestion(question) {
   currentQuestion = question;
-
-  // Remove comentários anteriores (se existirem)
-  Array.from(questionEl.parentNode.childNodes).forEach(node => {
-    if (node.nodeType === Node.COMMENT_NODE) {
-      node.remove();
-    }
+  questionEl.innerHTML = '';
+  
+  const sentences = question.question.split('\n').filter(sentence => sentence.trim() !== '');
+  sentences.forEach(sentence => {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = sentence.trim();
+    questionEl.appendChild(paragraph);
   });
 
-  // Adiciona um comentário no HTML com o ID da pergunta
-  const questionComment = document.createComment(`Pergunta: ${question.id}`);
-  document.documentElement.appendChild(questionComment);
-
-  questionEl.textContent = question.question;
   optionsContainer.innerHTML = '';
   resultEl.style.display = "none";
   resultEl.textContent = '';
   resultEl.className = '';
   commentsEl.style.display = "none";
-  commentsEl.innerHTML = ''; // Limpa os comentários
+  commentsEl.innerHTML = '';
   nextButton.style.display = "none";
 
   const shuffledOptions = shuffleArray([...question.options]);
@@ -102,13 +96,12 @@ function displayQuestion(question) {
   });
 
   submitButton.disabled = true;
-  submitButton.style.display = "block"
+  submitButton.style.display = "block";
 }
 
 // Configura o listener de mudança nas opções
 optionsContainer.addEventListener('change', () => {
-  const selected = Array.from(optionsContainer.querySelectorAll('input:checked'));
-  submitButton.disabled = selected.length === 0;
+  submitButton.disabled = !Array.from(optionsContainer.querySelectorAll('input:checked')).length;
 });
 
 // Verifica a resposta e exibe os comentários e resultado
@@ -116,33 +109,27 @@ function checkAnswer() {
   const selectedOptions = Array.from(optionsContainer.querySelectorAll('input:checked'));
   const isCorrect = selectedOptions.every(opt => opt.dataset.correct === 'true') &&
                     selectedOptions.length === currentQuestion.options.filter(opt => opt.isCorrect).length;
-  //contador de respostas corretas
+  
   if (isCorrect) {
-    document.documentElement.appendChild(document.createComment("Correta"));
     correctCount++;
     resultEl.textContent = "Resposta Correta!";
     resultEl.className = 'correct';
   } else {
-    document.documentElement.appendChild(document.createComment("Errada"));
     resultEl.textContent = "Resposta Incorreta!";
     resultEl.className = 'incorrect';
   }
 
-  //contador de perguntas
   resultEl.style.display = "block";
   answeredCount++;
   usedQuestions.add(currentQuestion.id);
-
-  //porcentagem de respostas corretas
   percentCount = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
   updateStatus();
 
-  // Exibe os comentários, se houver
   if (currentQuestion.comments) {
-    const sentences = currentQuestion.comments.split('.').filter(sentence => sentence.trim() !== '');
+    const sentences = currentQuestion.comments.split('\n').filter(sentence => sentence.trim() !== '');
     sentences.forEach(sentence => {
       const paragraph = document.createElement('p');
-      paragraph.textContent = sentence.trim() + '.';
+      paragraph.textContent = sentence.trim();
       commentsEl.appendChild(paragraph);
     });
     commentsEl.style.display = "block";
@@ -150,7 +137,7 @@ function checkAnswer() {
   
   nextButton.style.display = "inline-block";
   submitButton.disabled = true;
-  submitButton.style.display = "none"
+  submitButton.style.display = "none";
 }
 
 // Atualiza os contadores de status
@@ -177,26 +164,20 @@ submitButton.addEventListener('click', checkAnswer);
 // Evento do botão "Continuar"
 nextButton.addEventListener('click', loadNextQuestion);
 
-//contador de tempo
-
+// Contador de tempo
 let seconds = 0;
-    
 function formatTime(value) {
   return String(value).padStart(2, '0');
 }
-
 function updateTimer() {
   seconds++;
   const hrs = Math.floor(seconds / 3600);
   const mins = Math.floor((seconds % 3600) / 60);
   const secs = seconds % 60;
-
-  document.getElementById('timer').textContent = 
-    `${formatTime(hrs)}:${formatTime(mins)}:${formatTime(secs)}`;
+  document.getElementById('timer').textContent = `${formatTime(hrs)}:${formatTime(mins)}:${formatTime(secs)}`;
 }
 setInterval(updateTimer, 1000);
 
-// ------------------- Inicializa o quiz------------------------------
-
+// Inicializa o quiz
 inicialLoad();
 loadNextQuestion();
