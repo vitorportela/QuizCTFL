@@ -243,7 +243,7 @@ const quizData = {
         { "option": "Teste de sistema", "isCorrect": false },
         { "option": "Teste de usabilidade", "isCorrect": false },
         { "option": "Teste de performance (desempenho)", "isCorrect": false },
-        { "option": "B e C", "isCorrect": true }
+        { "option": "Teste de usabilidade e Teste de performance (desempenho)", "isCorrect": true }
       ],
       "comments": "Os testes de usabilidade e de desempenho não são testes funcionais, pois avaliam aspectos não funcionais do software, como experiência do usuário e eficiência."
     },
