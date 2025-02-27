@@ -92,7 +92,6 @@ function displayQuestion(question) {
 
     label.prepend(input);
     optionsContainer.appendChild(label);
-    optionsContainer.appendChild(document.createElement('br'));
   });
 
   submitButton.disabled = true;

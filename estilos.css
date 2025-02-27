@@ -23,10 +23,14 @@
     }
     .question-container p:nth-child(1){
       margin-bottom: 20px;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
-    .options-container {
-      margin-top: 20px;
+    .options-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .options-container label{
+      margin-top: 8px;
       font-size: 1.1rem;
     }
 
