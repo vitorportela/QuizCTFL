@@ -2064,7 +2064,696 @@ const quizData = {
       ],
       "comments": "A resposta correta é: Testes relacionados a mudanças.\nQuando uma exigência regulatória é descoberta e as histórias de usuários são atualizadas, é essencial realizar testes relacionados a mudanças para garantir que as modificações no código atendam aos novos requisitos. Esses testes incluem a validação das alterações feitas para cumprir a exigência regulatória. Embora os testes de regressão sejam parte dos testes relacionados a mudanças, pois verificam se as alterações não impactaram negativamente as funcionalidades existentes, eles não cobrem a validação da nova exigência regulatória em si. Portanto, é crucial focar em testes que validem diretamente as mudanças introduzidas."
     },
-
+    //--------Capitulo 3--------
+    {
+      "id": 301,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Quais das seguintes opções são papéis em uma revisão formal?",
+      "options": [
+        { "option": "Autor, Moderador, Gerente, Revisor, Desenvolvedor.", "isCorrect": false },
+        { "option": "Autor, Gerente, Líder de revisão, Revisor, Designer.", "isCorrect": false },
+        { "option": "Desenvolvedor, Moderador, Líder de revisão, Revisor, Testador.", "isCorrect": false },
+        { "option": "Autor, Moderador, Líder de revisão, Revisor, Redator.", "isCorrect": true }
+      ],
+      "comments": "A resposta correta é: Autor, Moderador, Líder de revisão, Revisor, Redator.\nNa revisão formal, os papéis típicos e suas responsabilidades são:\n1. Autor: Cria e corrige o produto de trabalho que está sendo revisado.\n2. Moderador (Facilitador): Garante o andamento eficaz das reuniões de revisão, mediando discussões, gerenciando o tempo e criando um ambiente seguro para que todos possam se expressar livremente.\n3. Líder da Revisão: Assume a responsabilidade geral pela revisão, decidindo quem participará e organizando quando e onde a revisão será realizada.\n4. Revisor: Realiza as revisões, podendo ser alguém que trabalha no projeto, um especialista no assunto ou qualquer outra parte interessada.\n5. Relator (Registrador): Reúne as anomalias identificadas pelos revisores e registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião."
+    },
+    {
+      "id": 302,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Quais atividades são realizadas no âmbito do planejamento de uma revisão formal?",
+      "options": [
+        { "option": "Definição e verificação do cumprimento dos critérios de entrada para a revisão", "isCorrect": true },
+        { "option": "Avaliação dos resultados da revisão em relação aos critérios de saída", "isCorrect": false },
+        { "option": "Responder a quaisquer perguntas que os participantes possam ter", "isCorrect": false },
+        { "option": "Coleta de métricas para a avaliação da eficácia da revisão", "isCorrect": false }
+      ],
+      "comments": "A resposta correta é: Definição e verificação do cumprimento dos critérios de entrada para a revisão.\nDurante o planejamento de uma revisão formal, a atividade principal é a definição do escopo da revisão, que inclui o objetivo, o produto de trabalho a ser revisado, as características de qualidade a serem avaliadas, as áreas a serem enfocadas, os critérios de saída, as informações de apoio, como padrões, o esforço e os prazos para a revisão."
+    },
+    {
+      "id": 303,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual dos tipos de revisão abaixo é a MELHOR opção para escolher quando a revisão deve seguir um processo formal baseado em regras e listas de verificação?",
+      "options": [
+        { "option": "Inspeção", "isCorrect": true },
+        { "option": "Passagem", "isCorrect": false },
+        { "option": "Revisão Informal", "isCorrect": false },
+        { "option": "Revisão Técnica", "isCorrect": false }
+      ],
+      "comments": "Resposta correta é: Inspeção.\nInspeção: É o tipo mais formal de revisão e utiliza listas de verificação (check-lists) para garantir que todos os aspectos importantes sejam cobertos.\nRevisão Informal: Como o nome sugere, não segue um processo formal e não exige documentação formal dos resultados. O principal objetivo é detectar anomalia.\nRevisão Técnica: Pode ser conduzida por pares ou especialistas e não requer necessariamente o uso de listas de verificação ou um conjunto rígido de regras. O foco é em obter consenso e tomar decisões técnicas.\nPassagem (Walkthrough): A tradução mais comum seria 'acompanhamento'. É conduzida pelo autor e pode servir a vários propósitos, como avaliar a qualidade e criar confiança no produto de trabalho. Embora os revisores possam realizar uma revisão individual antes, isso não é obrigatório."
+    },
+    {
+      "id": 304,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Quais das seguintes afirmações sobre testes estáticos são as mais verdadeiras?",
+      "options": [
+        { "option": "Os testes estáticos permitem encontrar problemas de tempo de execução no início do ciclo de vida", "isCorrect": false },
+        { "option": "Os testes estáticos são uma forma barata de detectar e remover defeitos", "isCorrect": true },
+        { "option": "Ao testar um sistema crítico de segurança, os testes estáticos tem menos valor porque os testes dinâmicos encontram melhor os defeitos", "isCorrect": false },
+        { "option": "Os testes estáticos tornam os testes dinâmicos menos desafiadores", "isCorrect": false }
+      ],
+      "comments": "A resposta correta é:Os testes estáticos são uma forma barata de detectar e remover defeitos\nOs testes estáticos permitem detectar defeitos nas fases iniciais do ciclo de vida do desenvolvimento de software, o que geralmente resulta em menor custo e esforço para corrigir esses defeitos."
+    },
+    {
+      "id": 305,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual das seguintes declarações sobre sua revisão é correta?",
+      "options": [
+        {
+          "option": "Você percebe que além do verificador e do verificador, o validador também deve ser convidado. Como este item não faz parte de sua lista de verificação, você não cria um comentário correspondente",
+          "isCorrect": false
+        },
+        {
+          "option": "O ponto II da lista de verificação foi violado porque não está claro qual condição deve ser preenchida para convidar para a revisão.",
+          "isCorrect": false
+        },
+        {
+          "option": "O ponto I da lista de verificação foi violado porque não está claro quem está fornecendo a lista de verificação para o convite para a revisão",
+          "isCorrect": true
+        },
+        {
+          "option": "O ponto III da lista de verificação foi violado, pois não está claro o que marca a revisão como concluída.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: O ponto I da lista de verificação foi violado porque não está claro quem esta fornecendo a lista de verificação para o convite para a revisão\nEm nenhum momento é especificado quem criou a lista de verificação.\nAtenção: Essa é uma pergunta armadilha, muito grande, muito complexa e tomará muito tempo para ser solucionada. O ideal é sempre tentar deixar esse tipo de pergunta por último e focar em perguntas mais rápidas de serem respondidas."
+    },
+    {
+      "id": 306,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual das seguintes afirmações reflete CORRETAMENTE o valor dos testes estáticos?",
+      "options": [
+        {
+          "option": "Desde que começamos a usar análise estática, encontramos defeitos de codificação que podem não ter sido encontrados realizando apenas testes dinâmicos",
+          "isCorrect": true
+        },
+        {
+          "option": "Usando testes estáticos significa que temos melhor controle e gerenciamento de defeitos mais barato devido à facilidade de detecção de defeitos mais tarde no ciclo de vida",
+          "isCorrect": false
+        },
+        {
+          "option": "Ao introduzir revisões, descobrimos que tanto a qualidade das especificações quanto o tempo necessário para o desenvolvimento e os testes aumentaram",
+          "isCorrect": false
+        },
+        {
+          "option": "Agora que exigimos o uso de análise estática, as exigências não atendidas diminuíram e a comunicação entre testadores e desenvolvedores melhorou",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Desde que começamos a usar análise estática, encontramos defeitos de codificação que podem não ter sido encontrados realizando apenas testes dinâmicos.\nOs testes estáticos podem detectar defeitos nas primeiras fases do ciclo de vida do desenvolvimento de software e identificar defeitos que não podem ser detectados por testes dinâmicos, como código inacessível e padrões de projeto não implementados conforme desejado."
+    },
+    {
+      "id": 307,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual das seguintes declarações sobre o uso de listas de verificação em uma revisão formal é CORRETA?",
+      "options": [
+        {
+          "option": "Como parte da reunião de revisão, os revisores criam relatórios de defeitos com base nas listas de verificação previstas para a revisão",
+          "isCorrect": false
+        },
+        {
+          "option": "Como parte da comunicação da questão, os revisores preenchem as listas de verificação previstas para a revisão",
+          "isCorrect": false
+        },
+        {
+          "option": "Como parte do planejamento da revisão, os revisores criam as listas de verificação necessárias para a revisão",
+          "isCorrect": false
+        },
+        {
+          "option": "Como parte do início da revisão, os revisores recebem as listas de verificação necessárias para a revisão",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Como parte do início da revisão, os revisores recebem as listas de verificação necessárias para a revisão\nDurante o início da revisão, é importante garantir que todos os participantes tenham acesso ao produto de trabalho e às listas de verificação necessárias para realizar a análise.\nAs outras opções estão incorretas pelas seguintes razões:\n- Avaliação dos resultados da revisão em relação aos critérios de saída: Esta atividade ocorre após a revisão, não durante o planejamento. O planejamento foca na definição do escopo e critérios de entrada, não na avaliação dos resultados.\n- Responder a quaisquer perguntas que os participantes possam ter: Esta atividade é mais relevante durante a fase de execução da revisão, onde os participantes podem discutir e esclarecer dúvidas, não especificamente durante o planejamento.\n\n- Coleta de métricas para a avaliação da eficácia da revisão: A coleta de métricas é uma atividade que ocorre após a revisão para avaliar sua eficácia e não faz parte do planejamento inicial."
+    },
+    {
+      "id": 308,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual das seguintes funções e responsabilidades se encaixa CORRETAMENTE em uma revisão formal?",
+      "options": [
+        {
+          "option": "Moderador - Monitora a relação custo-benefício contínua",
+          "isCorrect": false
+        },
+        {
+          "option": "Líder de revisão - Assegura o funcionamento eficaz das reuniões de revisão",
+          "isCorrect": false
+        },
+        {
+          "option": "Escriba - Corrige defeitos no produto de trabalho em revisão",
+          "isCorrect": false
+        },
+        {
+          "option": "Gerente - Decide sobre a execução das revisões",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Gerente - Decide sobre a execução das revisões.\nO gerente é responsável por decidir o que deve ser revisado e fornecer os recursos necessários, como equipe e tempo, para a revisão.\n\nAs outras opções estão incorretas porque:\n- Moderador - Monitora a relação custo-benefício contínua: O moderador é responsável por garantir o andamento eficaz das reuniões de revisão, incluindo mediação e gerenciamento de tempo, não por monitorar a relação custo-benefício.\n- Líder de revisão - Assegura o funcionamento eficaz das reuniões de revisão: O líder de revisão assume a responsabilidade geral pela revisão, mas o funcionamento eficaz das reuniões é mais atribuído ao moderador.\n- Escriba - Corrige defeitos no produto de trabalho em revisão: O escriba (ou relator) reúne as anomalias dos revisores e registra as informações da revisão, mas não corrige defeitos."
+    },
+    {
+      "id": 309,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "As revisões que estão sendo utilizadas em sua organização têm os seguintes atributos:\n\n• Há um papel de escriba\n• O objetivo é detectar defeitos potenciais\n• A reunião de revisão é liderada pelo autor\n• Os revisores encontram defeitos potenciais por revisão individual\n• É produzido um relatório de revisão\n\nQual dos seguintes tipos de revisão é o MAIS provável que seja utilizado?",
+      "options": [
+        {
+          "option": "Inspeção",
+          "isCorrect": false
+        },
+        {
+          "option": "Revisão Informal",
+          "isCorrect": false
+        },
+        {
+          "option": "Caminhada",
+          "isCorrect": true
+        },
+        {
+          "option": "Revisão Técnica",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Caminhada (Walkthrough)\nNo Walkthrough, a reunião de revisão é conduzida pelo autor, e os revisores podem realizar uma revisão individual para encontrar defeitos potenciais. Além disso, é comum produzir um relatório de revisão.\nInspeção: Embora a inspeção também utilize um papel de escriba e produza um relatório de revisão, ela é mais formal e não é liderada pelo autor. Além disso, as inspeções seguem um processo rigoroso e não se encaixam bem com a descrição de ser liderada pelo autor.\nRevisão Informal: Este tipo de revisão não segue um processo definido e não exige um resultado formal documentado, como um relatório de revisão. Além disso, não há papéis formais como o de escriba.\nRevisão Técnica: Embora possa incluir um papel de escriba e a detecção de defeitos, a revisão técnica é geralmente liderada por um moderador e não pelo autor. Além disso, pode não necessariamente resultar em um relatório formal."
+    },
+    {
+      "id": 310,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Você foi convidado a participar de uma revisão baseada em checklist do seguinte trecho da especificação de requisitos para um sistema de biblioteca:\nOs bibliotecários podem:\n(1) Registrar novos mutuários\n(2) Devolver livros dos mutuários\n(3) Aceitar multas de mutuários\n(4) Acrescentar novos livros ao sistema com seu ISBN, autor e título\n(5) Remover livros do sistema\n(6) Obter respostas do sistema em 5 segundos\nOs tomadores de empréstimo podem:\n(7) Pedir emprestado um máximo de 3 livros de uma vez\n(8) Veja a história dos livros que eles emprestaram/reservaram\n(9) Ser multado por não devolver um livro dentro de 3 semanas\n(10) Obter respostas do sistema em 3 segundos\n(11) Emprestar um livro sem custo por um período máximo de 4 semanas\n(12) Livros de reserva (se estiverem em empréstimo)\nTodos os usuários (bibliotecários e mutuários):\n(13) Podem pesquisar livros por ISBN, autor ou título\n(14) Pode consultar o catálogo do sistema\n(15) O sistema deve responder às solicitações dos usuários em 3 segundos\n(16) A interface do usuário deve ser fácil de usar\nFoi-lhe atribuída a entrada da lista de verificação que exige a revisão da especificação em busca de inconsistências entre exigências individuais (ou seja, conflitos entre exigências).\nQual dos seguintes CORRETAMENTE identifica inconsistências entre pares de requisitos?",
+      "options": [
+        {
+          "option": "6-15, 9-11",
+          "isCorrect": true
+        },
+        {
+          "option": "6-10, 6-15, 7-12",
+          "isCorrect": false
+        },
+        {
+          "option": "6-10, 6-15, 9-11",
+          "isCorrect": false
+        },
+        {
+          "option": "6-15, 7-12",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 6-15, 9-11\n6-15: Existe uma inconsistência entre o tempo de resposta do sistema para bibliotecários (5 segundos) e a exigência geral de resposta do sistema (3 segundos).\n9-11: Existe uma inconsistência entre o período de multa por não devolver um livro (3 semanas) e o período máximo de empréstimo sem custo (4 semanas).\nAs inconsistências não podem ocorrer entre bibliotecários (1 a 6) e mutuários (7 a 12) pois são requisitos de usuários diferentes.\nEssa é uma pergunta armadilha de tempo, relativamente grande e com certo grau de dificuldade. O recomendado é deixá-la para o final."
+    },
+    {
+      "id": 311,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Em uma revisão formal, qual é o nome do papel do participante que dirige uma reunião de inspeção?",
+      "options": [
+        {
+          "option": "Programador",
+          "isCorrect": false
+        },
+        {
+          "option": "Autor",
+          "isCorrect": false
+        },
+        {
+          "option": "Facilitador",
+          "isCorrect": true
+        },
+        {
+          "option": "Gerente de projetos",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Facilitador\nEm uma revisão formal, o papel do participante que dirige uma reunião de inspeção é o Facilitador (também conhecido como moderador)."
+    },
+    {
+      "id": 312,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Você está lendo uma história de usuário no acúmulo de produtos para se preparar para uma reunião com o proprietário do produto e um desenvolvedor, notando defeitos potenciais à medida que você vai. Qual das seguintes afirmações é verdadeira sobre esta atividade?",
+      "options": [
+        {
+          "option": "Não é um teste estático, pois os testes estáticos são sempre realizados com uma ferramenta",
+          "isCorrect": false
+        },
+        {
+          "option": "É um teste estático, porque o teste estático não envolve a execução do objeto de teste",
+          "isCorrect": true
+        },
+        {
+          "option": "É um teste estático, pois qualquer defeito encontrado pode ser encontrado mais barato durante os testes dinâmicos",
+          "isCorrect": false
+        },
+        {
+          "option": "Não é um teste estático, porque o teste estático envolve a execução do objeto de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: É um teste estático, porque o teste estático não envolve a execução do objeto de teste\nO teste estático é caracterizado pela avaliação de produtos de trabalho sem a execução do código, como a revisão de documentos ou código.\nUma história de usuário no acúmulo de produtos representa um recurso que será valioso para um usuário ou comprador de um sistema ou software.\nAs histórias de usuários têm três aspectos críticos, conhecidos como '3C': Cartão (onde a história é descrita), Conversação (explicação de como o software será usado) e Confirmação (critérios de aceite)."
+    },
+    {
+      "id": 313,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Durante um período intensivo de horas extras do projeto, um documento de arquitetura de sistema é enviado a vários participantes do projeto, anunciando uma revisão técnica previamente não planejada para ocorrer em uma semana. Não são feitos ajustes na lista de tarefas atribuídas aos participantes. Com base apenas nestas informações, qual dos seguintes fatores é um fator de sucesso para a revisão que é AUSENTE?",
+      "options": [
+        {
+          "option": "Métricas suficientes para avaliar o autor",
+          "isCorrect": false
+        },
+        {
+          "option": "Tipo de revisão apropriada",
+          "isCorrect": false
+        },
+        {
+          "option": "Tempo adequado para a preparação",
+          "isCorrect": true
+        },
+        {
+          "option": "Reunião de revisão bem gerenciada",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Tempo adequado para a preparação\nCom base nas informações fornecidas, o fator de sucesso ausente para a revisão é Tempo adequado para a preparação. Não houve ajustes na lista de tarefas dos participantes, o que sugere que eles podem não ter tempo suficiente para se preparar adequadamente para a revisão.\nReunião de revisão bem gerenciada: Esta opção está incorreta porque a questão não fornece informações sobre a gestão da reunião em si, mas sim sobre a preparação para a revisão.\nTipo de revisão apropriada: Esta opção está incorreta porque o tipo de revisão (neste caso, uma revisão técnica) foi escolhido, mas a questão não menciona que o tipo de revisão é inadequado. O problema está na falta de tempo para preparação.\nMétricas suficientes para avaliar o autor: Esta opção está incorreta porque a avaliação do autor não é um fator de sucesso para revisões. O foco deve ser na melhoria do produto de trabalho, não na avaliação dos participantes."
+    },
+    {
+      "id": 314,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Você está trabalhando como um testador em uma equipe Ágil e participou de mais de duas dúzias de sessões de refinamento da história do usuário com o proprietário do produto e os desenvolvedores da equipe no início de cada iteração. Como as revisões se tornaram mais eficazes na detecção de defeitos nas histórias de usuários e o proprietário do produto mais apto a corrigir esses defeitos, você e a equipe notam que a velocidade da equipe, como mostrado em seus gráficos queimados, começou a aumentar. Qual dos seguintes é um benefício dos testes estáticos que DIRETAMENTE se aplica ao aumento da velocidade?",
+      "options": [
+        {
+          "option": "Redução do custo dos testes",
+          "isCorrect": false
+        },
+        {
+          "option": "Aumentar a produtividade do desenvolvimento",
+          "isCorrect": true
+        },
+        {
+          "option": "Reduzir o custo total da qualidade",
+          "isCorrect": false
+        },
+        {
+          "option": "Aumento do custo total da qualidade",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Aumentar a produtividade do desenvolvimento\nOs testes estáticos permitem detectar defeitos nas fases iniciais do ciclo de vida do desenvolvimento, o que pode levar a menos retrabalho e, portanto, aumentar a produtividade."
+    },
+    {
+      "id": 315,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Você está trabalhando em um projeto de desenvolvimento de videogame, usando métodos ágeis. Ele é baseado na mitologia grega e na história, e os jogadores podem desempenhar papéis-chave em cenários como as batalhas entre gregos e troianos. Considere a seguinte história de usuário e seus critérios de aceite associados:\nComo um jogador, quero ser capaz de adquirir a Vara de Midas (um novo objeto mágico), para que eu possa transformar objetos e outros jogadores em ouro.(1) A Vara deve funcionar em qualquer objeto ou jogador, não importa o tamanho, funciona pelo simples toque.\n(2) Segurar o bastão não transforma o jogador que o segura em ouro\n(3) Qualquer objeto ou jogador tocado pelo bastão se transforma completamente em ouro dentro de um milissegundo.\n(4) A Vara aparece como mostrado no Protótipo O.W.RoM\n(5) A transformação começa no ponto de contato com a Vara e se move a uma taxa de um metro por milissegundo\nVocê está participando de uma sessão de revisão baseada em checklist desta história de usuário. Esta história de usuário e seus critérios de aceite associados contêm quais dos seguintes defeitos típicos identificados por testes estáticos neste tipo de produto de trabalho?",
+      "options": [
+        {
+          "option": "Lacunas de cobertura",
+          "isCorrect": false
+        },
+        {
+          "option": "Contradição",
+          "isCorrect": true
+        },
+        {
+          "option": "Desvio das Normas",
+          "isCorrect": false
+        },
+        {
+          "option": "Vulnerabilidade de segurança",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Contradição\nIsso ocorre porque há uma contradição entre o critério (3), que afirma que a transformação ocorre em um milissegundo, e o critério (5), que descreve a transformação como se movendo a uma taxa de um metro por milissegundo."
+    },
+    {
+      "id": 316,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "[CTFL 4.0 - SAQ14] Você está testando uma história de usuário com três critérios de aceite: AC1, AC2 e AC3. O AC1 é coberto pelo caso de teste TC1, o AC2 pelo TC2 e o AC3 pelo TC3. O histórico de execução do teste teve três execuções de teste em três versões consecutivas do software, como segue:\nTC1 (1) Falhou, (4) Aprovado, (7) Aprovado\nTC2 (2) Aprovado, (5) Falhou, (8) Aprovadon\nTC3 (3) Falhou, (6) Falhou, (9) Aprovado.\nOs testes são repetidos quando você é informado de que todos os defeitos encontrados na execução do teste foram corrigidos e que uma nova versão do software está disponível.\nQuais dos testes acima são executados como testes de regressão?",
+      "options": [
+        {
+          "option": "5, 7",
+          "isCorrect": true
+        },
+        {
+          "option": "5, 6",
+          "isCorrect": false
+        },
+        {
+          "option": "4, 6, 8, 9",
+          "isCorrect": false
+        },
+        {
+          "option": "4, 7, 8, 9",
+          "isCorrect": false
+        }
+      ],
+      "comments": "Após uma falha o teste realizado na sequência é o teste de confirmação, para confirmar se o bug foi solucionado. Após um Aprovado (sucesso) o teste realizado na sequência é um teste de regressão, para confirmar que nenhuma consequência adversa foi causada por uma alteração, inclusive uma correção que já tenha sido confirmada após o teste."
+    },
+    {
+      "id": 317,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "[CTFL 4.0 - SAQ15] Qual das opções a seguir NÃO é um benefício dos testes estáticos?",
+      "options": [
+        {
+          "option": "Encontrar defeitos de codificação que poderiam não ter sido encontrados apenas com a realização de testes dinâmicos.",
+          "isCorrect": false
+        },
+        {
+          "option": "Detecção de lacunas e inconsistências nos requisitos.",
+          "isCorrect": false
+        },
+        {
+          "option": "A correção de defeitos encontrados durante o teste estático geralmente é muito mais barata do que a correção de defeitos encontrados durante o teste dinâmico.",
+          "isCorrect": false
+        },
+        {
+          "option": "Ter um gerenciamento de defeitos menos dispendioso devido à facilidade de detectar defeitos mais tarde no processo SDLC.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "Resposta correta é: Ter um gerenciamento de defeitos menos dispendioso devido à facilidade de detectar defeitos mais tarde no processo SDLC.\nOs testes estáticos não facilitam detectar defeitos mais tarde e sim permitem detectar defeitos nas fases iniciais do SDLC, o que geralmente torna a correção de defeitos mais barata do que quando encontrados mais tarde no processo."
+    },
+    {
+      "id": 318,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "[CTFL 4.0 - SAQ16] Qual dos seguintes é um benefício do feedback antecipado e frequente?",
+      "options": [
+        {
+          "option": "Isso ajuda a evitar mal-entendidos sobre os requisitos.",
+          "isCorrect": true
+        },
+        {
+          "option": "Melhora o processo de teste para projetos futuros.",
+          "isCorrect": false
+        },
+        {
+          "option": "Ele força os clientes a priorizarem seus requisitos com base nos riscos acordados.",
+          "isCorrect": false
+        },
+        {
+          "option": "Essa é a única maneira de medir a qualidade das mudanças.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Isso ajuda a evitar mal-entendidos sobre os requisitos. Pois o feedback antecipado e frequente permite a comunicação precoce de possíveis problemas de qualidade e garante que as alterações nos requisitos sejam compreendidas e implementadas mais cedo.\nMelhora o processo de teste para projetos futuros.: Embora o feedback possa contribuir para melhorias, o benefício direto do feedback antecipado e frequente é evitar mal-entendidos e não necessariamente melhorar processos futuros.\nEle força os clientes a priorizarem seus requisitos com base nos riscos acordados.: O feedback não força os clientes a priorizarem requisitos; ele facilita a comunicação e compreensão dos requisitos existentes.\nEssa é a única maneira de medir a qualidade das mudanças.: O feedback não é a única maneira de medir a qualidade das mudanças; existem outras práticas e métricas para isso."},
+    {
+      "id": 319,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "[CTFL 4.0 - SAQ17] As revisões que estão sendo usadas em sua organização têm os seguintes atributos: \n\n• Há o papel de um redator. \n• O principal objetivo é avaliar a qualidade.\n• A reunião é conduzida pelo autor do produto de trabalho.\n• Há uma preparação individual.\n• É produzido um relatório de revisão.\n\nQual dos seguintes tipos de revisão é MAIS provável que esteja sendo usado?",
+      "options": [
+        {
+          "option": "Revisão técnica.",
+          "isCorrect": false
+        },
+        {
+          "option": "Walkthrough.",
+          "isCorrect": true
+        },
+        {
+          "option": "Inspeção.",
+          "isCorrect": false
+        },
+        {
+          "option": "Revisão informal.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Walkthrough.\nNo walkthrough, a reunião é conduzida pelo autor do produto de trabalho, há preparação individual, e pode ser produzido um relatório de revisão. Para ser Inspeção seria necessário que um moderador conduzisse a reunião, e teríamos também a figura do revisor líder."
+    },
+    {
+      "id": 320,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "[CTFL 4.0 - SAQ18] Qual dessas afirmações NÃO é um fator que contribui para revisões bem-sucedidas?",
+      "options": [
+        {
+          "option": "Os participantes devem evitar comportamentos que possam indicar tédio, exasperação ou hostilidade com outros participantes.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os participantes devem dedicar tempo suficiente para a análise.",
+          "isCorrect": false
+        },
+        {
+          "option": "As falhas encontradas devem ser reconhecidas, apreciadas e tratadas de forma objetiva.",
+          "isCorrect": true
+        },
+        {
+          "option": "Dividir grandes produtos de trabalho em pequenas partes para tornar o esforço necessário menos intenso.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: As falhas encontradas devem ser reconhecidas, apreciadas e tratadas de forma objetiva.\nFalhas não ocorrem em revisões (testes estáticos)."
+    },
+    {
+      "id": 321,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual das seguintes afirmações é CORRETA?",
+      "options": [
+        {
+          "option": "O teste de regressão se preocupa em verificar se o ambiente operacional permanece inalterado, enquanto o teste de confirmação se preocupa em testar as mudanças no objeto de teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os testes de regressão são criados e executados quando o objeto de teste é corrigido, enquanto os testes de confirmação são executados sempre que o objeto de teste é aprimorado.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os testes de regressão aumentam em número à medida que o projeto avança, enquanto o número de testes de confirmação diminui à medida que o projeto avança.",
+          "isCorrect": false
+        },
+        {
+          "option": "O teste de regressão se preocupa com efeitos adversos no código inalterado, enquanto o teste de confirmação se preocupa em testar o código alterado.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: O teste de regressão se preocupa com efeitos adversos no código inalterado, enquanto o teste de confirmação se preocupa em testar o código alterado.\nOs testes de regressão são realizados para garantir que alterações no código não causem efeitos adversos em partes do software que não foram alteradas. Já os testes de confirmação são realizados para verificar se um defeito foi corrigido com sucesso no código alterado."
+    },
+    {
+      "id": 322,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual dos seguintes é um exemplo de defeito que pode ser encontrado por testes estáticos, mas NÃO por testes dinâmicos?",
+      "options": [
+        {
+          "option": "Código sem nenhum caminho que o alcance",
+          "isCorrect": true
+        },
+        {
+          "option": "Recursos necessários que não estão implementados no código",
+          "isCorrect": false
+        },
+        {
+          "option": "Tempos de resposta ruins para a maioria dos usuários esperados",
+          "isCorrect": false
+        },
+        {
+          "option": "Falta de usabilidade fornecida pela interface do usuário",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Código sem nenhum caminho que o alcance\nTestes estáticos, como revisões de código e análise estática, podem identificar código inacessível ou 'código morto', que é código que não pode ser alcançado por nenhum caminho de execução. Esse tipo de defeito não é detectado por testes dinâmicos, pois eles dependem da execução do código, e código inacessível nunca é executado."
+    },
+    {
+      "id": 323,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual dos seguintes é um benefício do feedback precoce e frequente das partes interessadas?",
+      "options": [
+        {
+          "option": "Facilita a comunicação precoce de possíveis problemas de qualidade",
+          "isCorrect": true
+        },
+        {
+          "option": "Isso permite que os gerentes de projeto priorizem suas interações com as partes interessadas",
+          "isCorrect": false
+        },
+        {
+          "option": "Os usuários finais entendem melhor por que a entrega do produto de trabalho está atrasada",
+          "isCorrect": false
+        },
+        {
+          "option": "Os gerentes estão cientes de quais desenvolvedores são menos produtivos",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Facilita a comunicação precoce de possíveis problemas de qualidade\nO feedback antecipado e frequente permite a comunicação precoce de possíveis problemas de qualidade, ajudando a evitar mal-entendidos sobre os requisitos e garantindo que as alterações sejam compreendidas e implementadas mais cedo. Isso ajuda a equipe de desenvolvimento a se concentrar nos recursos que agregam mais valor aos stakeholders e têm o maior impacto positivo sobre os riscos identificados."
+    },
+    {
+      "id": 324,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Dadas as seguintes descrições de tarefa:\n1. As características de qualidade a serem avaliadas e os critérios de saída são selecionados\n2. Todos têm acesso ao produto de trabalho\n3. Anomalias são identificadas no produto de trabalho\n4. Anomalias são discutidas\nE as seguintes atividades de revisão:n\A. Revisão individual\nB. Início da revisão\nC. Planejamento\nD. Comunicação e análise\nQual das seguintes MELHOR corresponde às descrições de tarefa e atividades?",
+      "options": [
+        {
+          "option": "1B, 2C, 3D, 4A",
+          "isCorrect": false
+        },
+        {
+          "option": "1C, 2B, 3A, 4D",
+          "isCorrect": true
+        },
+        {
+          "option": "1B, 2D, 3C, 4A",
+          "isCorrect": false
+        },
+        {
+          "option": "1C, 2A, 3B, 4D",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 1C, 2B, 3A, 4D\n1C: As características de qualidade a serem avaliadas e os critérios de saída são selecionados durante o Planejamento.\n2B: Todos têm acesso ao produto de trabalho no Início da revisão.\n3A: Anomalias são identificadas no produto de trabalho durante a Revisão individual.\n4D: Anomalias são discutidas na Comunicação e análise.\nA revisão inicia-se com a fase de Planejamento, onde são definidas as características de qualidade a serem avaliadas e os critérios de saída. Em seguida, ocorre o Início da Revisão, no qual todos os participantes recebem acesso ao produto de trabalho para que possam analisá-lo individualmente.\nNa fase de Revisão Individual, cada participante examina o produto e identifica possíveis anomalias de forma independente. Essas anomalias são então levadas para a fase de Comunicação e Análise, que inclui a Reunião de Revisão. Nessa reunião, os participantes discutem as anomalias encontradas, esclarecem dúvidas e avaliam possíveis correções."
+    },
+    {
+      "id": 325,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Dadas as seguintes funções em revisões:\n1. Escrivão\n2. Líder da revisão\n3. Facilitador\n4. Gerente\nE as seguintes responsabilidades em revisões:\nA. Garante o funcionamento eficaz das reuniões de revisão e a criação de um ambiente de revisão seguro\nB. Registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão\nC. Decide o que será revisado e fornece recursos, como pessoal e tempo para a revisão\nD. Assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão ocorrerá\nQual das seguintes MELHOR corresponde às funções e responsabilidades?",
+      "options": [
+        {
+          "option": "1B, 2D, 3A, 4C",
+          "isCorrect": true
+        },
+        {
+          "option": "1B, 2D, 3C, 4A",
+          "isCorrect": false
+        },
+        {
+          "option": "1A, 2B, 3D, 4C",
+          "isCorrect": false
+        },
+        {
+          "option": "1A, 2C, 3B, 4D",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 1B, 2D, 3A, 4C\n1B: O Escrivão registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão.\n2D: O Líder da revisão assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão ocorrerá.\n3A: O Facilitador garante o funcionamento eficaz das reuniões de revisão e a criação de um ambiente de revisão seguro.\n4C: O Gerente decide o que será revisado e fornece recursos, como pessoal e tempo para a revisão."
+    },
+    {
+      "id": 326,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "O software do sistema de navegação foi atualizado devido a ele sugerir rotas que violam as leis de trânsito, como dirigir na contramão de ruas de sentido único. Qual das seguintes alternativas DESCREVE MELHOR os testes que serão realizados?",
+      "options": [
+        {
+          "option": "Apenas testes de confirmação",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes de regressão e depois testes de confirmação",
+          "isCorrect": false
+        },
+        {
+          "option": "Apenas testes de regressão",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes de confirmação e depois testes de regressão",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Testes de confirmação e depois testes de regressão\nOs testes de confirmação são realizados primeiro para garantir que o defeito original, como a sugestão de rotas que violam as leis de trânsito, foi corrigido com sucesso. Após a confirmação, os testes de regressão são realizados para verificar se a correção não introduziu novos defeitos em outras partes do sistema."
+    },
+    {
+      "id": 327,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Dadas os seguintes defeitos exemplos:\ni. Duas partes diferentes da especificação de design discordam devido à complexidade do design\nii. O tempo de resposta é muito longo e faz com que os usuários percam a paciência\niii. Um caminho no código não pode ser alcançado durante a execução\niv. Uma variável é declarada, mas nunca usada posteriormente no programa\nv. A quantidade de memória necessária pelo programa para gerar um relatório é muito alta\nQual das seguintes opções IDENTIFICA MELHOR exemplos de defeitos que poderiam ser encontrados por testes estáticos (em vez de testes dinâmicos)?",
+      "options": [
+        {
+          "option": "ii, v",
+          "isCorrect": false
+        },
+        {
+          "option": "i, iii, iv",
+          "isCorrect": true
+        },
+        {
+          "option": "iii, v",
+          "isCorrect": false
+        },
+        {
+          "option": "i, ii, iv",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: i, iii, iv\ni. Duas partes diferentes da especificação de design discordam devido à complexidade do design: Este é um defeito que pode ser identificado por meio de revisões e inspeções estáticas, onde inconsistências no design são detectadas sem a necessidade de execução do código.\niii. Um caminho no código não pode ser alcançado durante a execução: Este tipo de defeito, conhecido como 'código morto' ou inacessível, pode ser encontrado por análise estática, que verifica o código sem executá-lo.\niv. Uma variável é declarada, mas nunca usada posteriormente no programa: Este é um defeito que pode ser identificado por ferramentas de análise estática, que verificam o código para encontrar variáveis não utilizadas."
+    },
+    {
+      "id": 328,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Durante um período intensivo de horas extras do projeto, um documento de arquitetura de sistema é enviado a vários participantes do projeto, anunciando uma revisão técnica previamente não planejada para ocorrer em uma semana. Não são feitos ajustes na lista de tarefas atribuídas aos participantes. Com base apenas nestas informações, qual dos seguintes fatores é um fator de sucesso para a revisão que é AUSENTE?",
+      "options": [
+        { "option": "Tempo adequado para a preparação", "isCorrect": true },
+        { "option": "Tipo de revisão apropriada", "isCorrect": false },
+        { "option": "Reunião de revisão bem gerenciada", "isCorrect": false },
+        { "option": "Métricas suficientes para avaliar o autor", "isCorrect": false }
+      ],
+      "comments": "A resposta correta é: Tempo adequado para a preparação\nOs participantes não tiveram tempo suficiente para se preparar adequadamente para a revisão técnica, já que o documento foi enviado com apenas uma semana de antecedência e sem ajustes nas tarefas atribuídas.\nTipo de revisão apropriada: Um exemplo de tipo de revisão apropriada seria escolher uma revisão técnica para avaliar questões técnicas específicas, enquanto uma revisão informal poderia ser mais adequada para detectar anomalias em um estágio inicial.\nReunião de revisão bem gerenciada: Um exemplo de reunião de revisão bem gerenciada seria uma reunião onde há um moderador que guia a discussão, assegura que todos os pontos da agenda sejam cobertos e que as decisões sejam documentadas.\nMétricas suficientes para avaliar o autor: Um exemplo de métricas suficientes seria coletar dados sobre o número de defeitos encontrados por autor em diferentes revisões para identificar áreas de melhoria, embora a avaliação direta dos autores não deva ser um objetivo principal."
+    },
+    {
+      "id": 329,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Dado os seguintes tipos de revisão:\n1.Revisão técnica\n2.Revisão informal\n3.Inspeção\n4.Revisão detalhada\nE as seguintes descrições:\nA. Inclui objetivos como alcançar consenso, gerar novas ideias e motivar os autores a melhorarem\nB. Inclui objetivos como educar os revisores, alcançar consenso, gerar novas ideias e detectar defeitos potenciais\nC. O principal objetivo é detectar defeitos potenciais e requer coleta de métricas para apoiar a melhoria do processo\nD. O principal objetivo é detectar defeitos potenciais e não gera uma saída formal documentada\nQual das seguintes combinações corresponde MELHOR aos tipos de revisão e às descrições?",
+      "options": [
+        {
+          "option": "1A, 2B, 3C, 4D",
+          "isCorrect": true
+        },
+        {
+          "option": "1B, 2C, 3D, 4A",
+          "isCorrect": false
+        },
+        {
+          "option": "1A, 2D, 3C, 4B",
+          "isCorrect": false
+        },
+        {
+          "option": "1C, 2D, 3A, 4B",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 1A, 2D, 3C, 4B\nRevisão técnica (1) corresponde à descrição A, que inclui objetivos como alcançar consenso, gerar novas ideias e motivar os autores a melhorarem.\nRevisão informal (2) corresponde à descrição D, cujo principal objetivo é detectar defeitos potenciais e não gera uma saída formal documentada.\nInspeção (3) corresponde à descrição C, cujo principal objetivo é detectar defeitos potenciais e requer coleta de métricas para apoiar a melhoria do processo.\nRevisão detalhada (4) corresponde à descrição B, que inclui objetivos como educar os revisores, alcançar consenso, gerar novas ideias e detectar defeitos potenciais."
+    },
+    {
+      "id": 330,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 3"],
+      "question": "Qual dos seguintes é um fator que contribui para uma revisão bem-sucedida?",
+      "options": [
+        {
+          "option": "Garantir que a gerência participe como revisores",
+          "isCorrect": false
+        },
+        {
+          "option": "Definir a avaliação do revisor como um objetivo",
+          "isCorrect": false
+        },
+        {
+          "option": "Dividir grandes produtos de trabalho em partes menores",
+          "isCorrect": true
+        },
+        {
+          "option": "Planejar cobrir um documento por revisão",
+          "isCorrect": false
+        }
+      ],
+      "comments": "Resposta correta: Dividir grandes produtos de trabalho em partes menores\nDividir grandes produtos de trabalho em partes menores ajuda a manter o foco e a eficácia da revisão.\nGarantir que a gerência participe como revisores: Embora o apoio da gerência seja importante, a participação direta deles como revisores não é um fator crítico para o sucesso de uma revisão.\nDefinir a avaliação do revisor como um objetivo: Avaliar os revisores não deve ser um objetivo das revisões. O foco deve estar na melhoria do produto de trabalho.\nPlanejar cobrir um documento por revisão: Tentar cobrir um documento inteiro em uma única revisão pode ser ineficaz, especialmente se o documento for grande."
+    },
     //---Perguntas Variadas----
     {
       "id": 1,
@@ -2326,6 +3015,6 @@ const quizData = {
       ],
       "comments": "Ferramentas de captura e reprodução são amplamente usadas em testes de regressão para automatizar a execução de casos de teste e comparar os resultados com execuções anteriores."
     },
-
+    
   ]
 };
