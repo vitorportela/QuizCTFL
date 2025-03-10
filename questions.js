@@ -2754,11 +2754,1443 @@ const quizData = {
       ],
       "comments": "Resposta correta: Dividir grandes produtos de trabalho em partes menores\nDividir grandes produtos de trabalho em partes menores ajuda a manter o foco e a eficácia da revisão.\nGarantir que a gerência participe como revisores: Embora o apoio da gerência seja importante, a participação direta deles como revisores não é um fator crítico para o sucesso de uma revisão.\nDefinir a avaliação do revisor como um objetivo: Avaliar os revisores não deve ser um objetivo das revisões. O foco deve estar na melhoria do produto de trabalho.\nPlanejar cobrir um documento por revisão: Tentar cobrir um documento inteiro em uma única revisão pode ser ineficaz, especialmente se o documento for grande."
     },
+    //--Capitulo 4----
+  
+    {
+      "id": 401,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "O que é teste baseado em checklist?",
+      "options": [
+        {
+          "option": "Uma técnica de teste na qual os testes são derivados com base no conhecimento do testador sobre falhas do passado, ou conhecimento geral de falhas",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma técnica de teste baseada em uma análise da especificação de um componente ou sistema",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma abordagem aos testes onde os testadores projetam e executam dinamicamente testes baseados em seu conhecimento, exploração do item de teste e nos resultados dos testes anteriores",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma técnica de teste baseada na experiência em que o testador experiente usa uma lista de itens a serem anotados, verificados ou lembrados, ou um conjunto de regras ou critérios contra os quais um produto deve ser verificado",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Uma técnica de teste baseada na experiência em que o testador experiente usa uma lista de itens a serem anotados, verificados ou lembrados, ou um conjunto de regras ou critérios contra os quais um produto deve ser verificado.\n O teste baseado em checklist envolve o uso de listas de verificação que são criadas com base na experiência do testador, no conhecimento sobre o que é importante para o usuário ou na compreensão de como o software pode falhar. \nEssas listas ajudam a garantir que todas as condições de teste importantes sejam cobertas e verificadas durante o processo de teste."
+    },
+    {
+      "id": 402,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes opções é classificada como uma técnica de teste caixa-preta?",
+      "options": [
+        {
+          "option": "Uma técnica baseada no conhecimento de falhas do passado, ou conhecimento geral de falhas",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma técnica que verifica se o objeto de teste está funcionando de acordo com o projeto detalhado",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma técnica baseada em requisitos formais",
+          "isCorrect": true
+        },
+        {
+          "option": "Uma técnica baseada na análise da arquitetura",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Uma técnica baseada em requisitos formais.\n Uma técnica baseada em requisitos formais: Esta é uma técnica de teste caixa-preta, pois se baseia na análise das especificações e requisitos formais do sistema, sem considerar a estrutura interna do software.\n\nUma técnica baseada na análise da arquitetura: Esta é uma técnica de teste caixa-branca, pois envolve a análise da estrutura interna do sistema, como a arquitetura.\n\nUma técnica que verifica se o objeto de teste está funcionando de acordo com o projeto detalhado: Esta descrição se aproxima mais de uma técnica de teste caixa-branca, que se baseia na estrutura interna do sistema, como o código ou a arquitetura.\n\nUma técnica baseada no conhecimento de falhas do passado, ou conhecimento geral de falhas: Esta é uma técnica baseada na experiência, não uma técnica de teste caixa-preta. Técnicas baseadas na experiência utilizam o conhecimento do testador sobre falhas anteriores para guiar o teste."
+    },
+    {
+      "id": 403,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes afirmações é correta sobre a cobertura de decisões?",
+      "options": [
+        {
+          "option": "A afirmação é falsa. Um único caso de teste só pode garantir uma cobertura de decisão de 25% neste caso.",
+          "isCorrect": false
+        },
+        {
+          "option": "A afirmação é verdadeira. Qualquer caso isolado de teste faria com que o resultado da declaração 'se' fosse verdadeiro ou falso.",
+          "isCorrect": true
+        },
+        {
+          "option": "A declaração é verdadeira. Qualquer caso de teste único fornece 100% de cobertura de decisão e, portanto, 50% de cobertura de decisão.",
+          "isCorrect": false
+        },
+        {
+          "option": "A afirmação é falsa. A declaração é muito ampla. Ela pode estar correta ou não, dependendo do software testado.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A afirmação é verdadeira. Qualquer caso isolado de teste faria com que o resultado da declaração 'se' fosse verdadeiro ou falso.: Esta afirmação está correta porque, ao testar uma única declaração 'se', um caso de teste pode verificar uma das duas condições (verdadeira ou falsa), alcançando 50% de cobertura de decisão.\n A afirmação é verdadeira. Qualquer caso isolado de teste faria com que o resultado da declaração 'se' fosse verdadeiro ou falso: Esta afirmação está correta porque, ao testar uma única declaração 'se', um caso de teste pode verificar uma das duas condições (verdadeira ou falsa), alcançando 50% de cobertura de decisão.\n\nA declaração é verdadeira. Qualquer caso de teste único fornece 100% de cobertura de decisão e, portanto, 50% de cobertura de decisão: Esta afirmação está incorreta porque um único caso de teste não pode fornecer 100% de cobertura de decisão; ele só pode cobrir uma das duas condições possíveis, resultando em 50% de cobertura de decisão.\n\nA afirmação é falsa. Um único caso de teste só pode garantir uma cobertura de decisão de 25% neste caso: Esta afirmação está incorreta porque, em um cenário com uma única declaração 'se', um caso de teste pode cobrir uma das duas possíveis saídas (verdadeira ou falsa), resultando em 50% de cobertura de decisão.\n\nA afirmação é falsa. A declaração é muito ampla. Ela pode estar correta ou não, dependendo do software testado: Esta afirmação está incorreta porque a declaração é específica para um cenário com uma única declaração 'se', onde um caso de teste pode cobrir uma das duas saídas possíveis, resultando em 50% de cobertura de decisão."
+    },
+    {
+      "id": 405,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual declaração sobre a relação entre a cobertura de declarações e a cobertura de decisões é verdadeira?",
+      "options": [
+        {
+          "option": "A cobertura de decisão nunca pode chegar a 100%.",
+          "isCorrect": false
+        },
+        {
+          "option": "100% de cobertura de declaração também garante 100% de cobertura de decisão",
+          "isCorrect": false
+        },
+        {
+          "option": "50% de cobertura de decisão também garante 50% de cobertura de declaração",
+          "isCorrect": false
+        },
+        {
+          "option": "100% de cobertura de decisão também garante 100% de cobertura de declaração",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: 100% de cobertura de decisão também garante 100% de cobertura de declaração. \n Cobertura de declaração: Refere-se à porcentagem de instruções executáveis no código que foram exercitadas por um conjunto de casos de teste. Quando se atinge 100% de cobertura de declaração, todas as instruções executáveis no código foram executadas pelo menos uma vez.\n\nCobertura de decisão: Refere-se à porcentagem de resultados de decisões (verdadeiro/falso) que foram exercitadas por um conjunto de casos de teste. Quando se atinge 100% de cobertura de decisão, todas as ramificações de decisão no código foram exercitadas.\n\nA relação entre as duas é que 100% de cobertura de decisão implica que todas as decisões e suas ramificações foram testadas, o que, por sua vez, garante que todas as instruções dentro dessas ramificações também foram executadas, resultando em 100% de cobertura de declaração."
+    },
+    {
+      "id": 406,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Para qual das seguintes situações é adequado o teste exploratório?",
+      "options": [
+        {
+          "option": "Quando o sistema é desenvolvido de forma incremental, e não há carta de teste disponível",
+          "isCorrect": false
+        },
+        {
+          "option": "Quando houver testadores disponíveis que tenham conhecimento suficiente de aplicações e tecnologias similares",
+          "isCorrect": true
+        },
+        {
+          "option": "Quando já existe um conhecimento avançado do sistema, e é necessário fornecer provas de que ele deve ser testado intensivamente",
+          "isCorrect": false
+        },
+        {
+          "option": "Quando a pressão do tempo requer a aceleração da execução de testes já especificados",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Quando houver testadores disponíveis que tenham conhecimento suficiente de aplicações e tecnologias similares: Esta é a situação ideal para o teste exploratório, pois testadores experientes podem usar seu conhecimento para explorar o sistema de forma eficaz e identificar áreas problemáticas sem depender de especificações detalhadas \n Quando houver testadores disponíveis que tenham conhecimento suficiente de aplicações e tecnologias similares: Esta é a situação ideal para o teste exploratório, pois testadores experientes podem usar seu conhecimento para explorar o sistema de forma eficaz e identificar áreas problemáticas sem depender de especificações detalhadas.\n\nQuando o sistema é desenvolvido de forma incremental, e não há carta de teste disponível: Embora o teste exploratório possa ser útil em sistemas desenvolvidos de forma incremental, a falta de uma carta de teste não é uma condição ideal para o teste exploratório, pois ele se beneficia de algum nível de orientação e objetivos.\n\nQuando já existe um conhecimento avançado do sistema, e é necessário fornecer provas de que ele deve ser testado intensivamente: O teste exploratório é mais adequado para descobrir problemas desconhecidos em áreas menos exploradas, não necessariamente para fornecer provas de testes intensivos em um sistema já bem conhecido.\n\nQuando a pressão do tempo requer a aceleração da execução de testes já especificados: O teste exploratório é útil sob pressão de tempo, mas é mais eficaz quando se explora novas áreas ou se complementa testes formais, não apenas para acelerar testes já especificados.\n Teste Exploratório: No teste exploratório, os testes são modelados, executados e avaliados simultaneamente enquanto o Testador aprende sobre o objeto de teste. O teste é usado para aprender mais sobre o objeto de teste, para explorá-lo mais profundamente com testes focados e para criar testes para áreas não testadas.  "
+    },
+    {
+      "id": 407,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual é o número mínimo de casos de teste necessário para cobrir todas as partições de equivalência válidas para o cálculo do bônus?",
+      "options": [
+        {
+          "option": "4",
+          "isCorrect": true
+        },
+        {
+          "option": "3",
+          "isCorrect": false
+        },
+        {
+          "option": "2",
+          "isCorrect": false
+        },
+        {
+          "option": "5",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 4\n\nPara cobrir todas as partições de equivalência válidas para o cálculo do bônus, precisamos identificar as diferentes categorias de duração do emprego mencionadas e criar um caso de teste para cada uma delas:\n\nMenor que zero: Valores menores que zero não serão considerados porque qualquer valor de duração de emprego que resulte em um bônus negativo não é uma partição válida de equivalência.\n\nMenor ou igual a 2 anos: Um caso de teste para verificar o cálculo do bônus para funcionários com até 2 anos de emprego.\n\nMais de 2 anos, mas menos de 5 anos: Um caso de teste para verificar o cálculo do bônus para funcionários com mais de 2 anos, mas menos de 5 anos de emprego.\n\n5 a 10 anos, inclusive: Um caso de teste para verificar o cálculo do bônus para funcionários com 5 a 10 anos de emprego.\n\nMais de 10 anos: Um caso de teste para verificar o cálculo do bônus para funcionários com mais de 10 anos de emprego.\n\nCada uma dessas categorias representa uma partição de equivalência válida, e precisamos de um caso de teste para cada uma delas, totalizando 4 casos de teste."
+    },
+    {
+      "id": 408,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual seria o conjunto mais provável de valores (km/h) identificado pela aplicação da análise de valores limite, onde apenas os valores nos limites das classes de equivalência são selecionados?",
+      "options": [
+        {
+          "option": "50, 51, 55, 56, 60, 61",
+          "isCorrect": true
+        },
+        {
+          "option": "0, 49, 50, 54, 59, 60",
+          "isCorrect": false
+        },
+        {
+          "option": "50, 55, 60",
+          "isCorrect": false
+        },
+        {
+          "option": "49, 50, 54, 55, 60, 62",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 50, 51, 55, 56, 60, 61\n\nA análise de valores limite (BVA) foca nos valores nos limites das partições de equivalência, pois é onde os erros são mais prováveis de ocorrer. Vamos analisar cada faixa de velocidade e identificar os valores de limite:\n\n50 km/h ou menos: O limite superior é 50, então o valor de limite é 50.\n\nMais de 50 km/h, mas não mais que 55 km/h: Os limites são 51 (logo acima de 50) e 55.\n\nMais de 55 km/h, mas não mais que 60 km/h: Os limites são 56 (logo acima de 55) e 60.\n\nMais de 60 km/h: O limite inferior é 61 (logo acima de 60).\n\nPortanto, os valores de limite são 50, 51, 55, 56, 60, e 61."
+    },
+    {
+      "id": 409,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes casos de teste representa uma situação que pode acontecer na vida real, e está faltando na tabela de decisão acima?",
+      "options": [
+        {
+          "option": "Condição1 = NÃO, Condição2 = SIM, Condição3 = NÃO, Ação = NÃO",
+          "isCorrect": true
+        },
+        {
+          "option": "Condição1 = SIM, Condição2 = NÃO, Condição3 = SIM, Ação = NÃO",
+          "isCorrect": false
+        },
+        {
+          "option": "Condição1 = NÃO, Condição2 = NÃO, Condição3 = SIM, Ação = NÃO",
+          "isCorrect": false
+        },
+        {
+          "option": "Condição1 = SIM, Condição2 = SIM, Condição3 = NÃO, Ação = SIM",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Condição1 = NÃO, Condição2 = SIM, Condição3 = NÃO, Ação = NÃO\n\nA tabela de decisão atual cobre as seguintes situações:\n\nT1: Emprego por mais de 1 ano (SIM), Objetivo acordado (NÃO), Alcançado o objetivo (NÃO), Pagamento de bônus (NÃO)\n\nT2: Emprego por mais de 1 ano (NÃO), Objetivo acordado (NÃO), Alcançado o objetivo (NÃO), Pagamento de bônus (NÃO)\n\nT3: Emprego por mais de 1 ano (NÃO), Objetivo acordado (SIM), Alcançado o objetivo (SIM), Pagamento de bônus (NÃO)\n\nT4: Emprego por mais de 1 ano (SIM), Objetivo acordado (SIM), Alcançado o objetivo (SIM), Pagamento de bônus (SIM)\n\nO caso de teste que está faltando e pode ocorrer na vida real é quando um funcionário não está na empresa por mais de um ano, tem um objetivo acordado, mas não alcançou o objetivo. Neste caso, a ação correta seria não pagar o bônus."
+    },
+    {
+      "id": 410,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes afirmações sobre o diagrama de transição de estado dado e tabela de casos de teste é VERDADEIRA?",
+      "options": [
+        {
+          "option": "Os casos de teste em questão representam pares de transições no diagrama de transição estatal",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste em questão cobrem transições válidas e inválidas no diagrama de transição estatal",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste em questão representam todas as transições válidas possíveis no diagrama de transição estatal",
+          "isCorrect": true
+        },
+        {
+          "option": "Os casos de teste em questão representam algumas das transições válidas no diagrama de transição estatal",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Os casos de teste em questão representam todas as transições válidas possíveis no diagrama de transição estatal.\nComo se trata de um sistema simples, todas as transições possíveis que poderiam existir estão sendo representadas, normalmente um diagrama não representa transições inválidas."
+    },
+    {
+      "id": 411,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes casos de teste é resultado da aplicação da técnica de teste de equivalência de partição para testar este requisito?",
+      "options": [
+        {
+          "option": "Verificar se a aplicação pode reproduzir um vídeo em um display de tamanho 640x480 e 1920x1080 (2 casos de teste)",
+          "isCorrect": false
+        },
+        {
+          "option": "Verificar se a aplicação pode reproduzir um vídeo em qualquer um dos tamanhos de tela na exigência (1 caso de teste)",
+          "isCorrect": false
+        },
+        {
+          "option": "Verificar se a aplicação pode reproduzir um vídeo em uma tela de tamanho 1920x1080 (1 caso de teste)",
+          "isCorrect": false
+        },
+        {
+          "option": "Verificar se a aplicação pode reproduzir um vídeo em cada um dos tamanhos de exibição na exigência (4 casos de teste)",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Verificar se a aplicação pode reproduzir um vídeo em cada um dos tamanhos de exibição na exigência (4 casos de teste).\n\nA técnica de particionamento de equivalência divide os dados de entrada em partições, onde cada partição representa um conjunto de valores que são tratados da mesma forma pelo sistema. Neste caso, cada resolução de tela é uma partição diferente, e é necessário testar cada uma delas para garantir que o aplicativo funcione corretamente em todas as resoluções especificadas."
+    },
+    {
+      "id": 412,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos itens a seguir fornece a MELHOR descrição de testes exploratórios?",
+      "options": [
+        {
+          "option": "Testes baseados na experiência, conhecimento e intuição do testador",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma prática de teste na qual uma investigação aprofundada dos antecedentes do objeto de teste é utilizada para identificar potenciais pontos fracos que são examinados pelos casos de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma abordagem aos testes em que os testadores projetam e executam dinamicamente testes baseados em seu conhecimento, exploração do item de teste e nos resultados dos testes anteriores",
+          "isCorrect": true
+        },
+        {
+          "option": "Uma abordagem de projeto de teste na qual as atividades de teste são planejadas como sessões ininterruptas de análise e projeto de teste, frequentemente usadas em conjunto com testes baseados em checklist",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Uma abordagem aos testes em que os testadores projetam e executam dinamicamente testes baseados em seu conhecimento, exploração do item de teste e nos resultados dos testes anteriores.\nEsta é a melhor descrição dos testes exploratórios, pois enfatiza o aspecto dinâmico e adaptativo, onde os testadores ajustam seus testes com base no que aprendem durante a execução.\n\nTestes baseados na experiência, conhecimento e intuição do testador: Esta descrição é correta, pois os testes exploratórios dependem da experiência e intuição do testador para explorar o sistema e identificar defeitos. No entanto, é uma descrição bastante genérica e não captura a natureza dinâmica e adaptativa dos testes exploratórios.\n\nUma prática de teste na qual uma investigação aprofundada dos antecedentes do objeto de teste é utilizada para identificar potenciais pontos fracos que são examinados pelos casos de teste: Esta descrição se aproxima mais de uma análise de risco ou de uma abordagem de teste baseada em histórico, mas não descreve adequadamente a natureza exploratória e adaptativa dos testes exploratórios.\n\nUma abordagem de projeto de teste na qual as atividades de teste são planejadas como sessões ininterruptas de análise e projeto de teste, frequentemente usadas em conjunto com testes baseados em checklist: Esta descrição refere-se a uma técnica específica dentro dos testes exploratórios, conhecida como \"testes baseados em sessões\", que é uma forma estruturada de conduzir testes exploratórios, mas não abrange toda a abordagem exploratória."
+    },
+    {
+      "id": 413,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes MELHORES combina as descrições com as diferentes categorias de técnicas de teste?",
+      "options": [
+        {
+          "option": "Preto – 4; Branco - 1, 2; Experiência - 3, 5",
+          "isCorrect": false
+        },
+        {
+          "option": "Preto - 4, 5; Branco - 1, 2; Experiência - 3",
+          "isCorrect": true
+        },
+        {
+          "option": "Preto – 3; Branco - 1, 2; Experiência - 4, 5",
+          "isCorrect": false
+        },
+        {
+          "option": "Preto - 1, 3, 5; Branco - 2; Experiência - 4",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é:\nPreto - 4, 5; Branco - 1, 2; Experiência - 3\n\nPreto (Técnicas de teste caixa-preta):\n(4) Os desvios das exigências são verificados: As técnicas de teste caixa-preta verificam o comportamento do sistema em relação às suas especificações, sem considerar a estrutura interna.\n(5) As histórias de usuários são usadas como base de teste: As histórias de usuários são frequentemente usadas em técnicas de teste caixa-preta para derivar casos de teste baseados em requisitos.\n\nBranco (Técnicas de teste caixa-branca):\n(1) A cobertura é medida com base em uma estrutura selecionada do objeto de teste: As técnicas de teste caixa-branca são baseadas na análise da estrutura interna do objeto de teste.\n(2) O processamento dentro do objeto de teste é verificado: As técnicas de teste caixa-branca verificam o processamento interno e a estrutura do sistema.\n\nExperiência (Técnicas de teste baseadas na experiência):\n(3) Os testes são baseados na probabilidade de defeitos e sua distribuição: As técnicas de teste baseadas na experiência utilizam o conhecimento e a intuição do testador para identificar áreas propensas a defeitos."
+    },
+    {
+      "id": 414,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes conjuntos de entradas de teste alcançaria a MELHOR equivalência de cobertura de partição?",
+      "options": [
+        {
+          "option": "0, 1000, 2000, 3000, 4000",
+          "isCorrect": false
+        },
+        {
+          "option": "1000, 2001, 4000, 4001, 6000",
+          "isCorrect": false
+        },
+        {
+          "option": "666, 999, 2222, 5555, 6666",
+          "isCorrect": true
+        },
+        {
+          "option": "123, 2345, 3456, 4567, 5678",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 666, 999, 2222, 5555, 6666\n\nA questão é complexa pois se refere a opção que tem a MELHOR cobertura e nenhuma das opções cobre todas as opções:\n\nopção: 666, 999, 2222, 5555, 6666 Cobertura: 4\n\nopção: 0, 1000, 2000, 3000, 4000 Cobertura: 3\n\nopção: 123, 2345, 3456, 4567, 5678 Cobertura: 3\n\nopção: 1000, 2001, 4000, 4001, 6000 Cobertura: 3"
+    },
+    {
+      "id": 415,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual é o número mínimo de casos de teste adicionais que são necessários para garantir a cobertura total de TODAS as partições de equivalência de entrada válida?",
+      "options": [
+        {
+          "option": "3",
+          "isCorrect": false
+        },
+        {
+          "option": "2",
+          "isCorrect": true
+        },
+        {
+          "option": "1",
+          "isCorrect": false
+        },
+        {
+          "option": "4",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 2\n\nOs casos de testes ao contemplaram a exposição solar de 3 a 6 horas e a intensidade média da luz solar: baixa e alta. O tempo de exposição solar e a intensidade é possível serem testadas juntas por isso será necessário mais 2 casos de teste adicionais."
+    },
+    {
+      "id": 416,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Usando BVA (somente valores Min e Max), qual dos seguintes conjuntos de entradas de teste fornece o mais alto nível de cobertura de limite?",
+      "options": [
+        {
+          "option": "0°C, 11°C, 20°C, 22°C, 23°C",
+          "isCorrect": false
+        },
+        {
+          "option": "10°C, 16°C, 19°C, 22°C, 23°C",
+          "isCorrect": true
+        },
+        {
+          "option": "9°C, 15°C, 19°C, 23°C, 100°C",
+          "isCorrect": false
+        },
+        {
+          "option": "14°C, 15°C, 18°C, 19°C, 19°C, 21°C, 22°C",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 10°C, 16°C, 19°C, 22°C, 23°C\n\nUma pergunta complexa que não cobra uma resposta totalmente correta mas uma resposta que MAIS atenda.\n\nA resposta 10°C, 16°C, 19°C, 22°C, 23°C utiliza BVA e possui uma cobertura maior que as outras;\n\n0°C, 11°C, 20°C, 22°C, 23°C Não tende os critérios BVA pois 0°C não é valor limite;\n\n9°C, 15°C, 19°C, 23°C, 100°C Não tende os critérios BVA pois 9°C e 100°C não são valores limites;\n\n14°C, 15°C, 18°C, 19°C, 19°C, 21°C, 22°C Está utilizando algo parecido com BVA de 3 valores mas está cobrindo apenas 3 casos de uso."
+    },
+    {
+      "id": 418,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes sequências de transições proporciona o mais alto nível de cobertura de transição para o modelo?",
+      "options": [
+        {
+          "option": "WAIT → TRICKLE → WAIT → OFF → WAIT → TRICKLE → CHARGE → LOW → CHARGE",
+          "isCorrect": false
+        },
+        {
+          "option": "OFF → WAIT → OFF → WAIT → TRICKLE → CHARGE → HIGH → CHARGE → LOW",
+          "isCorrect": false
+        },
+        {
+          "option": "WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT",
+          "isCorrect": true
+        },
+        {
+          "option": "HIGH → CHARGE → LOW → CHARGE → TRICKLE → WAIT → TRICKLE → WAIT → TRICKLE",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT\nÉ a única opção onde não existe repetição de transições."
+    },
+    {
+      "id": 419,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes declarações BEST descreve como os casos de teste são derivados de um caso de uso?",
+      "options": [
+        {
+          "option": "Os casos de teste são gerados através da análise das interações dos atores com o sistema para garantir que as interfaces do usuário sejam fáceis de usar",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste são criados para exercer comportamentos básicos, excepcionais e de erro definidos pelo sistema em teste, em colaboração com os atores",
+          "isCorrect": true
+        },
+        {
+          "option": "Os casos de teste são derivados para exercer cada um dos pontos de decisão nos fluxos do processo comercial do caso de uso, para atingir 100% de cobertura de decisão desses fluxos",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste são derivados da identificação dos componentes incluídos no caso de uso e da criação de testes de integração que exercem as interações desses componentes",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Os casos de teste são criados para exercer comportamentos básicos, excepcionais e de erro definidos pelo sistema em teste, em colaboração com os atores.\n\nEsta opção é a mais abrangente, pois cobre os comportamentos básicos, excepcionais e de erro, que são aspectos essenciais de um caso de uso. Ela também menciona a colaboração com os atores, que é uma prática comum na derivação de casos de teste a partir de casos de uso.\n\nOs casos de teste são gerados através da análise das interações dos atores com o sistema para garantir que as interfaces do usuário sejam fáceis de usar: Esta opção foca na usabilidade das interfaces do usuário, mas derivar casos de teste de um caso de uso vai além de apenas garantir a facilidade de uso; envolve testar o comportamento funcional do sistema.\n\nOs casos de teste são derivados para exercer cada um dos pontos de decisão nos fluxos do processo comercial do caso de uso, para atingir 100% de cobertura de decisão desses fluxos: Esta opção se concentra exclusivamente na cobertura de decisão, o que é uma técnica de teste mais específica e não cobre todos os aspectos de um caso de uso.\n\nOs casos de teste são derivados da identificação dos componentes incluídos no caso de uso e da criação de testes de integração que exercem as interações desses componentes: Esta opção se refere à criação de testes de integração com base nos componentes, o que é mais relacionado a testes de integração do que à derivação de casos de teste de casos de uso."
+    },
+    {
+      "id": 420,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes descrições de cobertura de declarações é CORRETA?",
+      "options": [
+        {
+          "option": "A cobertura de declaração é uma medida da porcentagem de linhas de código fonte (sem comentários) exercida por testes",
+          "isCorrect": false
+        },
+        {
+          "option": "A cobertura das declarações é uma medida da proporção de declarações executáveis no código fonte exercida por testes",
+          "isCorrect": true
+        },
+        {
+          "option": "A cobertura das declarações é uma medida do número de declarações executáveis no código fonte exercido por testes",
+          "isCorrect": false
+        },
+        {
+          "option": "A cobertura de declaração é uma medida do número de linhas de código fonte exercidas por testes",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A cobertura das declarações é uma medida da proporção de declarações executáveis no código fonte exercida por testes\n\nEsta opção é correta, pois a cobertura de declaração mede a proporção de declarações executáveis no código que são exercidas pelos testes, expressa como uma porcentagem.\n\nA cobertura de declaração é uma medida da porcentagem de linhas de código fonte (sem comentários) exercida por testes: Esta opção está incorreta porque a cobertura de declaração não mede a porcentagem de linhas de código fonte, mas sim a proporção de declarações executáveis exercidas;\n\nA cobertura das declarações é uma medida do número de declarações executáveis no código fonte exercido por testes: Esta opção está incorreta porque a cobertura de declaração não mede o número absoluto de declarações executáveis, mas sim a proporção delas que são exercidas;\n\nA cobertura de declaração é uma medida do número de linhas de código fonte exercidas por testes: Esta opção está incorreta porque a cobertura de declaração não mede o número de linhas de código fonte, mas sim a proporção de declarações executáveis exercidas."
+    },
+    {
+      "id": 421,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes descrições de cobertura de decisão é CORRETA?",
+      "options": [
+        {
+          "option": "A cobertura de decisão é uma medida da proporção de resultados de decisão no código fonte exercida por testes",
+          "isCorrect": true
+        },
+        {
+          "option": "A cobertura de decisão é uma medida da porcentagem de caminhos possíveis através do código fonte exercida por testes",
+          "isCorrect": false
+        },
+        {
+          "option": "A cobertura de decisão é uma medida da porcentagem dos fluxos comerciais através do componente exercido por testes",
+          "isCorrect": false
+        },
+        {
+          "option": "A cobertura de decisão é uma medida das declarações 'se' no código que são exercidas tanto com os resultados verdadeiros como falsos",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A cobertura de decisão é uma medida da proporção de resultados de decisão no código fonte exercida por testes\n\nEsta opção é correta porque a cobertura de decisão mede se cada decisão no código, como as ramificações de uma instrução 'se','for','switch' entre outras, foi avaliada em todos os resultados possíveis.\n\nA cobertura de decisão é uma medida da porcentagem de caminhos possíveis através do código fonte exercida por testes: Esta opção está incorreta porque a cobertura de decisão não mede a porcentagem de caminhos possíveis, mas sim se cada decisão no código foi testada em todos os resultados possíveis;\n\nA cobertura de decisão é uma medida da porcentagem dos fluxos comerciais através do componente exercido por testes: Esta opção está incorreta porque a cobertura de decisão não se refere a fluxos comerciais, mas sim a decisões no código, como instruções 'se' e 'switch';\n\nA cobertura de decisão é uma medida das declarações 'se' no código que são exercidas tanto com os resultados verdadeiros como falsos: Esta opção está incorreta porque, embora a cobertura de decisão inclua as declarações 'se', ela não se limita a elas; também inclui outras estruturas de decisão, como 'switch' e loops."
+    },
+    {
+      "id": 422,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes itens descreve MELHOR o conceito por trás da adivinhação de erros?",
+      "options": [
+        {
+          "option": "A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos encontrados no passado e erros típicos cometidos pelos desenvolvedores",
+          "isCorrect": true
+        },
+        {
+          "option": "A adivinhação de erros envolve o uso de sua experiência pessoal de desenvolvimento e os erros que você cometeu como desenvolvedor",
+          "isCorrect": false
+        },
+        {
+          "option": "Adivinhação de erro requer que você imagine que é o usuário do objeto de teste e adivinhe os erros que o usuário poderia cometer ao interagir com ele",
+          "isCorrect": false
+        },
+        {
+          "option": "A adivinhação de erros exige que você duplique rapidamente a tarefa de desenvolvimento para identificar o tipo de erros que um desenvolvedor pode cometer",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos encontrados no passado e erros típicos cometidos pelos desenvolvedores\n\nEsta opção é correta porque a suposição de erros baseia-se no conhecimento e na experiência do testador sobre defeitos anteriores e erros comuns dos desenvolvedores para prever onde novos erros podem ocorrer.\n\nA suposição de erro é uma técnica usada para prever a ocorrência de erros, defeitos e falhas, com base no conhecimento do Testador, incluindo:\n-Como o aplicativo funcionou no passado;\n-Os tipos de erros que os desenvolvedores tendem a cometer e os tipos de defeitos que resultam desses erros;\n-Os tipos de falhas que ocorreram em outros aplicativos semelhantes."
+    },
+    {
+      "id": 423,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "O que é cobertura de decisão?",
+      "options": [
+        {
+          "option": "A cobertura dos resultados das condições",
+          "isCorrect": false
+        },
+        {
+          "option": "Cobertura de decisões é sinônimo de cobertura de declarações",
+          "isCorrect": false
+        },
+        {
+          "option": "A cobertura das declarações executáveis",
+          "isCorrect": false
+        },
+        {
+          "option": "A cobertura dos resultados das decisões",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: A cobertura dos resultados das decisões\n\nA cobertura de decisão não se refere apenas aos resultados das condições, mas sim aos resultados das decisões completas, que podem incluir múltiplas condições."
+    },
+    {
+      "id": 424,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Antes de uma sessão de planejamento de iteração, você está estudando uma história de usuário e seus critérios de aceite, derivando as condições de teste e casos de teste associados da história do usuário como uma forma de aplicar o princípio de qualidade e teste antecipados. Que técnica de teste você está aplicando?",
+      "options": [
+        {
+          "option": "Baseado na experiência",
+          "isCorrect": false
+        },
+        {
+          "option": "Caixa-branca",
+          "isCorrect": false
+        },
+        {
+          "option": "Suposição de erros",
+          "isCorrect": false
+        },
+        {
+          "option": "Caixa-preta",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Caixa-preta\n\nEsta técnica é baseada na análise do comportamento especificado do objeto de teste, como histórias de usuário e critérios de aceite, sem referência à estrutura interna, o que se alinha com a atividade descrita;\n\nCaixa-branca: Esta técnica foca na estrutura interna do código, o que não é o caso aqui, pois você está derivando testes a partir de histórias de usuário e critérios de aceite, sem considerar a implementação interna;\n\nSuposição de erros: Esta técnica envolve prever onde os erros podem ocorrer com base em defeitos anteriores e erros comuns, mas não é o foco principal ao derivar condições de teste de histórias de usuário;\n\nBaseado na experiência: Esta técnica envolve o uso de conhecimento e intuição do testador, mas não se aplica diretamente ao derivar condições de teste de histórias de usuário e critérios de aceite."
+    },
+    {
+      "id": 425,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes aspectos é uma afirmação verdadeira sobre testes exploratórios?",
+      "options": [
+        {
+          "option": "Testadores mais experientes que testaram aplicações e tecnologias similares provavelmente farão melhor do que testadores menos experientes em testes exploratórios",
+          "isCorrect": true
+        },
+        {
+          "option": "Os testes exploratórios não identificam nenhum teste adicional além daqueles que resultariam de técnicas de teste formais",
+          "isCorrect": false
+        },
+        {
+          "option": "Os testes exploratórios podem envolver o uso de técnicas caixa-preta, mas não técnicas caixa-branca",
+          "isCorrect": false
+        },
+        {
+          "option": "O tempo necessário para completar uma sessão de testes exploratórios não pode ser previsto com antecedência",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Testadores mais experientes que testaram aplicações e tecnologias similares provavelmente farão melhor do que testadores menos experientes em testes exploratórios\nEsta opção é verdadeira porque testadores experientes têm um melhor entendimento do domínio e das tecnologias, o que lhes permite explorar mais efetivamente o objeto de teste e identificar áreas problemáticas;\n\nOs testes exploratórios não identificam nenhum teste adicional além daqueles que resultariam de técnicas de teste formais: Esta opção é falsa porque testes exploratórios podem identificar testes adicionais que não seriam necessariamente cobertos por técnicas formais, especialmente em áreas não especificadas ou mal documentadas;\n\nOs testes exploratórios podem envolver o uso de técnicas caixa-preta, mas não técnicas caixa-branca: Esta opção é parcialmente verdadeira, mas incompleta. Embora os testes exploratórios frequentemente usem técnicas de caixa-preta, eles não estão limitados a elas e podem incorporar elementos de outras técnicas, incluindo técnicas de caixa-branca, dependendo do contexto e do objetivo do teste;\n\nO tempo necessário para completar uma sessão de testes exploratórios não pode ser previsto com antecedência: Esta opção é falsa porque, embora o tempo exato para completar uma sessão de testes exploratórios possa ser flexível, ele geralmente é planejado e estruturado dentro de um período definido, como em abordagens baseadas em sessões."
+    },
+    {
+      "id": 426,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um aplicativo móvel que permite aos clientes acessar e gerenciar suas contas bancárias. Você está executando um conjunto de testes que envolve a avaliação de cada tela e cada campo em cada tela em relação a uma lista geral de melhores práticas de interface com o usuário, derivada de um livro popular sobre o tema, que maximiza a atratividade, facilidade de uso e acessibilidade para tais aplicativos. Qual das seguintes opções MELHOR categoriza a técnica de teste que você está usando?",
+      "options": [
+        {
+          "option": "Suposição de erros",
+          "isCorrect": false
+        },
+        {
+          "option": "Exploratório",
+          "isCorrect": false
+        },
+        {
+          "option": "Baseado na especificação",
+          "isCorrect": false
+        },
+        {
+          "option": "Baseado em checklist",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Baseado em checklist\nEsta técnica envolve o uso de uma lista de verificação para guiar o teste, o que se alinha com o uso de uma lista de melhores práticas para avaliar a interface do usuário;\n\nBaseado na especificação: Esta técnica envolve testar com base em requisitos ou especificações formais, o que não é o caso aqui, pois você está usando uma lista de melhores práticas;\n\nExploratório: Embora o teste exploratório possa ser usado para avaliar a interface do usuário, ele geralmente não se baseia em uma lista predefinida de melhores práticas, mas sim na exploração livre e na intuição do testador;\n\nSuposição de erros: Esta técnica envolve prever onde os erros podem ocorrer com base em defeitos anteriores e erros comuns, o que não se aplica diretamente ao uso de uma lista de melhores práticas."
+    },
+    {
+      "id": 427,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Considere um aplicativo móvel que permita aos clientes acessar e gerenciar suas contas bancárias. Uma história de usuário acabou de ser adicionada ao conjunto de recursos que verifica as contas de mídia social e os registros bancários dos clientes para dar saudações personalizadas em aniversários e outros marcos pessoais. Qual das seguintes técnicas de teste um PROGRAMADOR poderia utilizar durante um teste unitário do código para garantir que a cobertura de situações quando as saudações são supostas ocorrer e quando as saudações NÃO são supostas ocorrer?",
+      "options": [
+        {
+          "option": "Teste de declaração",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes de decisão",
+          "isCorrect": true
+        },
+        {
+          "option": "Testes de transição do Estado",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes exploratórios",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Testes de decisão\nEsta técnica foca em garantir que todas as condições de decisão no código sejam avaliadas em ambas as direções (verdadeira e falsa), o que é essencial para testar quando saudações devem ou não ocorrer;\n\nTeste de declaração: Esta técnica verifica se cada linha de código foi executada, mas não garante que todas as condições de decisão foram avaliadas em ambas as direções.\n\nTestes de transição do Estado: Esta técnica é usada para testar sistemas que podem estar em diferentes estados, mas não é a mais adequada para verificar condições de decisão específicas;\n\nTestes exploratórios: Esta técnica é mais adequada para descobrir problemas inesperados e não é usada para garantir a cobertura sistemática de condições de decisão."
+    },
+    {
+      "id": 428,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Uma aplicação em lote está em produção inalterada há mais de dois anos. Ele funciona durante a noite uma vez por mês para produzir declarações que serão enviadas aos clientes por e-mail. Para cada cliente, o aplicativo passa por cada conta e lista todas as transações nessa conta no último mês. Ele usa uma estrutura neste loop para processar clientes (loop externo), as contas de cada cliente (loop médio) e as transações de cada conta (loop interno). Uma noite, o pedido de lote termina prematuramente, deixando de enviar extratos por e-mail a alguns clientes, quando encontra um cliente com uma conta para a qual não ocorreram transações no último mês. Esta é uma situação muito incomum e não tem ocorrido nos anos desde que este aplicativo foi colocado em produção. Enquanto conserta o defeito, um programador pede que você recomende técnicas de teste que sejam eficazes contra este tipo de defeito. Qual das seguintes técnicas de teste provavelmente teria sido capaz de detectar o defeito subjacente?",
+      "options": [
+        {
+          "option": "Testes baseados em listas de verificação",
+          "isCorrect": false
+        },
+        {
+          "option": "Suposição de erros",
+          "isCorrect": false
+        },
+        {
+          "option": "Teste de declaração",
+          "isCorrect": false
+        },
+        {
+          "option": "Teste de decisão",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Teste de decisão\nEsta técnica foca em garantir que todas as condições de decisão no código sejam avaliadas em ambas as direções (verdadeira e falsa), o que é essencial para detectar situações incomuns, como a ausência de transações;\n\nTeste de declaração: Esta técnica verifica se cada linha de código foi executada, mas não garante que todas as condições de decisão foram avaliadas em ambas as direções;\n\nSuposição de erros: Esta técnica se baseia na experiência para prever onde os erros podem ocorrer, mas não garante a cobertura sistemática de todas as condições de decisão;\n\nTestes baseados em listas de verificação: Esta técnica envolve verificar se o software atende a uma lista de critérios, mas pode não cobrir todas as condições lógicas específicas, como a ausência de transações."
+    },
+    {
+      "id": 429,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando uma bomba de gasolina desacompanhada que só aceita cartões de crédito. Uma vez validado o cartão de crédito, o bico da bomba colocado no tanque e a nota desejada selecionada, o cliente digita a quantidade desejada de combustível em galões usando o teclado. O teclado permite apenas a entrada de dígitos. O combustível é vendido em décimos (0,1) de um galão, até 50,0 galões. Qual dos seguintes é um conjunto mínimo de quantidades desejadas que cobre as partições de equivalência para esta entrada?",
+      "options": [
+        {
+          "option": "0.0, 20.0, 60.0",
+          "isCorrect": true
+        },
+        {
+          "option": "-0.1, 0.0, 0.1, 49.9, 50.0, 50.1",
+          "isCorrect": false
+        },
+        {
+          "option": "0.0, 0.1, 50.0, 70.0",
+          "isCorrect": false
+        },
+        {
+          "option": "0.0, 0.1, 50.0",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 0.0, 20.0, 60.0\n0.0 cobre o limite inferior válido.\n20.0 cobre um valor dentro do intervalo válido.\n60.0 cobre um valor acima do limite superior, testando a partição inválida.\nEsses valores cobrem as partições de equivalência para entradas válidas e inválidas."
+    },
+    {
+      "id": 430,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um sistema de comércio eletrônico que vende suprimentos de cozinha como especiarias, farinha e outros itens a granel. As unidades em que os itens são vendidos são gramas (para especiarias e outros itens caros) ou quilogramas (para farinha e outros itens baratos). Independentemente das unidades, a menor quantidade válida de pedido é de 0,5 unidades (p. ex., meia grama de casulos de cardamomo) e a maior quantidade válida de pedido é de 25,0 unidades (p. ex., 25 quilos de açúcar). A precisão do campo de unidades é de 0,1 unidades. Qual dos seguintes é um conjunto de valores de entrada que cobrem os valores limite com valores limite de dois pontos para este campo?",
+      "options": [
+        {
+          "option": "0.5, 0.6, 24.9, 25.0",
+          "isCorrect": false
+        },
+        {
+          "option": "0.4, 0.5, 0.6, 24.9, 25.0, 25.1",
+          "isCorrect": true
+        },
+        {
+          "option": "0.4, 0.5, 25.0, 25.1",
+          "isCorrect": false
+        },
+        {
+          "option": "0.3, 10.0, 28.0",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 0.4, 0.5, 0.6, 24.9, 25.0, 25.1\nEste conjunto cobre os valores limite inferiores e superiores, incluindo valores imediatamente abaixo e acima dos limites válidos."
+    },
+    {
+      "id": 431,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Considere o seguinte diagrama de transição de estado apenas para uma bomba de gasolina sem supervisão, com cartão de crédito: [Imagem Q432] Suponha que você queira desenvolver o número mínimo de testes para cobrir cada transição no diagrama de transição de estado. Suponha ainda que cada teste deve começar no estado inicial, esperando pelo cliente, e cada teste termina quando uma transição chega ao estado inicial. Quantos testes você precisa?",
+      "options": [
+        {
+          "option": "4",
+          "isCorrect": true
+        },
+        {
+          "option": "Infinito",
+          "isCorrect": false
+        },
+        {
+          "option": "7",
+          "isCorrect": false
+        },
+        {
+          "option": "1",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 4\nUma maneira de descobrir o número mínimo de testes para cobrir cada transição, que funciona na maioria das vezes, é contar quantas transições estão retornando ao ponto inicial. No caso da imagem, 4 transições retornam para o início."
+    },
+    {
+      "id": 432,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um sistema de comércio eletrônico que vende suprimentos de cozinha como especiarias, farinha e outros itens a granel. As unidades em que os itens são vendidos são gramas (para especiarias e outros itens caros) ou quilogramas (para farinha e outros itens baratos). Independentemente das unidades, a menor quantidade válida de pedido é de 0,5 unidades (p. ex., meia grama de casulos de cardamomo) e a maior quantidade válida de pedido é de 25,0 unidades (p. ex., 25 quilos de açúcar). A precisão do campo das unidades é de 0,1 unidades. Qual dos seguintes é um conjunto MÍNIMO de valores de entrada que cobre as partições de equivalência para este campo?",
+      "options": [
+        {
+          "option": "12.3",
+          "isCorrect": false
+        },
+        {
+          "option": "0.2, 0.9, 29.5",
+          "isCorrect": true
+        },
+        {
+          "option": "0.4, 0.5, 25.0, 25.1",
+          "isCorrect": false
+        },
+        {
+          "option": "10.0, 28.0",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 0.2, 0.9, 29.5\nA resposta cobre as 3 partições de equivalência: menor que 0.5, entre 0.5 e 25, e maior que 25."
+    },
+    {
+      "id": 433,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes é uma característica das técnicas de teste baseadas em experiência?",
+      "options": [
+        {
+          "option": "Os casos de teste são usados para identificar desvios dos requisitos.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste são criados com base em informações detalhadas do projeto.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os itens testados na seção de código da interface são usados para medir a cobertura.",
+          "isCorrect": false
+        },
+        {
+          "option": "As técnicas dependem muito do conhecimento do testador sobre o software e o domínio do negócio.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: As técnicas dependem muito do conhecimento do testador sobre o software e o domínio do negócio.\nTestes baseado em experiência não utiliza caso de testes (informações detalhadas do projeto), apenas cartas de teste, fichas de teste, check-lists.\nDesvios de requisitos normalmente são identificados por testes de caixa-preta."
+    },
+    {
+      "id": 434,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um formulário simplificado de busca de apartamento que tem apenas dois critérios de busca: andar (com três opções possíveis: térreo; primeiro andar; segundo andar) tipo de jardim (com três opções possíveis: sem jardim; jardim pequeno; jardim grande) Somente apartamentos no andar térreo podem ter jardins. O formulário tem um mecanismo de validação integrado que não permitirá que você use os critérios de pesquisa que violam essa regra. Cada teste tem dois valores de entrada: andar e tipo de jardim. Você deseja aplicar o particionamento de equivalência (EP) para cobrir cada andar e cada tipo de jardim em seus testes. Qual é o número mínimo de casos de teste para atingir 100% de cobertura do EP?",
+      "options": [
+        {
+          "option": "6",
+          "isCorrect": false
+        },
+        {
+          "option": "4",
+          "isCorrect": true
+        },
+        {
+          "option": "5",
+          "isCorrect": false
+        },
+        {
+          "option": "3",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 4\nSeriam 2 testes para primeiro e segundo andar sem jardim e mais dois testes para o térreo com jardim pequeno e grande."
+    },
+    {
+      "id": 435,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um sistema que calcula a nota final do curso para um determinado aluno. A nota final é atribuída com base no resultado final de pontos, de acordo com as regras a seguir: Reprovado: 0 a 50 Razoável: 51 a 60 Satisfatório: 61 a 70 Bom: 71 a 80 Muito Bom: 81 a 90 Excelente: 91 a 100 Você preparou o seguinte conjunto de casos de teste: TC1 - Resultado final: 91 Nota final: Excelente TC2 - Resultado final: 50 Nota final: Reprovado TC3 - Resultado final: 81 Nota final: Muito Bom TC4 - Resultado final: 60 Nota final: Razoável TC5 - Resultado final: 70 Nota final: Satisfatório TC6 - Resultado final: 80 Nota final: Bom Qual é a cobertura da Análise de Valor Limite - BVA (Boundary Value Analysis) de dois valores para o resultado final obtido com os casos de teste existentes?",
+      "options": [
+        {
+          "option": "100%",
+          "isCorrect": false
+        },
+        {
+          "option": "50%",
+          "isCorrect": true
+        },
+        {
+          "option": "33.3%",
+          "isCorrect": false
+        },
+        {
+          "option": "60%",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 50%"
+    },
+    {
+      "id": 436,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você testa um sistema cujo ciclo de vida é modelado pelo diagrama de transição de estado mostrado abaixo. O sistema começa no estado INIT e termina sua operação no estado OFF. Qual é o número MÍNIMO de casos de teste para obter uma cobertura de transições válida?",
+      "options": [
+        {
+          "option": "2",
+          "isCorrect": false
+        },
+        {
+          "option": "7",
+          "isCorrect": false
+        },
+        {
+          "option": "4",
+          "isCorrect": false
+        },
+        {
+          "option": "3",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: 3\nPara cobrir todas as transições válidas no diagrama de transição de estado, são necessários 3 casos de teste, garantindo que cada transição seja exercitada pelo menos uma vez."
+    },
+    {
+      "id": 437,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Seu conjunto de testes atingiu 100% de cobertura de instrução. Qual é a consequência desse fato?",
+      "options": [
+        {
+          "option": "Cada instrução no código que contém um defeito foi executada pelo menos uma vez.",
+          "isCorrect": true
+        },
+        {
+          "option": "Cada caminho no código foi executado pelo menos uma vez.",
+          "isCorrect": false
+        },
+        {
+          "option": "Qualquer conjunto de testes que contenha mais casos de teste do que o seu conjunto de testes também alcançará 100% de cobertura de instrução.",
+          "isCorrect": false
+        },
+        {
+          "option": "Cada combinação de valores de entrada foi testada pelo menos uma vez.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Cada instrução no código que contém um defeito foi executada pelo menos uma vez.\nIsso é verdadeiro, pois atingir 100% de cobertura de instrução significa que todas as instruções executáveis no código foram executadas pelo menos uma vez, o que inclui aquelas que podem conter defeitos.\n Cada caminho no código foi executado pelo menos uma vez: Isso não é garantido apenas com cobertura de instrução, pois a cobertura de instrução não assegura que todas as combinações de caminhos (ou fluxos de controle) foram testadas;\n Qualquer conjunto de testes que contenha mais casos de teste do que o seu conjunto de testes também alcançará 100% de cobertura de instrução: Isso não é necessariamente verdadeiro, pois a quantidade de casos de teste não garante a cobertura de instrução; depende de quais instruções os casos de teste exercitam;\nCada combinação de valores de entrada foi testada pelo menos uma vez: Isso não é garantido pela cobertura de instrução, pois a cobertura de instrução não considera todas as combinações possíveis de valores de entrada."
+    },
+    {
+      "id": 438,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das opções a seguir NÃO é verdadeira para testes caixa-branca?",
+      "options": [
+        {
+          "option": "As métricas de cobertura caixa-branca podem ajudar a identificar testes adicionais para aumentar a cobertura do código.",
+          "isCorrect": false
+        },
+        {
+          "option": "As técnicas de teste caixa-branca podem ser usadas em testes estáticos.",
+          "isCorrect": true
+        },
+        {
+          "option": "O teste caixa-branca pode ajudar a identificar lacunas na implementação dos requisitos.",
+          "isCorrect": false
+        },
+        {
+          "option": "Durante o teste caixa-branca, toda a implementação do software é considerada.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: As técnicas de teste caixa-branca podem ser usadas em testes estáticos.\nOlhando apenas o código não é possível identificar se algum requisito não foi atendido é necessário comparar com alguma especificação.\nDurante o teste caixa-branca, toda a implementação do software é considerada. Todo tipo de código e linha de comando pode ser considerado.\nAs métricas de cobertura caixa-branca podem ajudar a identificar testes adicionais para aumentar a cobertura do código. Realmente pode ajudar a identificar algum ponto que não foi contemplado, algum 'else' alguma saída de 'for', qualquer coisa que não foi identificado durante um teste caixa-preta.\nO teste caixa-branca pode ajudar a identificar lacunas na implementação dos requisitos. Basicamente o teste estático pode ser considerado um teste caixa-branca."
+    },
+    {
+      "id": 439,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das opções a seguir descreve MELHOR o conceito por trás da suposição de erros?",
+      "options": [
+        {
+          "option": "A suposição de erros exige que você duplique rapidamente a tarefa de desenvolvimento para identificar os tipos de erros que um desenvolvedor pode cometer.",
+          "isCorrect": false
+        },
+        {
+          "option": "A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos encontrados no passado e erros típicos cometidos por desenvolvedores.",
+          "isCorrect": true
+        },
+        {
+          "option": "A suposição de erros exige que você imagine que é o usuário do objeto de teste e adivinhe os erros que o usuário poderia cometer ao interagir com ele.",
+          "isCorrect": false
+        },
+        {
+          "option": "A suposição de erros envolve o uso de sua experiência pessoal de desenvolvimento e os erros que você cometeu como desenvolvedor.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos encontrados no passado e erros típicos cometidos por desenvolvedores."
+    },
+    {
+      "id": 440,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Em seu projeto, houve um atraso no lançamento de um aplicativo totalmente novo e a execução do teste começou tarde, mas você tem um conhecimento de domínio muito detalhado e boas habilidades analíticas. A lista completa de requisitos ainda não foi compartilhada com a equipe, mas a gerência está pedindo que alguns resultados de testes sejam apresentados. Qual técnica de teste se encaixa MELHOR nessa situação?",
+      "options": [
+        {
+          "option": "Suposição de erros.",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes baseados em listas de verificação.",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes exploratórios.",
+          "isCorrect": true
+        },
+        {
+          "option": "Teste de ramificação.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Testes exploratórios.\nTestes exploratórios são adequados quando há falta de documentação completa, pois permitem que o testador use seu conhecimento e habilidades analíticas para explorar o sistema e identificar problemas potenciais."
+    },
+    {
+      "id": 441,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das opções a seguir descreve MELHOR a maneira como os critérios de aceite podem ser documentados?",
+      "options": [
+        {
+          "option": "Documentar os riscos relacionados a uma determinada história de usuário em um plano de teste para facilitar o teste baseado em riscos de uma determinada história de usuário.",
+          "isCorrect": false
+        },
+        {
+          "option": "Realizar retrospectivas para determinar as necessidades reais dos stakeholders em relação a uma determinada história de usuário.",
+          "isCorrect": false
+        },
+        {
+          "option": "Usar a comunicação verbal para reduzir o risco de outras pessoas não entenderem os critérios de aceite.",
+          "isCorrect": false
+        },
+        {
+          "option": "Usar o formato dado/quando/então para descrever um exemplo de condição de teste relacionada a uma determinada história de usuário.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Usar o formato dado/quando/então para descrever um exemplo de condição de teste relacionada a uma determinada história de usuário.\nEsta é a melhor maneira de documentar critérios de aceite. O formato dado/quando/então é amplamente utilizado em metodologias ágeis, como o Desenvolvimento Orientado por Comportamento (BDD), para descrever cenários de teste de forma clara e estruturada. Ele ajuda a definir as condições iniciais, ações e resultados esperados de maneira compreensível e verificável.\nDocumentar os riscos relacionados a uma determinada história de usuário em um plano de teste para facilitar o teste baseado em riscos de uma determinada história de usuário.\n  Esta opção se refere ao uso de planos de teste para documentar riscos, o que é útil para testes baseados em riscos, mas não é a melhor maneira de documentar critérios de aceite. Os critérios de aceite são condições específicas que devem ser atendidas para que uma história de usuário seja aceita, não apenas uma lista de riscos.\nRealizar retrospectivas para determinar as necessidades reais dos stakeholders em relação a uma determinada história de usuário.\n  Retrospectivas são úteis para entender as necessidades dos stakeholders e melhorar processos, mas não são uma forma de documentar critérios de aceite. Elas são mais voltadas para a melhoria contínua e ajuste de processos.\nUsar a comunicação verbal para reduzir o risco de outras pessoas não entenderem os critérios de aceite.\n  A comunicação verbal pode ajudar na compreensão, mas não é uma forma eficaz de documentar critérios de aceite, pois a documentação precisa ser clara e acessível a todos os membros da equipe de forma consistente e verificável"
+    },
+    {
+      "id": 442,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Considere a seguinte história de usuário: “Como editor, quero revisar o conteúdo antes de ser publicado, para que eu possa garantir que a gramática esteja correta”, e seus critérios de aceite: O usuário pode fazer login no sistema de gerenciamento de conteúdo com o papel de 'Editor'; O editor pode visualizar as páginas de conteúdo existentes; O editor pode editar o conteúdo da página; O editor pode adicionar comentários de marcação; O editor pode salvar as alterações; O editor pode reatribuir a função de 'proprietário do conteúdo' para fazer atualizações. Qual dos seguintes é o MELHOR exemplo de um teste ATDD para essa história de usuário?",
+      "options": [
+        {
+          "option": "testar se o proprietário do conteúdo pode fazer login e fazer atualizações no conteúdo.",
+          "isCorrect": false
+        },
+        {
+          "option": "testar se o editor pode programar o conteúdo editado para publicação.",
+          "isCorrect": false
+        },
+        {
+          "option": "testar se o editor pode reatribuir a outro editor para fazer atualizações.",
+          "isCorrect": false
+        },
+        {
+          "option": "testar se o editor pode salvar o documento após excluir o conteúdo da página.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: testar se o editor pode salvar o documento após excluir o conteúdo da página.\nEste teste ATDD (Acceptance Test-Driven Development) foca em verificar uma funcionalidade crítica para o papel do editor, garantindo que as alterações possam ser salvas corretamente após a edição do conteúdo."
+    },
+    {
+      "id": 445,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual das seguintes afirmações DESCREVE MELHOR a diferença entre o teste de tabela de decisão e o teste de ramificação?",
+      "options": [
+        {
+          "option": "No teste de tabela de decisão, os casos de teste são derivados da especificação que descreve a lógica de negócios. No teste de ramificação, os casos de teste são baseados na antecipação de possíveis defeitos no código-fonte.",
+          "isCorrect": false
+        },
+        {
+          "option": "No teste de tabela de decisão, os casos de teste são independentes de como o software é implementado. No teste de ramificação, os casos de teste só podem ser criados após o design ou implementação do código.",
+          "isCorrect": true
+        },
+        {
+          "option": "No teste de tabela de decisão, os casos de teste são derivados das declarações de decisão no código. No teste de ramificação, os casos de teste são derivados do conhecimento do fluxo de controle do objeto de teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "No teste de tabela de decisão, os casos de teste são derivados do conhecimento do fluxo de controle do objeto de teste. No teste de ramificação, os casos de teste são derivados da especificação que descreve a lógica de negócios.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "Resposta correta: No teste de tabela de decisão, os casos de teste são independentes de como o software é implementado. No teste de ramificação, os casos de teste só podem ser criados após o design ou implementação do código.\n\nTeste de Tabela de Decisão: Este teste é uma técnica de caixa-preta baseado em especificações que descrevem a lógica de negócios e não depende de como o software é implementado. Ele utiliza tabelas para representar combinações de condições e ações, permitindo testar diferentes cenários de decisão.\n\nTeste de Ramificação: Este teste é uma técnica de caixa-branca que requer conhecimento do fluxo de controle do código. Os casos de teste são criados para cobrir as diferentes ramificações no código, o que só é possível após o design ou implementação do código."
+    },
+    {
+      "id": 446,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Clientes da cadeia de lava-rápidos TestWash têm cartões com um registro do número de lavagens que eles compraram até agora. O valor inicial é 0. Após entrar no lava-rápido, o sistema aumenta o número no cartão em um. Esse valor representa o número da lavagem atual. Com base nesse número, o sistema decide qual desconto o cliente tem direito. Para cada décima lavagem, o sistema oferece um desconto de 10%, e para cada vigésima lavagem, o sistema oferece mais um desconto de 40% (ou seja, um desconto total de 50%). Qual dos seguintes conjuntos de dados de entrada (entendidos como os números da lavagem atual) alcança a cobertura de partição de equivalência mais alta?",
+      "options": [
+        {
+          "option": "19, 20, 30",
+          "isCorrect": true
+        },
+        {
+          "option": "1, 10, 50",
+          "isCorrect": false
+        },
+        {
+          "option": "11, 12, 20",
+          "isCorrect": false
+        },
+        {
+          "option": "10, 29, 30, 31",
+          "isCorrect": false
+        }
+      ],
+      "comments": "Sua resposta está correta. A resposta correta é: 19, 20, 30\n\nEstá correto. 19 cobre a partição 'sem desconto', 20 cobre a partição 'desconto de 50%', e 30 cobre a partição 'desconto de 10%'. Esses três valores cobrem todas as três partições de equivalência válidas."
+    },
+    {
+      "id": 447,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um formulário que verifica a correção do comprimento da senha fornecida como entrada. O formulário aceita uma senha com o comprimento correto e rejeita uma senha que é muito curta ou muito longa. O comprimento da senha é considerado correto se tiver entre 6 e 12 caracteres, inclusivamente. Caso contrário, é considerado incorreto. Inicialmente, o formulário está vazio (comprimento da senha = 0). Você aplica a análise de valores de fronteira à variável 'comprimento da senha'. Seu conjunto de casos de teste alcança 100% de cobertura de valores de fronteira de 2 valores. A equipe decidiu que, devido ao alto risco desse componente, casos de teste devem ser adicionados para garantir 100% de cobertura de valores de fronteira de 3 valores. Quais comprimentos de senha adicionais devem ser testados para alcançar isso?",
+      "options": [
+        {
+          "option": "7, 11",
+          "isCorrect": false
+        },
+        {
+          "option": "4, 5, 13, 14",
+          "isCorrect": false
+        },
+        {
+          "option": "1, 4, 7, 11, 14",
+          "isCorrect": true
+        },
+        {
+          "option": "1, 5, 13",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 1, 4, 7, 11, 14\n\nO BVA de 2 valores nessa questao seria:\n[0] Partiçao invalida menor [5,6] Partiçao valida [12,13] Partiçao invalida maior\nPor se tratar de um componente de alto risco foi utilizado BVA de 3 valores em todas as partiçoes o que gerou um efeito de 4 valores limites sequencias:\n[0,1] Partiçao invalida menor [4,5,6,7] Partiçao valida [11,12,13,14] Partiçao invalida maior"
+    },
+    {
+      "id": 448,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "A tabela de decisão a seguir contém as regras para determinar o risco de aterosclerose. \nRegra 1 muito baixo Colesterol (mg/dl) ≤ 124 Pressão sanguínea (mmHg) ≤ 140 \nRegra 2 baixo Colesterol (mg/dl) ≤ 124 Pressão sanguínea (mmHg) > 140 \nRegra 3 médio Colesterol (mg/dl) 125 - 200 Pressão sanguínea (mmHg) ≤ 140 \nRegra 4 alto Colesterol (mg/dl) 125 - 200 Pressão sanguínea (mmHg) > 140 \nRegra 5 muito alto Colesterol (mg/dl) ≥ 201 Pressão sanguínea (mmHg) - \nVocê projetou os casos de teste com os seguintes dados de entrada de teste: \nTC1: Colesterol = 125 mg/dl Pressão sanguínea = 141 mmHg \nTC2: Colesterol = 200 mg/dl Pressão sanguínea = 201 mmHg \nTC3: Colesterol = 124 mg/dl Pressão sanguínea = 201 mmHg \nTC4: Colesterol = 109 mg/dl Pressão sanguínea = 200 mmHg \nTC5: Colesterol = 201 mg/dl Pressão sanguínea = 140 mmHg \nQual é a cobertura da tabela de decisão alcançada por esses casos de teste?",
+      "options": [
+        {
+          "option": "100%",
+          "isCorrect": false
+        },
+        {
+          "option": "80%",
+          "isCorrect": false
+        },
+        {
+          "option": "40%",
+          "isCorrect": false
+        },
+        {
+          "option": "60%",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: 60%\n\nApenas as regras 2, 4 e 5 foram cobertas pelos casos de teste.\nCada regra equivale 20%."
+    },
+    {
+      "id": 449,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Um sistema de armazenamento pode armazenar até três elementos e é modelado pelo seguinte diagrama de transição de estados. A variável N representa o número de elementos atualmente armazenados.\nAqui teria uma imagem\n Qual dos seguintes casos de teste, representados como sequências de eventos, alcança o maior nível de cobertura de transições válidas?",
+      "options": [
+        {
+          "option": "Add, Add, Add, Remove, Add",
+          "isCorrect": false
+        },
+        {
+          "option": "Add, Add, Add, Add, Remove, Remove",
+          "isCorrect": false
+        },
+        {
+          "option": "Add, Remove, Add, Add, Add",
+          "isCorrect": false
+        },
+        {
+          "option": "Add, Add, Add, Remove, Remove",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Add, Add, Add, Remove, Remove\nEsta sequência cobre todas as transições válidas sem repetir transições desnecessárias, garantindo a cobertura máxima de transições."
+    },
+    {
+      "id": 450,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você executou dois casos de teste, T1 e T2, no mesmo código. O teste T1 alcançou 40% de cobertura de instruções e o teste T2 alcançou 65% de cobertura de instruções. Qual das seguintes afirmações deve ser necessariamente verdadeira?",
+      "options": [
+        {
+          "option": "Existe pelo menos uma instrução que deve ter sido executada tanto por T1 quanto por T2",
+          "isCorrect": true
+        },
+        {
+          "option": "O conjunto de testes composto pelos testes T1 e T2 alcança 105% de cobertura de instruções",
+          "isCorrect": false
+        },
+        {
+          "option": "O conjunto de testes composto pelos testes T1 e T2 alcança cobertura total de branches",
+          "isCorrect": false
+        },
+        {
+          "option": "Pelo menos 5% das instruções no código em teste são não executáveis",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Existe pelo menos uma instrução que deve ter sido executada tanto por T1 quanto por T2\nSe as instruções executadas por T1 e T2 fossem disjuntas, a cobertura do conjunto de testes {T1, T2} seria de 105%, o que é impossível. Portanto, pelo menos 5% das instruções executáveis devem ter sido executadas tanto por T1 quanto por T2."
+    },
+    {
+      "id": 451,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Seja a métrica de cobertura de ramificação definida como BCov=X/Y×100. \nO que X e Y representam nesta fórmula?",
+      "options": [
+        {
+          "option": "X = número de resultados de decisões exercidos pelos casos de teste\nY = número total de resultados de decisão no código",
+          "isCorrect": false
+        },
+        {
+          "option": "X = número de ramificações exercidas pelos casos de teste\nY = número total de ramificações no código",
+          "isCorrect": true
+        },
+        {
+          "option": "X = número de ramificações condicionais exercidos pelos casos de teste\nY = número total de ramificações no código",
+          "isCorrect": false
+        },
+        {
+          "option": "X = número de ramificações condicionais exercidas pelos casos de teste\nY = número total de resultados de decisão no código",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: X = número de ramificações exercidas pelos casos de teste\nY = número total de ramificações no código\nEsta definição considera todas as ramificações, tanto condicionais quanto incondicionais, para calcular a cobertura de ramificação."
+    },
+    {
+      "id": 452,
+      "isMultipleChoice": true,
+      "tag": ["Capítulo 4"],
+      "question": "Quais DUAS das seguintes afirmações fornecem a MELHOR justificativa para usar testes exploratórios?",
+      "options": [
+        {
+          "option": "Os testadores têm experiência no domínio de negócios e têm boas habilidades analíticas",
+          "isCorrect": true
+        },
+        {
+          "option": "Os testadores não foram alocados tempo suficiente para o design e execução de testes",
+          "isCorrect": true
+        },
+        {
+          "option": "Os testadores são membros de uma equipe ágil e têm boas habilidades de programação",
+          "isCorrect": false
+        },
+        {
+          "option": "A estratégia de teste existente requer que os testadores usem técnicas formais de teste caixa-preta",
+          "isCorrect": false
+        },
+        {
+          "option": "A especificação é escrita em uma linguagem formal que pode ser processada por uma ferramenta",
+          "isCorrect": false
+        }
+      ],
+      "comments": "As respostas corretas são: Os testadores não foram alocados tempo suficiente para o design e execução de testes, Os testadores têm experiência no domínio de negócios e têm boas habilidades analíticas\n\nTestes exploratórios são mais eficazes quando os testadores têm experiência no domínio e boas habilidades analíticas, pois isso permite que eles explorem o sistema de forma mais eficiente e identifiquem áreas problemáticas rapidamente.\n\nQuando há pressão de tempo e não há tempo suficiente para o design e execução de testes formais, os testes exploratórios permitem que os testadores avaliem rapidamente o sistema e identifiquem defeitos potenciais."
+    },
+    {
+      "id": 453,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual dos seguintes se encaixa MELHOR como um elemento da lista de verificação usada no teste baseado em lista de verificação?",
+      "options": [
+        {
+          "option": "“A cobertura de declarações alcançada excede 85%”",
+          "isCorrect": false
+        },
+        {
+          "option": "“As mensagens de erro são escritas em uma linguagem que o usuário pode entender”",
+          "isCorrect": true
+        },
+        {
+          "option": "“O desenvolvedor cometeu um erro ao implementar o código”",
+          "isCorrect": false
+        },
+        {
+          "option": "“O programa funciona corretamente em relação aos requisitos funcionais e não funcionais”",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: “As mensagens de erro são escritas em uma linguagem que o usuário pode entender”\n\nListas de verificação são usadas para garantir que aspectos específicos e importantes do sistema sejam verificados, como a clareza das mensagens de erro para o usuário."
+    },
+    {
+      "id": 454,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Sua equipe analisa a seguinte história do usuário para definir os critérios de aceitação: \nComo cliente registrado, quero poder visualizar meus pedidos anteriores no site da empresa, para que eu possa acompanhar minhas compras. \nQual dos seguintes casos de teste NÃO será relevante para esta história do usuário?",
+      "options": [
+        {
+          "option": "Entrada: o cliente clica no botão \"Ordenar ascendente\" na tela de histórico de pedidos Saída esperada: o sistema mostra o histórico de pedidos ordenado pelo número do pedido em ordem ascendente",
+          "isCorrect": false
+        },
+        {
+          "option": "Entrada: o cliente faz login em sua conta no site e clica no botão \"ver histórico de pedidos\" Saída esperada: o sistema mostra uma lista de todos os pedidos anteriores do cliente, incluindo a data, número do pedido e custo total",
+          "isCorrect": false
+        },
+        {
+          "option": "Entrada: um cliente não registrado se registra como novo cliente com um endereço de e-mail válido",
+          "isCorrect": true
+        },
+        {
+          "option": "Entrada: o cliente clica em um pedido na lista de pedidos Saída esperada: o sistema exibe os itens individuais comprados, juntamente com seus preços e quantidades",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Entrada: um cliente não registrado se registra como novo cliente com um endereço de e-mail válido\n\nEste caso de teste não é relevante para a história do usuário, pois a história se concentra em clientes registrados visualizando seus pedidos anteriores, não em novos registros de clientes."
+    },
+    {
+      "id": 455,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Qual é a principal diferença entre as técnicas de teste caixa-preta e as técnicas de teste baseadas em experiência?",
+      "options": [
+        {
+          "option": "A base de teste",
+          "isCorrect": true
+        },
+        {
+          "option": "O objeto de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "O ciclo de vida de desenvolvimento de software (SDLC) no qual a técnica de teste pode ser usada",
+          "isCorrect": false
+        },
+        {
+          "option": "O nível de teste no qual a técnica de teste é usada",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A base de teste\nAs técnicas de teste caixa-preta são baseadas em especificações e requisitos do sistema, sem considerar a estrutura interna do software. Já as técnicas de teste baseadas em experiência dependem do conhecimento e da experiência dos testadores, utilizando suposições sobre onde os defeitos podem estar;\n\nO objeto de teste: Ambas as técnicas podem ser aplicadas ao mesmo objeto de teste, mas diferem na abordagem e nos critérios utilizados para criar casos de teste;\n\nO ciclo de vida de desenvolvimento de software (SDLC) no qual a técnica de teste pode ser usada: Ambas as técnicas podem ser usadas em diferentes fases do SDLC, dependendo das necessidades do projeto;\n\nO nível de teste no qual a técnica de teste é usada: As técnicas de teste caixa-preta e baseadas em experiência podem ser aplicadas em vários níveis de teste, como teste de sistema ou teste de aceitação, dependendo do contexto e dos objetivos do teste."
+    },
+    {
+      "id": 456,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está testando um validador de PIN, que aceita PINs válidos e rejeita PINs inválidos. Um PIN é uma sequência de dígitos. \nUm PIN é válido se consistir de quatro dígitos, sendo pelo menos dois deles diferentes. Você identificou as seguintes partições de equivalência válidas: Variável: Comprimento do código PIN\n\nA partição 'comprimento correto' - PINs de quatro dígitos\nA partição 'comprimento incorreto' - PINs com comprimento diferente de 4 Variável: Número de dígitos diferentes\nA partição 'número de dígitos diferentes correto' - PINs com pelo menos dois dígitos diferentes\nA partição 'número de dígitos diferentes incorreto' - PINs com todos os dígitos iguais\nQual dos seguintes é um conjunto MÍNIMO de dados de entrada que cobre todas as partições de equivalência identificadas?",
+      "options": [
+        {
+          "option": "1, 123, 1111, 1234",
+          "isCorrect": false
+        },
+        {
+          "option": "112, 1111, 1234, 123456",
+          "isCorrect": true
+        },
+        {
+          "option": "12, 112, 1112, 11112",
+          "isCorrect": false
+        },
+        {
+          "option": "1, 111, 1111, 11111",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 112, 1111, 1234, 123456\nEste conjunto cobre todas as partições de equivalência identificadas: comprimento correto e incorreto, e número de dígitos diferentes correto e incorreto."
+    },
+    {
+      "id": 457,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Um desenvolvedor foi solicitado a implementar a seguinte regra de negócio:\n\nENTRADA: valor (número inteiro)\nSE (valor ≤ 100 OU valor ≥ 200) ENTÃO escreva “valor incorreto”\nSENÃO escreva “valor OK”\n\nVocê projeta os casos de teste usando análise de valores limite de 2 valores.\nQual dos seguintes conjuntos de entradas de teste alcança a maior cobertura?",
+      "options": [
+        {
+          "option": "100, 150, 200, 201",
+          "isCorrect": false
+        },
+        {
+          "option": "99, 100, 200, 201",
+          "isCorrect": false
+        },
+        {
+          "option": "98, 99, 100, 101",
+          "isCorrect": false
+        },
+        {
+          "option": "101, 150, 199, 200",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: 101, 150, 199, 200\nEste conjunto de entradas de teste cobre os valores limite de 2 valores para a regra de negócio, garantindo a maior cobertura possível."
+    },
+    {
+      "id": 460,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você está projetando casos de teste com base no seguinte diagrama de transição de estados: [image Q460] Qual é o número MÍNIMO de casos de teste necessários para alcançar uma cobertura de transições válidas de 100%?",
+      "options": [
+        {
+          "option": "3",
+          "isCorrect": true
+        },
+        {
+          "option": "2",
+          "isCorrect": false
+        },
+        {
+          "option": "5",
+          "isCorrect": false
+        },
+        {
+          "option": "6",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 3\nPara alcançar 100% de cobertura de transições válidas, é necessário projetar casos de teste que cubram todas as transições possíveis no diagrama de estados. Neste caso, três casos de teste são suficientes para cobrir todas as transições sem repetições desnecessárias."
+    },
+    {
+      "id": 461,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Você deseja aplicar teste de branch ao código representado pelo seguinte grafo de fluxo de controle. [image Q461] Quantos itens de cobertura você precisa testar?",
+      "options": [
+        {
+          "option": "2",
+          "isCorrect": true
+        },
+        {
+          "option": "4",
+          "isCorrect": false
+        },
+        {
+          "option": "8",
+          "isCorrect": false
+        },
+        {
+          "option": "7",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 2\nO teste de branch requer que cada decisão no código seja avaliada em ambas as direções possíveis (verdadeira e falsa). Neste caso, dois itens de cobertura são suficientes para garantir que todas as ramificações do grafo de fluxo de controle sejam testadas."
+    },
+    {
+      "id": 462,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Como o teste de caixa branca pode ser útil para apoiar o teste de caixa preta?",
+      "options": [
+        {
+          "option": "As medidas de cobertura de caixa branca podem ajudar os testadores a avaliar os testes de caixa preta em termos da cobertura de código alcançada por esses testes de caixa preta",
+          "isCorrect": true
+        },
+        {
+          "option": "A análise de cobertura de caixa branca pode ajudar os testadores a identificar fragmentos inacessíveis do código-fonte",
+          "isCorrect": false
+        },
+        {
+          "option": "O teste de ramificação subsume técnicas de teste de caixa preta, então alcançar cobertura de ramificação completa garante alcançar cobertura completa de qualquer técnica de caixa preta",
+          "isCorrect": false
+        },
+        {
+          "option": "As técnicas de teste de caixa branca podem fornecer itens de cobertura para técnicas de caixa preta",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: As medidas de cobertura de caixa branca podem ajudar os testadores a avaliar os testes de caixa preta em termos da cobertura de código alcançada por esses testes de caixa preta\nAs medidas de cobertura de caixa branca, como a cobertura de instrução ou de ramificação, permitem que os testadores verifiquem se os casos de teste de caixa preta estão exercitando adequadamente o código subjacente. Isso ajuda a identificar áreas do código que não estão sendo testadas e a melhorar a eficácia dos testes de caixa preta."
+    },
+    {
+      "id": 463,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 4"],
+      "question": "Considerando a seguinte lista: Entrada correta não aceita, Entrada incorreta aceita, Formato de saída errado, Divisão por zero. Qual técnica de teste é MAIS PROVAVELMENTE usada pelo testador que usa esta lista ao realizar testes?",
+      "options": [
+        {
+          "option": "Teste exploratório",
+          "isCorrect": false
+        },
+        {
+          "option": "Ataque de falha",
+          "isCorrect": true
+        },
+        {
+          "option": "Teste baseado em lista de verificação",
+          "isCorrect": false
+        },
+        {
+          "option": "Análise de valor limite",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Ataque de falha\nO ataque de falha é uma técnica que envolve a criação ou aquisição de uma lista de possíveis erros, defeitos e falhas, e a modelagem de testes que identificam os defeitos associados a esses erros, expõem os defeitos ou causam as falhas. A lista fornecida, que inclui itens como \"Entrada correta não aceita\" e \"Divisão por zero\", é típica de um ataque de falha, onde o testador está focado em identificar falhas específicas que podem ocorrer no sistema."
+    },
+
     //---Perguntas Variadas----
     {
       "id": 1,
       "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
+      "tag": ["Variado"],
       "question": "Cobertura de código é usada para medir o que?",
       "options": [
         { "option": "Defeitos", "isCorrect": false },
@@ -2771,7 +4203,7 @@ const quizData = {
     {
       "id": 2,
       "isMultipleChoice": false,
-      "tag": ["Gerenciamento das Atividades de Teste"],
+      "tag": ["Variado"],
       "question": "Verificação e Validação independente é:",
       "options": [
         { "option": "Feita por uma empresa de fora, que não influência o projeto", "isCorrect": true },
@@ -2782,22 +4214,9 @@ const quizData = {
       "comments": "A Verificação e Validação independentes são feitas por uma equipe externa para garantir uma avaliação imparcial do software. Isso reduz o risco de viés e melhora a qualidade do produto."
     },
     {
-      "id": 3,//-------------------------------------------------------------------------------------------verificar
-      "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
-      "question": "Cobertura de sentença (comando) não irá checar:",
-      "options": [
-        { "option": "Sentenças (comandos) que faltam", "isCorrect": false },
-        { "option": "Desvios não utilizados", "isCorrect": true },
-        { "option": "Código morto", "isCorrect": false },
-        { "option": "Sentenças (comandos) não utilizadas", "isCorrect": false }
-      ],
-      "comments": "A cobertura de sentença mede quais linhas do código foram executadas, mas não verifica se todas as condições de desvio (como if-else) foram testadas. Isso significa que caminhos lógicos alternativos podem não ser cobertos, mesmo que todas as linhas tenham sido executadas."
-    },
-    {
       "id": 4,
       "isMultipleChoice": false,
-      "tag": ["Testes ao longo do ciclo de Vida de Desenvolvimento de Software"],
+      "tag": ["Variado"],
       "question": "Os casos de teste de aceitação são baseados no que?",
       "options": [
         { "option": "Requisitos", "isCorrect": true },
@@ -2810,7 +4229,7 @@ const quizData = {
     {
       "id": 5,
       "isMultipleChoice": false,
-      "tag": ["Gerenciamento das Atividades de Teste"],
+      "tag": ["Variado"],
       "question": "Quanto teste é suficiente?",
       "options": [
         { "option": "Esta questão é impossível de responder", "isCorrect": false },
@@ -2823,7 +4242,7 @@ const quizData = {
     {
       "id": 6,
       "isMultipleChoice": false,
-      "tag": ["Fundamentos de Teste"],
+      "tag": ["Variado"],
       "question": "Uma técnica de teste comum durante o teste de componente é?",
       "options": [
         { "option": "Teste de comando e desvio", "isCorrect": true },
@@ -2836,7 +4255,7 @@ const quizData = {
     {
       "id": 7,
       "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
+      "tag": ["Variado"],
       "question": "Quantos casos de testes são necessários para cobrir todas as possibilidades de declarações (caminhos) para o seguinte fragmento de código? Supondo que as duas condições são independentes entre elas.\nif (Condition 1)\nthen statement 1\nelse statement 2\nfi\nif (Condition 2)\nthen statement 3\nfi",
       "options": [
         { "option": "2 casos", "isCorrect": false },
@@ -2849,7 +4268,7 @@ const quizData = {
     {
       "id": 8,
       "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
+      "tag": ["Variado"],
       "question": "Dado o seguinte programa\nIF X < Y\nTHEN Statement 1;\nELSE IF Y >= Z\nTHEN Statement 2;\nEND\nA complexidade ciclomática de McCabe é",
       "options": [
         { "option": "2", "isCorrect": false },
@@ -2862,7 +4281,7 @@ const quizData = {
     {
       "id": 11,
       "isMultipleChoice": false,
-      "tag": ["Teste Estático"],
+      "tag": ["Variado"],
       "question": "Em uma reunião de revisão o moderador tem qual papel?",
       "options": [
         { "option": "Tomar alguns minutos da reunião", "isCorrect": false },
@@ -2875,7 +4294,7 @@ const quizData = {
     {
       "id": 12,
       "isMultipleChoice": false,
-      "tag": ["Fundamentos de Teste"],
+      "tag": ["Variado"],
       "question": "Escolha a melhor definição de qualidade:",
       "options": [
         { "option": "Qualidade é um trabalho", "isCorrect": false },
@@ -2888,7 +4307,7 @@ const quizData = {
     {
       "id": 13,
       "isMultipleChoice": false,
-      "tag": ["Fundamentos de Teste"],
+      "tag": ["Variado"],
       "question": "Qual a melhor definição para mascaramento de defeito (faltas)?",
       "options": [
         { "option": "Um defeito escondendo outro defeito", "isCorrect": true },
@@ -2901,7 +4320,7 @@ const quizData = {
     {
       "id": 14,
       "isMultipleChoice": false,
-      "tag": ["Fundamentos de Teste"],
+      "tag": ["Variado"],
       "question": "Uma das principais razões pela qual os desenvolvedores têm dificuldade de testar o seu próprio trabalho é:",
       "options": [
         { "option": "Falta de documentação técnica", "isCorrect": false },
@@ -2914,7 +4333,7 @@ const quizData = {
     {
       "id": 15,
       "isMultipleChoice": false,
-      "tag": ["Testes ao longo do ciclo de Vida de Desenvolvimento de Software"],
+      "tag": ["Variado"],
       "question": "Durante o processo de desenvolvimento de software, qual é o momento do processo de teste começar?",
       "options": [
         { "option": "Quando o código estiver pronto", "isCorrect": false },
@@ -2925,22 +4344,9 @@ const quizData = {
       "comments": "O processo de teste deve começar o mais cedo possível, preferencialmente quando os requisitos do software são aprovados. Isso permite identificar problemas desde as fases iniciais, reduzindo custos e retrabalho."
     },
     {
-      "id": 16,//-----------------------------------------------------------------------------------verificar
-      "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
-      "question": "Uma forma de cobertura lógica incorreta é:",
-      "options": [
-        { "option": "Cobertura de sentença (comando)", "isCorrect": true },
-        { "option": "Cobertura de pólo", "isCorrect": false },
-        { "option": "Cobertura de condição", "isCorrect": false },
-        { "option": "Cobertura de caminho", "isCorrect": false }
-      ],
-      "comments": "A cobertura de sentença é considerada uma forma incorreta de cobertura lógica, pois ela apenas verifica se cada linha de código foi executada, mas não garante que todas as condições lógicas foram testadas corretamente."
-    },
-    {
       "id": 17,
       "isMultipleChoice": false,
-      "tag": ["Fundamentos de Teste"],
+      "tag": ["Variado"],
       "question": "Qual das seguintes características de qualidade não faz parte da Norma ISO 9126?",
       "options": [
         { "option": "Funcionalidade", "isCorrect": false },
@@ -2953,7 +4359,7 @@ const quizData = {
     {
       "id": 18,
       "isMultipleChoice": false,
-      "tag": ["Teste Estático"],
+      "tag": ["Variado"],
       "question": "Para testar uma função, o programador precisa escrever um ________, que chama a função a ser testada e passa os dados do teste.",
       "options": [
         { "option": "Stub", "isCorrect": false },
@@ -2966,7 +4372,7 @@ const quizData = {
     {
       "id": 19,
       "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
+      "tag": ["Variado"],
       "question": "Qual das seguintes afirmações está correta, quanto ao teste de valor limite?",
       "options": [
         { "option": "É o mesmo que o teste de Partição de Equivalência", "isCorrect": false },
@@ -2979,7 +4385,7 @@ const quizData = {
     {
       "id": 20,
       "isMultipleChoice": false,
-      "tag": ["Análise e Modelagem de Teste"],
+      "tag": ["Variado"],
       "question": "Um campo de entrada (input field) referente ao ano de aniversário aceita valores de 1900 até 2004. Utilizando a análise do valor limite o teste usaria quais valores?",
       "options": [
         { "option": "0,1900,2004,2005", "isCorrect": false },
@@ -2992,7 +4398,7 @@ const quizData = {
     {
       "id": 21,
       "isMultipleChoice": false,
-      "tag": ["Fundamentos de Teste"],
+      "tag": ["Variado"],
       "question": "Quais dos seguintes testes não é um teste do tipo funcional?",
       "options": [
         { "option": "Teste de sistema", "isCorrect": false },
@@ -3005,7 +4411,7 @@ const quizData = {
     {
       "id": 22,
       "isMultipleChoice": false,
-      "tag": ["Gerenciamento das Atividades de Teste"],
+      "tag": ["Variado"],
       "question": "Quais das seguintes ferramentas seriam utilizadas na automação do teste de regressão?",
       "options": [
         { "option": "Uma verificadora de dados", "isCorrect": false },
