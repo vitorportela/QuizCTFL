@@ -160,6 +160,7 @@ function updateStatus() {
 function loadNextQuestion() {
   const question = getRandomQuestion(selectedTags);
   displayQuestion(question);
+  focarElemento(document.getElementById('cabecalho'));
 }
 
 // Carregamentos iniciais
@@ -186,6 +187,16 @@ function updateTimer() {
   document.getElementById('timer').textContent = `${formatTime(hrs)}:${formatTime(mins)}:${formatTime(secs)}`;
 }
 setInterval(updateTimer, 1000);
+
+//Acessibilidade
+function focarElemento(input){
+  input.setAttribute('tabindex', '-1')
+  setTimeout(function() {
+      input.setAttribute('tabindex', '0');
+      input.focus();
+      input.setAttribute('tabindex', '-1');
+  },200);
+}
 
 // Inicializa o quiz
 inicialLoad();
