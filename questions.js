@@ -2957,31 +2957,6 @@ const quizData = {
       "comments": "A resposta correta é: Condição1 = NÃO, Condição2 = SIM, Condição3 = NÃO, Ação = NÃO\n\nA tabela de decisão atual cobre as seguintes situações:\n\nT1: Emprego por mais de 1 ano (SIM), Objetivo acordado (NÃO), Alcançado o objetivo (NÃO), Pagamento de bônus (NÃO)\n\nT2: Emprego por mais de 1 ano (NÃO), Objetivo acordado (NÃO), Alcançado o objetivo (NÃO), Pagamento de bônus (NÃO)\n\nT3: Emprego por mais de 1 ano (NÃO), Objetivo acordado (SIM), Alcançado o objetivo (SIM), Pagamento de bônus (NÃO)\n\nT4: Emprego por mais de 1 ano (SIM), Objetivo acordado (SIM), Alcançado o objetivo (SIM), Pagamento de bônus (SIM)\n\nO caso de teste que está faltando e pode ocorrer na vida real é quando um funcionário não está na empresa por mais de um ano, tem um objetivo acordado, mas não alcançou o objetivo. Neste caso, a ação correta seria não pagar o bônus."
     },
     {
-      "id": 410,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Qual das seguintes afirmações sobre o diagrama de transição de estado dado e tabela de casos de teste é VERDADEIRA?",
-      "options": [
-        {
-          "option": "Os casos de teste em questão representam pares de transições no diagrama de transição estatal",
-          "isCorrect": false
-        },
-        {
-          "option": "Os casos de teste em questão cobrem transições válidas e inválidas no diagrama de transição estatal",
-          "isCorrect": false
-        },
-        {
-          "option": "Os casos de teste em questão representam todas as transições válidas possíveis no diagrama de transição estatal",
-          "isCorrect": true
-        },
-        {
-          "option": "Os casos de teste em questão representam algumas das transições válidas no diagrama de transição estatal",
-          "isCorrect": false
-        }
-      ],
-      "comments": "A resposta correta é: Os casos de teste em questão representam todas as transições válidas possíveis no diagrama de transição estatal.\nComo se trata de um sistema simples, todas as transições possíveis que poderiam existir estão sendo representadas, normalmente um diagrama não representa transições inválidas."
-    },
-    {
       "id": 411,
       "isMultipleChoice": false,
       "tag": ["Capítulo 4"],
@@ -3130,31 +3105,6 @@ const quizData = {
         }
       ],
       "comments": "A resposta correta é: 10°C, 16°C, 19°C, 22°C, 23°C\n\nUma pergunta complexa que não cobra uma resposta totalmente correta mas uma resposta que MAIS atenda.\n\nA resposta 10°C, 16°C, 19°C, 22°C, 23°C utiliza BVA e possui uma cobertura maior que as outras;\n\n0°C, 11°C, 20°C, 22°C, 23°C Não tende os critérios BVA pois 0°C não é valor limite;\n\n9°C, 15°C, 19°C, 23°C, 100°C Não tende os critérios BVA pois 9°C e 100°C não são valores limites;\n\n14°C, 15°C, 18°C, 19°C, 19°C, 21°C, 22°C Está utilizando algo parecido com BVA de 3 valores mas está cobrindo apenas 3 casos de uso."
-    },
-    {
-      "id": 418,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Qual das seguintes sequências de transições proporciona o mais alto nível de cobertura de transição para o modelo?",
-      "options": [
-        {
-          "option": "WAIT → TRICKLE → WAIT → OFF → WAIT → TRICKLE → CHARGE → LOW → CHARGE",
-          "isCorrect": false
-        },
-        {
-          "option": "OFF → WAIT → OFF → WAIT → TRICKLE → CHARGE → HIGH → CHARGE → LOW",
-          "isCorrect": false
-        },
-        {
-          "option": "WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT",
-          "isCorrect": true
-        },
-        {
-          "option": "HIGH → CHARGE → LOW → CHARGE → TRICKLE → WAIT → TRICKLE → WAIT → TRICKLE",
-          "isCorrect": false
-        }
-      ],
-      "comments": "A resposta correta é: WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT\nÉ a única opção onde não existe repetição de transições."
     },
     {
       "id": 419,
@@ -3457,31 +3407,6 @@ const quizData = {
       "comments": "A resposta correta é: 0.4, 0.5, 0.6, 24.9, 25.0, 25.1\nEste conjunto cobre os valores limite inferiores e superiores, incluindo valores imediatamente abaixo e acima dos limites válidos."
     },
     {
-      "id": 431,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Considere o seguinte diagrama de transição de estado apenas para uma bomba de gasolina sem supervisão, com cartão de crédito: [Imagem Q432] Suponha que você queira desenvolver o número mínimo de testes para cobrir cada transição no diagrama de transição de estado. Suponha ainda que cada teste deve começar no estado inicial, esperando pelo cliente, e cada teste termina quando uma transição chega ao estado inicial. Quantos testes você precisa?",
-      "options": [
-        {
-          "option": "4",
-          "isCorrect": true
-        },
-        {
-          "option": "Infinito",
-          "isCorrect": false
-        },
-        {
-          "option": "7",
-          "isCorrect": false
-        },
-        {
-          "option": "1",
-          "isCorrect": false
-        }
-      ],
-      "comments": "A resposta correta é: 4\nUma maneira de descobrir o número mínimo de testes para cobrir cada transição, que funciona na maioria das vezes, é contar quantas transições estão retornando ao ponto inicial. No caso da imagem, 4 transições retornam para o início."
-    },
-    {
       "id": 432,
       "isMultipleChoice": false,
       "tag": ["Capítulo 4"],
@@ -3581,31 +3506,7 @@ const quizData = {
       ],
       "comments": "A resposta correta é: 50%"
     },
-    {
-      "id": 436,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Você testa um sistema cujo ciclo de vida é modelado pelo diagrama de transição de estado mostrado abaixo. O sistema começa no estado INIT e termina sua operação no estado OFF. Qual é o número MÍNIMO de casos de teste para obter uma cobertura de transições válida?",
-      "options": [
-        {
-          "option": "2",
-          "isCorrect": false
-        },
-        {
-          "option": "7",
-          "isCorrect": false
-        },
-        {
-          "option": "4",
-          "isCorrect": false
-        },
-        {
-          "option": "3",
-          "isCorrect": true
-        }
-      ],
-      "comments": "A resposta correta é: 3\nPara cobrir todas as transições válidas no diagrama de transição de estado, são necessários 3 casos de teste, garantindo que cada transição seja exercitada pelo menos uma vez."
-    },
+
     {
       "id": 437,
       "isMultipleChoice": false,
@@ -3631,11 +3532,13 @@ const quizData = {
       ],
       "comments": "A resposta correta é: Cada instrução no código que contém um defeito foi executada pelo menos uma vez.\nIsso é verdadeiro, pois atingir 100% de cobertura de instrução significa que todas as instruções executáveis no código foram executadas pelo menos uma vez, o que inclui aquelas que podem conter defeitos.\n Cada caminho no código foi executado pelo menos uma vez: Isso não é garantido apenas com cobertura de instrução, pois a cobertura de instrução não assegura que todas as combinações de caminhos (ou fluxos de controle) foram testadas;\n Qualquer conjunto de testes que contenha mais casos de teste do que o seu conjunto de testes também alcançará 100% de cobertura de instrução: Isso não é necessariamente verdadeiro, pois a quantidade de casos de teste não garante a cobertura de instrução; depende de quais instruções os casos de teste exercitam;\nCada combinação de valores de entrada foi testada pelo menos uma vez: Isso não é garantido pela cobertura de instrução, pois a cobertura de instrução não considera todas as combinações possíveis de valores de entrada."
     },
+    
     {
       "id": 438,
       "isMultipleChoice": false,
       "tag": ["Capítulo 4"],
       "question": "Qual das opções a seguir NÃO é verdadeira para testes caixa-branca?",
+
       "options": [
         {
           "option": "As métricas de cobertura caixa-branca podem ajudar a identificar testes adicionais para aumentar a cobertura do código.",
@@ -3857,31 +3760,6 @@ const quizData = {
       "comments": "A resposta correta é: 60%\n\nApenas as regras 2, 4 e 5 foram cobertas pelos casos de teste.\nCada regra equivale 20%."
     },
     {
-      "id": 449,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Um sistema de armazenamento pode armazenar até três elementos e é modelado pelo seguinte diagrama de transição de estados. A variável N representa o número de elementos atualmente armazenados.\nAqui teria uma imagem\n Qual dos seguintes casos de teste, representados como sequências de eventos, alcança o maior nível de cobertura de transições válidas?",
-      "options": [
-        {
-          "option": "Add, Add, Add, Remove, Add",
-          "isCorrect": false
-        },
-        {
-          "option": "Add, Add, Add, Add, Remove, Remove",
-          "isCorrect": false
-        },
-        {
-          "option": "Add, Remove, Add, Add, Add",
-          "isCorrect": false
-        },
-        {
-          "option": "Add, Add, Add, Remove, Remove",
-          "isCorrect": true
-        }
-      ],
-      "comments": "A resposta correta é: Add, Add, Add, Remove, Remove\nEsta sequência cobre todas as transições válidas sem repetir transições desnecessárias, garantindo a cobertura máxima de transições."
-    },
-    {
       "id": 450,
       "isMultipleChoice": false,
       "tag": ["Capítulo 4"],
@@ -4086,56 +3964,6 @@ const quizData = {
       "comments": "A resposta correta é: 101, 150, 199, 200\nEste conjunto de entradas de teste cobre os valores limite de 2 valores para a regra de negócio, garantindo a maior cobertura possível."
     },
     {
-      "id": 460,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Você está projetando casos de teste com base no seguinte diagrama de transição de estados: [image Q460] Qual é o número MÍNIMO de casos de teste necessários para alcançar uma cobertura de transições válidas de 100%?",
-      "options": [
-        {
-          "option": "3",
-          "isCorrect": true
-        },
-        {
-          "option": "2",
-          "isCorrect": false
-        },
-        {
-          "option": "5",
-          "isCorrect": false
-        },
-        {
-          "option": "6",
-          "isCorrect": false
-        }
-      ],
-      "comments": "A resposta correta é: 3\nPara alcançar 100% de cobertura de transições válidas, é necessário projetar casos de teste que cubram todas as transições possíveis no diagrama de estados. Neste caso, três casos de teste são suficientes para cobrir todas as transições sem repetições desnecessárias."
-    },
-    {
-      "id": 461,
-      "isMultipleChoice": false,
-      "tag": ["Capítulo 4"],
-      "question": "Você deseja aplicar teste de branch ao código representado pelo seguinte grafo de fluxo de controle. [image Q461] Quantos itens de cobertura você precisa testar?",
-      "options": [
-        {
-          "option": "2",
-          "isCorrect": true
-        },
-        {
-          "option": "4",
-          "isCorrect": false
-        },
-        {
-          "option": "8",
-          "isCorrect": false
-        },
-        {
-          "option": "7",
-          "isCorrect": false
-        }
-      ],
-      "comments": "A resposta correta é: 2\nO teste de branch requer que cada decisão no código seja avaliada em ambas as direções possíveis (verdadeira e falsa). Neste caso, dois itens de cobertura são suficientes para garantir que todas as ramificações do grafo de fluxo de controle sejam testadas."
-    },
-    {
       "id": 462,
       "isMultipleChoice": false,
       "tag": ["Capítulo 4"],
@@ -4185,6 +4013,1545 @@ const quizData = {
       ],
       "comments": "A resposta correta é: Ataque de falha\nO ataque de falha é uma técnica que envolve a criação ou aquisição de uma lista de possíveis erros, defeitos e falhas, e a modelagem de testes que identificam os defeitos associados a esses erros, expõem os defeitos ou causam as falhas. A lista fornecida, que inclui itens como \"Entrada correta não aceita\" e \"Divisão por zero\", é típica de um ataque de falha, onde o testador está focado em identificar falhas específicas que podem ocorrer no sistema."
     },
+    //--Capitulo 5
+
+    {
+      "id": 501,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes declarações MELHOR descreve como as tarefas são divididas entre o gerente de testes e o testador?",
+      "options": [
+        {
+          "option": "O gerente de testes planeja as atividades de teste e escolhe os padrões a serem seguidos, enquanto o testador escolhe as ferramentas e estabelece as diretrizes de uso das ferramentas",
+          "isCorrect": false
+        },
+        {
+          "option": "O gerente de testes planeja e organiza os testes e especifica os casos de teste, enquanto o testador executa os testes",
+          "isCorrect": false
+        },
+        {
+          "option": "O gerente de testes planeja, coordena e controla as atividades de teste, enquanto o testador automatiza os testes",
+          "isCorrect": true
+        },
+        {
+          "option": "O gerente de testes planeja, monitora e controla as atividades de teste, enquanto o testador projeta os testes e decide sobre a liberação do objeto de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: O gerente de testes planeja, coordena e controla as atividades de teste, enquanto o testador automatiza os testes. \nO gerente de testes é responsável por coordenar e controlar as atividades de teste, garantindo que o processo de teste seja executado conforme planejado. \nO testador, por outro lado, foca na automação dos testes, utilizando ferramentas e scripts para executar testes de forma eficiente. \nEscolher ferramentas e estabelecer diretrizes é geralmente uma função do gerente. \nDecidir sobre a liberação do objeto de teste é uma decisão de negócios, não do testador. \nEspecificar casos de teste é responsabilidade do testador, não do gerente."
+    },
+    {
+      "id": 502,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes métricas seria a mais útil para monitorar durante a execução do teste?",
+      "options": [
+        {
+          "option": "Porcentagem de casos de teste executados",
+          "isCorrect": true
+        },
+        {
+          "option": "Número médio de testadores envolvidos na execução do teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Cobertura dos requisitos por código fonte",
+          "isCorrect": false
+        },
+        {
+          "option": "Porcentagem de casos de teste já criados e revisados",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Porcentagem de casos de teste executados. \nEsta métrica é crucial para monitorar o progresso da execução dos testes, \npois indica quantos testes planejados foram realmente executados, \npermitindo uma avaliação do andamento do processo de teste."
+    },
+    {
+      "id": 503,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes aspectos pode afetar e fazer parte do planejamento (inicial) do teste?",
+      "options": [
+        {
+          "option": "Limitações orçamentárias",
+          "isCorrect": true
+        },
+        {
+          "option": "Casos de uso",
+          "isCorrect": false
+        },
+        {
+          "option": "Diário de testes",
+          "isCorrect": false
+        },
+        {
+          "option": "Taxa de falha",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Limitações orçamentárias. \nCasos de uso: Parte da etapa de modelagem não planejamento. \nDiário de testes: é coletado na etapa de execução. \nTaxa de falha: é coletado na etapa de execução."
+    },
+    {
+      "id": 504,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das listas a seguir contém apenas os critérios típicos de saída dos testes?",
+      "options": [
+        {
+          "option": "Medidas de confiabilidade, cobertura do teste, cronograma e status sobre a correção de defeitos e riscos remanescentes",
+          "isCorrect": true
+        },
+        {
+          "option": "Tempo para comercialização, defeitos restantes, qualificação do testador, disponibilidade de casos de uso testável, cobertura de teste e custo do teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Medidas de confiabilidade, cobertura de teste, custo do teste, disponibilidade do ambiente de teste, tempo de colocação no mercado e completude do produto",
+          "isCorrect": false
+        },
+        {
+          "option": "Medidas de confiabilidade, cobertura de teste, grau de independência do testador e completude do produto",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Medidas de confiabilidade, cobertura do teste, cronograma e status sobre a correção de defeitos e riscos remanescentes. \nOs critérios de saída típicos incluem: medidas de precisão (p. ex., nível de cobertura alcançado, número de defeitos não resolvidos, densidade de defeitos, número de casos de teste com falha) e critérios de conclusão (p. ex., testes planejados foram executados, testes estáticos foram realizados, todos os defeitos encontrados foram relatados, todos os testes de regressão foram automatizados). \nO esgotamento do tempo ou do orçamento também pode ser visto como um critério de saída válido. Mesmo sem que outros critérios de saída sejam atendidos, pode ser aceitável encerrar os testes nessas circunstâncias, se os stakeholders tiverem analisado e aceitado o risco de entrar em operação sem mais testes."
+    },
+    {
+      "id": 505,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos itens a seguir NÃO está incluído em um relatório resumido de teste?",
+      "options": [
+        {
+          "option": "Desvios da abordagem de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Medições do progresso real em relação aos critérios de saída",
+          "isCorrect": false
+        },
+        {
+          "option": "Definição de critérios de aprovação/reprovação e objetivos dos testes",
+          "isCorrect": true
+        },
+        {
+          "option": "Avaliação da qualidade do objeto de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Definição de critérios de aprovação/reprovação e objetivos dos testes. \nUm relatório resumido de teste geralmente é realizado no final do teste, ele inclui informações como desvios da abordagem de teste, medições do progresso real em relação aos critérios de saída e avaliação da qualidade do objeto de teste. \nA definição de critérios de aprovação/reprovação e objetivos dos testes é geralmente parte do planejamento inicial de testes, não do relatório de conclusão."
+    },
+    {
+      "id": 506,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "O projeto desenvolve um termostato de aquecimento 'inteligente'. Os algoritmos de controle do termostato foram modelados como modelos Matlab/Simulink e executados no servidor conectado a Internet.\n O termostato usa as especificações do servidor para acionar as válvulas de aquecimento. O gerente de teste definiu a seguinte estratégia/abordagem de teste no plano de teste: \n 1. O teste de aceite para todo o sistema e executado como um teste baseado na experiência. \n 2. Os algoritmos de controle no servidor são verificados em relação ao padrão do regulamento de economia de energia. \n 3. O teste funcional do termostato é executado como um teste baseado em risco. \n 4. Os testes de segurança de dados / comunicação via internet são executados em conjunto com especialistas externos em segurança. \n Que quatro tipos comuns de estratégias/abordagens de teste o gerente de testes implementou no plano de teste?",
+      "options": [
+        {
+          "option": "regressão-aversão, consultiva, reativa e metódica",
+          "isCorrect": false
+        },
+        {
+          "option": "baseada em modelos, metódica, analítica e consultiva",
+          "isCorrect": false
+        },
+        {
+          "option": "analítico, conforme às normas, consultivo e reativo",
+          "isCorrect": true
+        },
+        {
+          "option": "metódico, analítico, reativo e avesso à regressão",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: analítico, conforme às normas, consultivo e reativo. \n🔹Analítico: O teste funcional do termostato é executado como um teste baseado em risco, que é uma abordagem analítica. Base em risco, base em caso de teste, base em requisito, base em historia, tudo isso seria analítico. \n🔹Conforme às normas: Os algoritmos de controle no servidor são verificados em relação ao padrão do regulamento de economia de energia, o que implica conformidade com normas. \n🔹Consultivo: Os testes de segurança de dados/comunicação via internet são executados em conjunto com especialistas externos em segurança, o que caracteriza uma abordagem consultiva. \n🔹Reativo: O teste de aceite para todo o sistema é executado como um teste baseado na experiência, que é uma abordagem reativa. \nExplicação das respostas erradas: \n🔹Regressão-aversão ou avesso à regressão: Esta abordagem foca em evitar a introdução de novos defeitos após mudanças no software, mas não é mencionada nas estratégias adotadas para este projeto específico. \n🔹Baseada em modelos: Refere-se ao uso de modelos para derivar casos de teste, como modelos Matlab/Simulink, mas não é explicitamente mencionada como uma estratégia adotada neste contexto. \n🔹Metódico: Envolve seguir um conjunto específico de métodos ou processos, mas não é uma abordagem destacada nas estratégias mencionadas para este projeto."
+    },
+    {
+      "id": 507,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes é a característica de uma abordagem baseada em métricas para a estimativa de teste?",
+      "options": [
+        {
+          "option": "Experiência geral coletada em entrevistas com gerentes de testes",
+          "isCorrect": false
+        },
+        {
+          "option": "Orçamento que foi utilizado por um projeto de teste anterior semelhante",
+          "isCorrect": true
+        },
+        {
+          "option": "Média dos cálculos coletados de especialistas empresariais",
+          "isCorrect": false
+        },
+        {
+          "option": "Estimativa de esforço para automação de testes acordada na equipe de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Orçamento que foi utilizado por um projeto de teste anterior semelhante. \nEstá alinhado com essa abordagem porque utiliza dados concretos e históricos para prever os custos do novo projeto. \nUma abordagem baseada em métricas para estimativa de testes se baseia em dados históricos e quantitativos para prever o esforço, custo e tempo necessários para os testes. \n🔹Experiência geral coletada em entrevistas com gerentes de testes → Está mais próxima de uma abordagem baseada em especialistas, pois se apoia na experiência subjetiva dos gerentes. \n🔹Média dos cálculos coletados de especialistas empresariais → Também faz parte da abordagem baseada em especialistas, pois depende da opinião de pessoas ao invés de métricas passadas. \n🔹Estimativa de esforço para automação de testes acordada na equipe de teste → Isso pode ser útil, mas não é um método baseado em métricas históricas, e sim em consenso da equipe, o que se aproxima mais de uma abordagem empírica."
+    },
+    {
+      "id": 509,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Que informações valiosas foram omitidas no relatório de defeitos acima?",
+      "options": [
+        {
+          "option": "Status do defeito",
+          "isCorrect": false
+        },
+        {
+          "option": "Os resultados reais dos testes",
+          "isCorrect": false
+        },
+        {
+          "option": "Idéias para melhorar o caso teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Identificação da versão testada do software",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Identificação da versão testada do software. \nA identificação da versão testada é crucial para rastrear o defeito e garantir que ele seja corrigido na versão correta. \nSem essa informação, pode haver confusão sobre qual versão do software está sendo referida."
+    },
+    {
+      "id": 510,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes explica MELHOR um benefício dos testes independentes?",
+      "options": [
+        {
+          "option": "Uma equipe de teste independente pode trabalhar totalmente separada dos desenvolvedores, não precisa se distrair com a mudança dos requisitos do projeto e pode restringir a comunicação com os desenvolvedores a relatórios de defeitos através do sistema de gerenciamento de defeitos",
+          "isCorrect": false
+        },
+        {
+          "option": "Se uma equipe de teste externa à organização pode ser proporcionada, então há benefícios distintos em termos de esta equipe externa não ser tão facilmente influenciada pelas preocupações de entrega do gerenciamento do projeto e pela necessidade de cumprir prazos de entrega rígidos",
+          "isCorrect": false
+        },
+        {
+          "option": "O uso de uma equipe de teste independente permite que a gerência do projeto atribua a responsabilidade pela qualidade da entrega final à equipe de teste, garantindo assim que todos estejam cientes de que a qualidade é responsabilidade geral da equipe de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Quando as especificações contêm ambiguidades e inconsistências, são feitas suposições sobre sua interpretação, e um testador independente pode ser útil para questionar essas suposições e a interpretação feita pelo desenvolvedor.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Quando as especificações contêm ambiguidades e inconsistências, são feitas suposições sobre sua interpretação, e um testador independente pode ser útil para questionar essas suposições e a interpretação feita pelo desenvolvedor. \n🔹Incorreto → Uma equipe de teste independente não deve trabalhar completamente separada dos desenvolvedores. A comunicação entre testadores e desenvolvedores é essencial para um bom processo de testes. \n🔹Incorreto → Embora uma equipe externa possa reduzir a influência da pressão do gerenciamento, a principal vantagem dos testes independentes não é evitar prazos rígidos, mas sim fornecer uma visão imparcial. \n🔹Incorreto → A qualidade do produto não é responsabilidade exclusiva da equipe de teste, mas sim de toda a equipe de desenvolvimento. Os testadores identificam problemas, mas não são os únicos responsáveis pela qualidade."
+    },
+    {
+      "id": 511,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes tarefas é MUITO MAIS EFICIENTE a ser executada pelo gerente de testes?",
+      "options": [
+        {
+          "option": "Escrever relatórios resumidos de testes com base nas informações coletadas durante os testes",
+          "isCorrect": true
+        },
+        {
+          "option": "Analisar, rever e avaliar os requisitos, especificações e modelos de testabilidade",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes de revisão desenvolvidos por outros",
+          "isCorrect": false
+        },
+        {
+          "option": "Preparar e adquirir dados de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Escrever relatórios resumidos de testes com base nas informações coletadas durante os testes. \nEssa é uma atividade estratégica que requer uma visão ampla dos testes realizados. O gerente de testes coleta informações da equipe e apresenta um resumo para stakeholders, ajudando na tomada de decisão sobre a qualidade do software. \nO gerente de testes tem um papel estratégico, focado no planejamento, supervisão e comunicação dos testes dentro do projeto. Entre suas principais responsabilidades estão: \n✅ Monitoramento e controle do progresso dos testes \n✅ Análise de riscos e planejamento \n✅ Gestão da equipe de testes \n✅ Relatórios para stakeholders \n🔹Incorreto: Analisar, rever e avaliar os requisitos, especificações e modelos de testabilidade → Analisar e avaliar requisitos está mais relacionado à equipe de QA e testadores técnicos. O gerente pode supervisionar essa atividade, mas ela é normalmente realizada por analistas de teste. \n🔹Incorreto: Testes de revisão desenvolvidos por outros → Revisar testes desenvolvidos por outros é uma tarefa que pode ser executada por testadores seniores ou pares dentro da equipe. O gerente de testes foca mais na coordenação e no planejamento. \n🔹Incorreto: Preparar e adquirir dados de teste → Preparação e aquisição de dados de teste são tarefas mais técnicas, realizadas por testadores funcionais ou engenheiros de teste. O gerente pode garantir que os recursos estejam disponíveis, mas não executa essa tarefa diretamente."
+    },
+    {
+      "id": 512,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes MELHORES os classifica como critérios de entrada e saída?",
+      "options": [
+        {
+          "option": "Critérios de entrada - 2, 3, 6; Critérios de saída - 1, 4, 5",
+          "isCorrect": false
+        },
+        {
+          "option": "Critérios de entrada - 1, 3; Critérios de saída - 2, 4, 5, 6",
+          "isCorrect": false
+        },
+        {
+          "option": "Critérios de entrada - 5, 6; Critérios de saída - 1, 2, 3, 4",
+          "isCorrect": false
+        },
+        {
+          "option": "Critérios de entrada - 3, 5, 6; Critérios de saída - 1, 2, 4",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Critérios de entrada - 3, 5, 6; Critérios de saída - 1, 2, 4. \nCritérios de entrada: \n(3) O ambiente de teste de desempenho comercial foi projetado, montado e verificado. \nO ambiente precisa estar pronto antes de iniciar os testes, então é um critério de entrada. \n(5) As especificações de projeto do piloto automático foram revisadas e retrabalhadas. \nTer especificações revisadas e corrigidas é necessário antes de testar, então é critério de entrada. \n(6) O componente de cálculo da taxa de imposto passou nos testes unitários. \nPara começar testes de níveis mais altos, os componentes individuais devem passar nos testes unitários. \nCritérios de saída: \n(1) O orçamento original de teste de $30.000 mais a contingência de $7.000 foi gasto. \nO uso do orçamento pode ser um critério de saída para encerrar os testes. \n(2) 96% dos testes planejados para o pacote de desenho foram executados e os testes restantes estão agora fora do escopo. \nIndica que os testes foram completados conforme planejado, sendo um critério de saída. \n(4) O status atual não é nenhum defeito crítico pendente e dois de alta prioridade. \nO critério de saída pode incluir a aceitação de um certo nível de defeitos antes da liberação."
+    },
+    {
+      "id": 513,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes cronogramas de execução de testes BEST considera as prioridades e dependências técnicas e lógicas?",
+      "options": [
+        {
+          "option": "TC4 - TC3 - TC1 - TC2 - TC5 - TC6",
+          "isCorrect": true
+        },
+        {
+          "option": "TC4 - TC1 - TC3 - TC5 - TC6 - TC2",
+          "isCorrect": false
+        },
+        {
+          "option": "TC1 - TC3 - TC4 - TC6 - TC2 - TC5",
+          "isCorrect": false
+        },
+        {
+          "option": "TC4 - TC2 - TC5 - TC1 - TC3 - TC6",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: TC4 - TC3 - TC1 - TC2 - TC5 - TC6. \nExecuta TC4 antes de TC1 e TC3 (respeitando dependências). \nDá prioridade a TC1 e TC3 antes dos testes de menor prioridade. \nColoca TC2 antes de TC5 (respeitando a dependência)."
+    },
+    {
+      "id": 514,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes afirmações sobre os métodos de estimativa de teste é CORRETA?",
+      "options": [
+        {
+          "option": "Com a abordagem baseada em especialistas, os gerentes de testes responsáveis pelas diferentes atividades de teste preveem o esforço de teste esperado",
+          "isCorrect": true
+        },
+        {
+          "option": "Com a abordagem baseada em métricas, uma média dos custos de teste registrados de vários projetos passados é usada como orçamento de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Com a abordagem baseada em especialistas, um grupo de usuários experientes identificados pelo cliente recomenda o orçamento de teste necessário",
+          "isCorrect": false
+        },
+        {
+          "option": "Com a abordagem baseada em métricas, a estimativa é baseada em medidas de teste do projeto e, portanto, esta estimativa só está disponível após o início dos testes",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Com a abordagem baseada em especialistas, os gerentes de testes responsáveis pelas diferentes atividades de teste preveem o esforço de teste esperado. \nNa abordagem baseada em especialistas, a estimativa é feita com base no conhecimento e experiência de profissionais que entendem as necessidades do projeto. \nIsso pode envolver gerentes de testes ou outros especialistas que fazem uma previsão com base em sua experiência prévia. \nEmbora os especialistas façam as estimativas, não é comum que sejam 'usuários experientes identificados pelo cliente' quem recomenda o orçamento. \nO grupo de especialistas geralmente inclui membros da equipe de testes e não necessariamente usuários do produto. \nA abordagem baseada em métricas não utiliza apenas os custos de projetos passados. \nEla se baseia em dados reais de métricas de teste (como o número de casos de teste executados, falhas, etc.) para estimar o esforço de testes, e não em médias de custos. \nEmbora a abordagem baseada em métricas utilize dados do projeto, é possível fazer estimativas iniciais com base em métricas anteriores de projetos similares. \nNão é necessário esperar até o início dos testes para começar a estimativa."
+    },
+    {
+      "id": 515,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes define MELHOR o nível de risco?",
+      "options": [
+        {
+          "option": "O nível de risco é calculado somando as probabilidades de todas as situações problemáticas e os danos financeiros que delas resultam",
+          "isCorrect": false
+        },
+        {
+          "option": "O nível de risco é determinado por uma combinação da probabilidade de um evento indesejável e o impacto esperado desse evento",
+          "isCorrect": true
+        },
+        {
+          "option": "O nível de risco é a soma de todos os perigos potenciais de um sistema multiplicada pela soma de todas as perdas potenciais desse sistema",
+          "isCorrect": false
+        },
+        {
+          "option": "O nível de risco é estimado pela multiplicação da probabilidade de uma ameaça ao sistema pela chance de que a ameaça ocorra e resulte em dano financeiro",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: O nível de risco é determinado por uma combinação da probabilidade de um evento indesejável e o impacto esperado desse evento. \nEsta é a definição clássica de risco. \nEla reconhece que o nível de risco é uma função da probabilidade de ocorrência de um evento e da gravidade (impacto) desse evento."
+    },
+    {
+      "id": 516,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes é o mais provável de ser um exemplo de risco de PRODUTO?",
+      "options": [
+        {
+          "option": "As características de segurança esperadas podem não ser suportadas pela arquitetura do sistema",
+          "isCorrect": true
+        },
+        {
+          "option": "Os desenvolvedores podem não ter tempo para corrigir todos os defeitos encontrados pela equipe de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste podem não oferecer cobertura total dos requisitos especificados",
+          "isCorrect": false
+        },
+        {
+          "option": "O ambiente de teste de desempenho pode não estar pronto antes que o sistema esteja pronto para entrega",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: As características de segurança esperadas podem não ser suportadas pela arquitetura do sistema. \nEste é um exemplo de risco de produto. Refere-se a uma falha potencial no produto que afeta suas características e funcionalidades, como a segurança. \nA arquitetura do sistema pode não ser capaz de atender aos requisitos de segurança desejados, afetando diretamente a qualidade do produto final. \nErrado: Os desenvolvedores podem não ter tempo para corrigir todos os defeitos encontrados pela equipe de teste. Este é um risco relacionado ao processo de desenvolvimento e à gestão do projeto, não ao produto em si. \nRefere-se à falta de tempo para corrigir os defeitos, o que está mais relacionado ao gerenciamento de prazos e recursos. \nErrado: Os casos de teste podem não oferecer cobertura total dos requisitos especificados. Este é um risco relacionado à estratégia de teste e à qualidade da cobertura dos testes, mas não é diretamente um risco de produto. \nEle está mais relacionado ao processo de teste do que à falha do próprio produto. \nErrado: O ambiente de teste de desempenho pode não estar pronto antes que o sistema esteja pronto para entrega. Este é um risco relacionado ao ambiente de testes e à infraestrutura necessária para realizar os testes de desempenho, e não diretamente ao produto em si."
+    },
+    {
+      "id": 517,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes é o MENOS provável que seja um exemplo de análise de risco do produto CORRETAMENTE influenciando os testes?",
+      "options": [
+        {
+          "option": "O tempo necessário para carregar as páginas web é crucial para o sucesso do novo site, por isso foi empregado para este projeto um especialista em testes de desempenho",
+          "isCorrect": false
+        },
+        {
+          "option": "Os usuários tiveram problemas com a interface de usuário do sistema anterior, de modo que testes de usabilidade adicionais estão planejados para o sistema de substituição",
+          "isCorrect": false
+        },
+        {
+          "option": "O impacto potencial das falhas de segurança foi identificado como sendo particularmente alto, portanto os testes de segurança foram priorizados antes de algumas outras atividades de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Os testes constataram que a qualidade do módulo de rede é superior ao esperado, portanto não serão realizados testes adicionais nessa área",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Os testes constataram que a qualidade do módulo de rede é superior ao esperado, portanto não serão realizados testes adicionais nessa área. \nEste é o menos provável de ser um exemplo de análise de risco do produto corretamente influenciando os testes, pois a decisão de não realizar testes adicionais pode ignorar riscos potenciais não identificados. \nOs outros exemplos mostram como a análise de risco pode levar a decisões de teste que abordam diretamente os riscos identificados."
+    },
+    {
+      "id": 518,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual destas informações é a mais útil para incluir no relatório de defeitos?",
+      "options": [
+        {
+          "option": "2, 3, 4, 5",
+          "isCorrect": false
+        },
+        {
+          "option": "1, 4, 5, 6",
+          "isCorrect": false
+        },
+        {
+          "option": "3, 5, 6",
+          "isCorrect": true
+        },
+        {
+          "option": "1, 2, 6",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 3, 5, 6. \n(3) Detalhes do ambiente de teste: É essencial fornecer informações sobre o ambiente onde o defeito foi identificado, pois o defeito pode ser específico de um determinado ambiente (por exemplo, configurações de hardware, software ou rede). \n(5) Resultados reais: Mostrar o que aconteceu durante o teste (resultados reais) ajuda a ilustrar o comportamento do sistema em relação ao esperado, permitindo que os desenvolvedores reproduzam o problema de forma precisa. \n(6) Referência à especificação do caso de teste: Essa referência ajuda a contextualizar o defeito com base no caso de teste que foi executado e oferece uma correspondência direta com os requisitos especificados, facilitando a identificação do comportamento incorreto."
+    },
+    {
+      "id": 519,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes aspectos seria um bom resumo para um relatório de defeitos para esta falha, um que capte tanto a essência da falha quanto seu impacto sobre as partes interessadas?",
+      "options": [
+        {
+          "option": "Os desenvolvedores introduziram um grande defeito de disponibilidade que irá perturbar seriamente nossos clientes",
+          "isCorrect": false
+        },
+        {
+          "option": "O desempenho é lento e confiável sob carga",
+          "isCorrect": false
+        },
+        {
+          "option": "A típica transação de transferência de fundos resulta no término da sessão do cliente, com um atraso na disponibilidade quando se tenta reconectar",
+          "isCorrect": true
+        },
+        {
+          "option": "Os logs do servidor Web mostram erro 0x44AB27 ao executar o teste 07.005, que não é uma mensagem de erro esperada no sistema de arquivos /tmp",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: A típica transação de transferência de fundos resulta no término da sessão do cliente, com um atraso na disponibilidade quando se tenta reconectar. \nEssência da falha: A descrição especifica que o problema ocorre durante uma transação de transferência de fundos, o que ajuda a contextualizar onde a falha ocorre no processo. \nImpacto sobre as partes interessadas: Destaca que o defeito afeta a 'disponibilidade' (um aspecto crítico), já que os clientes não conseguem se reconectar por um período de três a cinco minutos, o que é problemático para um sistema bancário online onde a disponibilidade é essencial. \nClareza e especificidade: A frase descreve claramente o que acontece quando o defeito é acionado, de forma a ser facilmente compreendido pelas partes interessadas."
+    },
+    {
+      "id": 520,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes é um possível cronograma de execução de testes que considera tanto as prioridades quanto as dependências?",
+      "options": [
+        {
+          "option": "01.001, 01.002, 01.004, 01.003, 01.005",
+          "isCorrect": true
+        },
+        {
+          "option": "01.001, 01.002, 01.003, 01.005, 01.004",
+          "isCorrect": false
+        },
+        {
+          "option": "01.003, 01.004, 01.002, 01.001, 01.002",
+          "isCorrect": false
+        },
+        {
+          "option": "01.001, 01.002, 01.004, 01.005, 01.003",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 01.001, 01.002, 01.004, 01.003, 01.005. \nEste cronograma respeita as dependências e prioridades dos casos de teste. \n01.001 deve ser executado primeiro, pois 01.002 depende dele. \n01.004 e 01.003 têm a mesma prioridade, mas 01.004 pode ser executado logo após 01.002, enquanto 01.003 deve esperar a execução de 01.002. \nFinalmente, 01.005 pode ser executado após 01.002, respeitando sua prioridade."
+    },
+    {
+      "id": 521,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes é uma métrica de teste comum frequentemente usada para monitorar a preparação e execução do teste BOTH?",
+      "options": [
+        {
+          "option": "Taxas de localização/correção de defeitos",
+          "isCorrect": false
+        },
+        {
+          "option": "Status do caso de teste",
+          "isCorrect": true
+        },
+        {
+          "option": "Preparação do ambiente de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Custo estimado para encontrar o próximo defeito",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Status do caso de teste. \nA questão possui um erro de tradução, o BOTH significaria AMBOS, preparação e execução. \nQual é a métrica comum para monitorar AMBOS os testes de preparação e execução. \nA resposta mais apropriada, então, seria 'Status do caso de teste', porque isso geralmente envolve o acompanhamento tanto da preparação dos testes (como criação e revisão de casos de teste, configuração de ambientes) quanto da execução dos testes (execução dos testes, rastreamento dos resultados e defeitos encontrados)."
+    },
+    {
+      "id": 522,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Quais dos dois fatores a seguir podem ser usados para determinar o nível de risco?",
+      "options": [
+        {
+          "option": "Probabilidade e impacto",
+          "isCorrect": true
+        },
+        {
+          "option": "Declaração e decisão",
+          "isCorrect": false
+        },
+        {
+          "option": "Dinâmico e reativo",
+          "isCorrect": false
+        },
+        {
+          "option": "Testes e desenvolvimento",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Probabilidade e impacto. \nO nível de risco é determinado pela probabilidade de um evento indesejado ocorrer e pelo impacto que esse evento pode causar caso ocorra. \n🔹Probabilidade: Quão provável é que o risco se materialize? \n🔹Impacto: Se o risco acontecer, qual será a consequência para o sistema, os usuários ou o negócio? \nEssa abordagem é usada em análises de risco para priorizar testes e tomar decisões sobre mitigação de riscos no desenvolvimento de software."
+    },
+    {
+      "id": 523,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você está trabalhando como gerente de projeto em um projeto de software bancário interno. Para evitar retrabalho e ciclos excessivos de encontrar/corrigir/retestar, o seguinte processo foi colocado em prática para resolver um defeito, uma vez encontrado no laboratório de testes: (a) O desenvolvedor designado encontra e conserta o defeito, depois cria uma construção experimental (b) Um desenvolvedor de um par revisa, testa e confirma a correção do defeito em sua área de trabalho (c) Um testador, geralmente o que encontrou o defeito, testa a confirmação da correção do defeito no ambiente de desenvolvimento (d) Uma vez por dia, um novo lançamento com todas as correções de defeitos confirmadas é instalado no ambiente de teste (e) O mesmo testador da etapa 3 de confirmação testa a correção do defeito no ambiente de teste. No entanto, um elevado número de defeitos que os testadores confirmaram como corrigidos no ambiente de desenvolvimento (na etapa 3) são de alguma forma reprovados nos testes de confirmação no ambiente de teste, com os resultados do retrabalho e do tempo de ciclo resultantes. Você tem a maior confiança em seus testadores, e descartou erros ou omissões na etapa 3. Qual dos seguintes aspectos é a parte mais provável do processo a ser verificada a seguir?",
+      "options": [
+        {
+          "option": "A atividade dos desenvolvedores, que podem não estar corrigindo defeitos corretamente na etapa 1",
+          "isCorrect": false
+        },
+        {
+          "option": "Gerenciamento da configuração, que pode não estar mantendo a integridade do produto na etapa 4",
+          "isCorrect": true
+        },
+        {
+          "option": "A atividade dos desenvolvedores, que podem não estar testando adequadamente na etapa 2",
+          "isCorrect": false
+        },
+        {
+          "option": "A atividade dos testadores, que podem estar confusos sobre o que testar no passo 5",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Gerenciamento da configuração, que pode não estar mantendo a integridade do produto na etapa 4. \nSe os defeitos são confirmados como corrigidos no ambiente de desenvolvimento, mas reaparecem no ambiente de teste, isso pode indicar um problema no gerenciamento de configuração. \nPossíveis causas incluem: \n🔹O código corrigido não está sendo corretamente incluído no build diário. \n🔹Há um problema de versionamento, onde uma versão antiga ou incorreta do software está sendo implantada. \n🔹Dependências ou configurações específicas do ambiente de teste podem estar diferentes do ambiente de desenvolvimento. \nRevisar o processo de build, empacotamento e implantação pode ajudar a identificar e corrigir essa falha."
+    },
+    {
+      "id": 524,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você está empenhado em planejar um esforço de teste para uma nova aplicação bancária móvel. Como parte da estimativa, você se encontra primeiro com os testadores propostos e outros sobre o projeto. A equipe está bem coordenada e já trabalhou em projetos similares. Para verificar a estimativa resultante, você então se refere a algumas médias do setor para esforço de teste e custos em projetos similares, publicadas por um consultor de renome. Qual declaração descreve com exatidão sua abordagem de estimativa?",
+      "options": [
+        {
+          "option": "Primeiramente o planning poker, verificado por velocidade a partir de gráficos burndown",
+          "isCorrect": false
+        },
+        {
+          "option": "Principalmente uma abordagem baseada em especialistas, complementada com uma baseada em métricas",
+          "isCorrect": true
+        },
+        {
+          "option": "Principalmente uma abordagem baseada em métricas, complementada com uma baseada em especialistas",
+          "isCorrect": false
+        },
+        {
+          "option": "Uma abordagem simultânea baseada em especialistas e em métricas",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Principalmente uma abordagem baseada em especialistas, complementada com uma baseada em métricas. \nVocê começou a estimativa reunindo-se com testadores experientes e outros membros do projeto para discutir o esforço de teste. Isso caracteriza uma abordagem baseada em especialistas, pois se baseia no conhecimento e na experiência da equipe para estimar o esforço necessário. \nDepois, você verificou essa estimativa usando médias do setor publicadas por um consultor de renome. Isso caracteriza uma abordagem baseada em métricas, pois usa dados históricos e estatísticas de projetos semelhantes para validar a estimativa inicial."
+    },
+    {
+      "id": 525,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Durante um projeto seguindo métodos ágeis, você encontra uma discrepância entre a interpretação do desenvolvedor de um critério de aceite e a interpretação do proprietário do produto, que você traz à tona durante uma sessão de refinamento da história do usuário. Qual dos seguintes aspectos é um benefício de independência de teste exemplificado por esta situação?",
+      "options": [
+        {
+          "option": "Remoção precoce de um defeito",
+          "isCorrect": false
+        },
+        {
+          "option": "Desafiar as suposições das partes interessadas",
+          "isCorrect": true
+        },
+        {
+          "option": "Assumir a responsabilidade primária pela qualidade",
+          "isCorrect": false
+        },
+        {
+          "option": "Reconhecimento de diferentes tipos de falhas",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Desafiar as suposições das partes interessadas. \nA independência do testador permite que ele questione e desafie as interpretações e suposições das partes interessadas, como desenvolvedores e o proprietário do produto."
+    },
+    {
+      "id": 526,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você está definindo o processo para realizar a análise de risco do produto como parte de cada iteração em um projeto Ágil. Qual dos seguintes é o lugar apropriado para documentar este processo em um plano de teste?",
+      "options": [
+        {
+          "option": "Gerenciamento da configuração do objeto de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Abordagem de testes",
+          "isCorrect": true
+        },
+        {
+          "option": "Escopo dos testes",
+          "isCorrect": false
+        },
+        {
+          "option": "Métricas de testes",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Abordagem de testes. \nA análise de risco do produto faz parte da estratégia de testes e da forma como os testes serão conduzidos no projeto Ágil. \nO local adequado para documentar esse processo no plano de teste é a Abordagem de Testes, pois essa seção define métodos, técnicas e critérios que serão utilizados para identificar e lidar com riscos durante as iterações. \nAs demais opções não são apropriadas: \n🔹Gerenciamento da configuração do objeto de teste: Refere-se ao controle de versões e rastreabilidade dos artefatos de teste. \n🔹Escopo dos testes: Define os recursos, funcionalidades e áreas do sistema a serem testadas, mas não detalha processos de análise de risco. \n🔹Métricas de testes: Relaciona-se ao acompanhamento e medição dos testes, mas não descreve a abordagem para análise de risco."
+    },
+    {
+      "id": 527,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Considere a seguinte lista de resultados indesejáveis que poderiam ocorrer em um esforço de desenvolvimento de aplicativos móveis: (a) Totais incorretos nos relatórios (b) Mudança nos critérios de aceite durante os testes de aceite (c) Os usuários acham o teclado macio muito difícil de usar com seu aplicativo (d) O sistema responde muito lentamente à entrada do usuário durante a entrada da cadeia de busca (e) Testadores não autorizados a relatar resultados de testes em reuniões diárias. Qual dos seguintes aspectos classifica adequadamente estes resultados como riscos de projeto e de produto?",
+      "options": [
+        {
+          "option": "Riscos do produto: A, C, D; Riscos do projeto: B, E",
+          "isCorrect": true
+        },
+        {
+          "option": "Riscos do produto: A, C Riscos do projeto: B, D, E",
+          "isCorrect": false
+        },
+        {
+          "option": "Riscos do produto: A, C, D, E Riscos do projeto: B",
+          "isCorrect": false
+        },
+        {
+          "option": "Riscos do produto: B, E; Riscos de projeto: A, C, D",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Riscos do produto: A, C, D; Riscos do projeto: B, E. \nRiscos do produto: São riscos que afetam a qualidade do software entregue ao usuário. \n(a) Totais incorretos nos relatórios → Impacta a funcionalidade do produto. \n(c) Usuários acham o teclado difícil de usar → Impacta a usabilidade do produto. \n(d) Sistema responde lentamente → Impacta a performance do produto. \nRiscos do projeto: São riscos que afetam o processo de desenvolvimento. \n(b) Mudança nos critérios de aceite durante os testes de aceite → Impacta o planejamento e execução dos testes. \n(e) Testadores não podem relatar resultados nas reuniões → Impacta a comunicação e gestão do projeto."
+    },
+    {
+      "id": 528,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Como os testadores agregam valor aos planejamentos de iteração e lançamento?",
+      "options": [
+        {
+          "option": "Os testadores garantem o lançamento de software de alta qualidade por meio de um projeto de teste antecipado durante o planejamento do lançamento.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os testadores se concentram apenas nos aspectos funcionais do sistema a ser testado.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os testadores participam da identificação de riscos e da avaliação de riscos das histórias de usuários.",
+          "isCorrect": true
+        },
+        {
+          "option": "Os testadores determinam a prioridade das histórias de usuários a serem desenvolvidas.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Os testadores participam da identificação de riscos e da avaliação de riscos das histórias de usuários. \nA avaliação e validação de riscos acontecem tanto no planejamento da iteração quanto no planejamento do lançamento: \nNo planejamento da iteração, os testadores se envolvem na identificação de riscos específicos que podem afetar o sucesso da iteração. Isso pode incluir riscos relacionados a novas funcionalidades, problemas de integração, mudanças de requisitos ou qualquer outra área que possa impactar a entrega dentro do ciclo de desenvolvimento. \nNo planejamento do lançamento, os testadores também precisam considerar os riscos globais que podem afetar a qualidade geral do produto, como problemas críticos, falhas de desempenho ou questões de segurança. \nJustificativa para as demais alternativas: \nOs testadores garantem o lançamento de software de alta qualidade por meio de um projeto de teste antecipado durante o planejamento do lançamento: O planejamento do lançamento geralmente se refere à fase final do ciclo de desenvolvimento, enquanto o planejamento de iterações está mais relacionado ao desenvolvimento incremental de funcionalidades ao longo do projeto. \nOs testadores se concentram apenas nos aspectos funcionais do sistema a ser testado: Isso é uma visão limitada, pois os testadores não devem se concentrar apenas nos aspectos funcionais. Eles também analisam riscos, desempenho, segurança, entre outros aspectos não funcionais. \nOs testadores determinam a prioridade das histórias de usuários a serem desenvolvidas: A determinação da prioridade das histórias de usuários normalmente é uma função do produto e do gestor de produto. Os testadores podem fornecer informações valiosas para o planejamento, mas não são responsáveis por determinar as prioridades das histórias."
+    },
+    {
+      "id": 529,
+      "isMultipleChoice": true,
+      "tag": ["Capítulo 5"],
+      "question": "Quais das DUAS opções a seguir são os critérios de saída para testar um sistema?",
+      "options": [
+        {
+          "option": "Os requisitos são traduzidos para o formato dado/quando/então.",
+          "isCorrect": false
+        },
+        {
+          "option": "A capacidade do testador de fazer login no objeto de teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "Prontidão do ambiente de teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "A densidade de defeitos estimada é atingida.",
+          "isCorrect": true
+        },
+        {
+          "option": "Os testes de regressão são automatizados.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "As respostas corretas são: A densidade de defeitos estimada é atingida., Os testes de regressão são automatizados. \nA densidade de defeitos estimada é atingida: É importante que, ao final do ciclo de testes, o número de defeitos encontrados seja avaliado para garantir que o sistema atingiu um nível aceitável de qualidade, é um critério de saída. \nOs testes de regressão são automatizados: Poderia ser uma meta de final de um processo de teste, é um critério de saída. \nJustificativa para as demais alternativas: \nProntidão do ambiente de teste: É o que eu preciso para começar a testar, é um critério de entrada. \nOs requisitos são traduzidos para o formato dado/quando/então: Dado quando então é um jeito de formatar documentação, poderia ser um critério de entrada. \nA capacidade do testador de fazer login no objeto de teste: Saber as informações de usuário e senha seria uma entrada."
+    },
+    {
+      "id": 530,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Sua equipe usa a técnica de estimativa de três pontos para estimar o esforço de teste de um novo recurso de alto risco. Foram feitas as seguintes estimativas: \nEstimativa mais otimista: 2 homens/hora \nEstimativa mais provável: 11 homens/hora \nEstimativa mais pessimista: 14 homens/hora \nQual é a estimativa final?",
+      "options": [
+        {
+          "option": "14 homens/hora",
+          "isCorrect": false
+        },
+        {
+          "option": "9 homens/hora",
+          "isCorrect": false
+        },
+        {
+          "option": "10 homens/hora",
+          "isCorrect": true
+        },
+        {
+          "option": "11 homens/hora",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 10 homens/hora \nA estimativa de três pontos, também chamada de Monte Carlo funciona dessa forma: \nMultiplica o provável por 4 + otimista + pessimista e divide tudo por 6."
+    },
+    {
+      "id": 531,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você está testando um aplicativo móvel que permite que os usuários encontrem um restaurante próximo com base no tipo de comida que desejam comer. Considere a seguinte lista de casos de teste, prioridades (ou seja, um número menor significa uma prioridade maior) e dependências:",
+      "options": [
+        {
+          "option": "TC 001 - Selecione o tipo de alimento - Prioridade: 3 - Dependência: nenhum",
+          "isCorrect": false
+        },
+        {
+          "option": "TC 002 - Selecione o restaurante - Prioridade: 2 - Dependência: TC 001",
+          "isCorrect": false
+        },
+        {
+          "option": "TC 003 - Obter direção - Prioridade: 1 - Dependência: TC 002",
+          "isCorrect": true
+        },
+        {
+          "option": "TC 004 - Ligar para o restaurante - Prioridade: 2 - Dependência: TC 002",
+          "isCorrect": false
+        },
+        {
+          "option": "TC 005 - Fazer reserva - Prioridade: 3 - Dependência: TC 002",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: TC 003 - Obter direção - Prioridade: 1 - Dependência: TC 002. \nEste caso de teste tem a maior prioridade e depende da seleção do restaurante, que é coberta por TC 002. \nA execução dos casos de teste deve seguir a ordem de dependência e prioridade para garantir que as funcionalidades críticas sejam testadas primeiro."
+    },
+    {
+      "id": 532,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Considere as seguintes categorias de teste (1-4) e os quadrantes de teste ágil (A-D).\ncategorias de teste:\n(1) Teste de usabilidade	\n(2) Teste de componentes	\n(3) Teste funcional	\n(4) Teste de confiabilidade	\nquadrantes de teste ágil:\n(A) Q1: voltado para a tecnologia, apoiando o desenvolvimento\n(B) Q2: voltado para o negócio, apoiando o desenvolvimento\n(C) Q3: voltado para o negócio, crítica do produto\n(D) Q4: voltado para a tecnologia, crítica do produto\nComo as seguintes categorias de teste são mapeadas nos quadrantes de teste ágil?",
+      "options": [
+        {
+          "option": "1D, 2A, 3C, 4B",
+          "isCorrect": false
+        },
+        {
+          "option": "1C, 2B, 3D, 4A",
+          "isCorrect": false
+        },
+        {
+          "option": "1C, 2A, 3B, 4D",
+          "isCorrect": true
+        },
+        {
+          "option": "1D, 2B, 3C, 4A",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 1C, 2A, 3B, 4D. \nO teste de usabilidade (1) está relacionado ao quadrante Q3, voltado para o negócio e crítica do produto, pois foca na experiência do usuário. \nO teste de componentes (2) se encaixa no quadrante Q1, voltado para a tecnologia, apoiando o desenvolvimento, pois verifica componentes isolados. \nO teste funcional (3) está no quadrante Q2, voltado para o negócio, apoiando o desenvolvimento, pois verifica requisitos funcionais. \nO teste de confiabilidade (4) se encaixa no quadrante Q4, voltado para a tecnologia e crítica do produto, pois foca na estabilidade e confiabilidade do sistema."
+    },
+    {
+      "id": 533,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Durante uma análise de risco, o seguinte risco foi identificado e avaliado: Risco: o tempo de resposta é muito longo para gerar um relatório. Probabilidade do risco: média. Impacto do risco: alto. Resposta ao risco: (1) uma equipe de teste independente realiza testes de performance durante o teste do sistema; (2) uma amostra selecionada de usuários finais realiza testes de aceite alfa e beta antes do lançamento. Que medida é proposta para ser tomada em resposta a esse risco analisado?",
+      "options": [
+        {
+          "option": "Aceite de riscos",
+          "isCorrect": false
+        },
+        {
+          "option": "Mitigação de riscos.",
+          "isCorrect": true
+        },
+        {
+          "option": "Transferência de risco.",
+          "isCorrect": false
+        },
+        {
+          "option": "Plano de contingência.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Mitigação de riscos. \nA mitigação de riscos envolve ações para reduzir a probabilidade ou o impacto de um risco identificado. Neste caso, a resposta ao risco 'o tempo de resposta é muito longo para gerar um relatório' inclui ações como a realização de testes de performance para verificar a capacidade do sistema e permitir ajustes antes do lançamento (ação de mitigação). Além disso, envolver usuários finais em testes de aceite também ajuda a garantir que o sistema atenda aos requisitos de desempenho esperados, o que contribui para a redução do impacto de um possível problema de desempenho."
+    },
+    {
+      "id": 534,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual ferramenta pode ser usada por uma equipe ágil para mostrar a quantidade de trabalho que foi concluída e a quantidade de trabalho total restante para uma determinada iteração?",
+      "options": [
+        {
+          "option": "Gráfico de Burndown.",
+          "isCorrect": true
+        },
+        {
+          "option": "Relatório de conclusão do teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "Relatório de defeitos.",
+          "isCorrect": false
+        },
+        {
+          "option": "Critérios de aceite.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Gráfico de Burndown. \nO Gráfico de Burndown é uma ferramenta amplamente utilizada em equipes ágeis para visualizar o progresso durante uma iteração (sprint). Ele mostra a quantidade de trabalho que foi concluída e a quantidade de trabalho restante ao longo do tempo, geralmente de forma diária. Esse gráfico ajuda a equipe a monitorar seu progresso e a identificar se está no caminho certo para completar todas as tarefas dentro do prazo da iteração."
+    },
+    {
+      "id": 535,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você precisa atualizar um dos scripts de teste automatizados para que esteja de acordo com um novo requisito. Qual processo indica que você deve criar uma nova versão do script de teste no repositório de testes?",
+      "options": [
+        {
+          "option": "Teste de Manutenção.",
+          "isCorrect": false
+        },
+        {
+          "option": "Gerenciamento de Rastreabilidade.",
+          "isCorrect": false
+        },
+        {
+          "option": "Gerenciamento de Configuração.",
+          "isCorrect": true
+        },
+        {
+          "option": "Engenharia de Requisitos.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Gerenciamento de Configuração. \nO Gerenciamento de Configuração envolve a prática de controlar as mudanças em documentos, scripts de teste, código-fonte e outros artefatos ao longo do ciclo de vida do projeto."
+    },
+    {
+      "id": 536,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você recebeu o seguinte relatório de defeito dos desenvolvedores afirmando que a anomalia descrita neste relatório de teste não é reproduzível. O aplicativo desliga. 2022-May-03 - John Doe - Rejeitado. O aplicativo desliga depois de inserir 'Test input: $ä' no campo Nome na tela de criação de novo usuário. Tentei fazer logoff e fazer login com a conta test_admin01, o mesmo problema. Tentei com outras contas de administrador de teste, o mesmo problema. Nenhuma mensagem de erro recebida; o registro (veja anexo) contém notificação de erro fatal. Com base no caso de teste TC-1305, o aplicativo deve aceitar a entrada fornecida e criar o usuário. Corrija com alta prioridade, pois esse recurso está relacionado ao REQ-0012, que é um novo requisito crítico de negócio. Que informações essenciais estão FALTANDO nesse relatório de teste que teriam sido úteis para os desenvolvedores?",
+      "options": [
+        {
+          "option": "Resultado esperado e resultado real.",
+          "isCorrect": false
+        },
+        {
+          "option": "Prioridade e gravidade.",
+          "isCorrect": false
+        },
+        {
+          "option": "Ambiente de teste e item de teste.",
+          "isCorrect": true
+        },
+        {
+          "option": "Referências e status do defeito.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Ambiente de teste e item de teste. \nItem de teste é informado mas o ambiente não está sendo informado."
+    },
+    {
+      "id": 537,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você está testando uma aplicação web que permite aos usuários BUSCAR por produtos, VER detalhes do produto, ADICIONAR produtos a um carrinho de compras e fazer um PEDIDO. Você preparou os seguintes cinco casos de teste, que deseja executar de acordo com suas prioridades: \nTC1: BUSCAR produto A Prioridade: média \nTC2: VER detalhes do produto A Prioridade: baixa \nTC3: ADICIONAR produto B ao carrinho de compras Prioridade: média \nTC4: ADICIONAR produto C ao carrinho de compras Prioridade: alta \nTC5: fazer um PEDIDO Prioridade: alta \nVocê também identificou as seguintes dependências lógicas entre os casos de teste: \nA funcionalidade de BUSCA deve ser testada antes que a funcionalidade de VISUALIZAÇÃO possa ser testada, pois os detalhes do produto dependem da funcionalidade de busca. \nA funcionalidade de VISUALIZAÇÃO deve ser testada antes da funcionalidade de ADIÇÃO, pois adicionar produtos depende da disponibilidade de detalhes precisos do produto. \nA funcionalidade de ADIÇÃO deve ser testada antes da funcionalidade de PEDIDO, pois fazer um pedido depende da disponibilidade de informações precisas do carrinho de compras. \nQual caso de teste deve ser executado como o quarto?",
+      "options": [
+        {
+          "option": "TC3",
+          "isCorrect": true
+        },
+        {
+          "option": "TC2",
+          "isCorrect": false
+        },
+        {
+          "option": "TC4",
+          "isCorrect": false
+        },
+        {
+          "option": "TC1",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: TC3. A ordem de dependência é: BUSCAR > VER > ADICIONAR > PEDIDO. Dessa forma a ordem de teste é: TC1, TC2, TC4, TC3, TC5."
+    },
+    {
+      "id": 538,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "De acordo com o modelo de quadrantes de teste, qual das seguintes opções se enquadra no quadrante Q1 ('orientado à tecnologia' e 'suporte à equipe')?",
+      "options": [
+        {
+          "option": "Teste de integração de componentes",
+          "isCorrect": true
+        },
+        {
+          "option": "Teste de usabilidade",
+          "isCorrect": false
+        },
+        {
+          "option": "Teste de aceitação do usuário",
+          "isCorrect": false
+        },
+        {
+          "option": "Teste funcional",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Teste de integração de componentes. O quadrante Q1 do modelo de quadrantes de teste ágil é orientado à tecnologia e foca no suporte à equipe de desenvolvimento. Ele inclui testes que ajudam a garantir a qualidade do código durante o desenvolvimento, como: Testes de unidade, Testes de componentes, Testes de integração de componentes. Esses testes são normalmente automatizados e têm o objetivo de validar a funcionalidade do código antes de passar para testes mais avançados. Por que as outras opções estão erradas? Teste de aceitação do usuário → Q3 ou Q2 (Voltado para o negócio) Teste funcional → Q2 ou Q3, dependendo do contexto (voltado para o negócio e suporte ao desenvolvimento ou crítica do produto) Teste de usabilidade → Q3 (Voltado para o negócio, crítica do produto)"
+    },
+    {
+      "id": 539,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Dadas os seguintes riscos: \n1. Implementação de loop ineficaz causa respostas longas do sistema \n2. Consumidores alteram suas preferências \n3. Inundação da sala do servidor \n4. Pacientes acima de uma certa idade recebem relatórios imprecisos \nE as seguintes atividades de mitigação: \nA. Aceitação do risco \nB. Teste de desempenho \nC. Utilização da análise de valor limite como técnica de teste \nD. Transferência de risco \nQual das seguintes opções melhor corresponde aos riscos com as atividades de mitigação?",
+      "options": [
+        {
+          "option": "1C, 2A, 3D, 4B",
+          "isCorrect": false
+        },
+        {
+          "option": "1C, 2D, 3A, 4B",
+          "isCorrect": false
+        },
+        {
+          "option": "1B, 2D, 3A, 4C",
+          "isCorrect": false
+        },
+        {
+          "option": "1B, 2A, 3D, 4C",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: 1B, 2A, 3D, 4C. Considerando cada um dos riscos listados e suas mitigações: Respostas longas do sistema (1) podem ser testadas no teste de desempenho (B) Mudanças nas preferências dos consumidores (2) geralmente estão fora de nosso controle, então geralmente aceitamos esse risco (A) Inundação da sala do servidor (3) pode causar perdas significativas, então devemos transferir o risco, por exemplo, comprando uma apólice de seguro (D) O fato de pacientes acima de uma certa idade receberem relatórios imprecisos (4) sugere um potencial problema de limite, que pode ser detectado efetivamente com técnicas como BVA (C)"
+    },
+    {
+      "id": 542,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes é uma métrica de qualidade do produto?",
+      "options": [
+        {
+          "option": "Número de defeitos encontrados",
+          "isCorrect": false
+        },
+        {
+          "option": "Tempo médio até a falha",
+          "isCorrect": true
+        },
+        {
+          "option": "Cobertura de requisitos",
+          "isCorrect": false
+        },
+        {
+          "option": "Percentual de detecção de defeitos",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Tempo médio até a falha\n\nO Tempo Médio até a Falha (MTTF - Mean Time to Failure) é uma métrica que indica a reliabilidade do produto, ou seja, o tempo médio que o sistema ou componente pode operar antes de falhar. Ela mede a durabilidade e a robustez do produto, sendo, portanto, uma métrica diretamente relacionada à qualidade do produto.\n\nVamos analisar as outras opções:\n\n🔹Número de defeitos encontrados: Essa é uma métrica de qualidade do processo de teste, pois mede quantos defeitos foram encontrados durante a execução dos testes, mas não diretamente a qualidade do produto em si.\n\n🔹Cobertura de requisitos: Também é uma métrica de qualidade do processo de teste. Ela indica o quanto os requisitos foram testados, mas não descreve a qualidade do produto final.\n\n🔹Percentual de detecção de defeitos: Essa métrica é relacionada ao processo de testes, pois mede a eficácia dos testes em detectar defeitos, mas não é uma medida direta da qualidade do produto final."
+    },
+    {
+      "id": 543,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você é membro de uma equipe de teste localizada na América do Norte, desenvolvendo um produto para um cliente localizado na Europa. A equipe é ágil e segue a abordagem DevOps, usando um pipeline de integração/distribuição contínua.\n\nQual das seguintes é a maneira MENOS eficaz de comunicar o progresso do teste ao cliente?",
+      "options": [
+        {
+          "option": "E-mail",
+          "isCorrect": false
+        },
+        {
+          "option": "Cara-a-cara",
+          "isCorrect": true
+        },
+        {
+          "option": "Painéis de controle",
+          "isCorrect": false
+        },
+        {
+          "option": "Videoconferência",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Cara-a-cara\n\nO melhor meio de comunicar o status do teste varia, dependendo das preocupações com o gerenciamento de testes, das estratégias de teste da organização, dos padrões normativos ou, no caso de equipes auto-organizadas (ver seção 1.5.2), da própria equipe. As opções incluem:\n\n🔹Comunicação verbal com membros da equipe e outros stakeholders;\n🔹Painéis (p. ex., painéis de CI/CD, painéis de tarefas e gráficos de burn-down);\n🔹Canais de comunicação eletrônica (p. ex., e-mail, bate-papo);\n🔹Documentação on-line;\n🔹Relatórios de testes formais (ver seção 5.3.2)."
+    },
+    {
+      "id": 544,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes opções descreve MELHOR um exemplo de como o gerenciamento de configuração (CM) apoia os testes?",
+      "options": [
+        {
+          "option": "Tendo um registro dos valores das entradas de teste, a ferramenta de CM pode executar os casos de teste para essas configurações e calcular a cobertura de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Tendo dados sobre a data de compra de uma licença de software, a ferramenta de CM automaticamente gera informações sobre o fato de que a licença do produto está chegando ao fim",
+          "isCorrect": false
+        },
+        {
+          "option": "Tendo o número da versão do ambiente, a ferramenta de CM pode recuperar os números de versão das bibliotecas, stubs e drivers usados nesse ambiente",
+          "isCorrect": true
+        },
+        {
+          "option": "Tendo o número da versão do caso de teste, a ferramenta de CM pode automaticamente gerar dados de teste para este caso de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Tendo o número da versão do ambiente, a ferramenta de CM pode recuperar os números de versão das bibliotecas, stubs e drivers usados nesse ambiente."
+    },
+    {
+      "id": 545,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Você está testando uma função de classificação que recebe um conjunto de números como entrada e retorna o mesmo conjunto de números classificados em ordem crescente. O registro da execução do teste é o seguinte.\n\nTC1 - Input:[3] output:[3]\nTC2 - Input:[3,11,6,5] output:[3,5,6,11]\nTC3 - Input:[8,7,3,7,1] output:[1,3,7,8]\nTC4 - Input:[-2,-2,-2,-3,-3] output:[-2,-3]\nTC5 - Input:[0,-2,0,3,4,4] output:[-2,0,3,4]\n\nQual das seguintes fornece a MELHOR descrição da falha que pode ser usada em um relatório de defeitos?",
+      "options": [
+        {
+          "option": "O sistema falha ao classificar números negativos. Referência: TC4, TC5.",
+          "isCorrect": false
+        },
+        {
+          "option": "O sistema parece ignorar duplicatas durante a classificação. Referência: TC3, TC4, TC5.",
+          "isCorrect": true
+        },
+        {
+          "option": "O sistema falha ao classificar várias sequências de números. Referência: TC3, TC4, TC5.",
+          "isCorrect": false
+        },
+        {
+          "option": "TC3, TC4 e TC5 possuem defeitos (dados de entrada duplicados) e devem ser corrigidos.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: O sistema parece ignorar duplicatas durante a classificação. Referência: TC3, TC4, TC5."
+    },
+    {
+      "id": 546,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes NÃO é um propósito de um plano de teste?",
+      "options": [
+        {
+          "option": "Definir dados de teste e resultados esperados para testes de componente e testes de integração de componentes.",
+          "isCorrect": true
+        },
+        {
+          "option": "Definir como critério de saída do nível de teste de componente que \"cobertura de 100% de instruções e cobertura de 100% de ramificação devem ser alcançadas\".",
+          "isCorrect": false
+        },
+        {
+          "option": "Descrever quais campos o relatório de progresso do teste deve conter e qual deve ser o formato deste relatório.",
+          "isCorrect": false
+        },
+        {
+          "option": "Explicar por que os testes de integração do sistema serão excluídos dos testes, embora a estratégia de teste exija esse nível de teste.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Definir dados de teste e resultados esperados para testes de componente e testes de integração de componentes.\n\nA definição de dados de teste e resultados esperados normalmente está mais diretamente associada à execução do teste, não sendo um propósito primário do plano de teste.\n\nUm plano de teste descreve os objetivos, os recursos e os processos de um projeto de teste, demonstra que os testes seguirão a política e a estratégia de testes existentes (ou explica por que os testes se desviarão delas);\n\nO conteúdo típico de um plano de teste inclui:\n• Contexto do teste (p. ex., escopo, objetivos do teste, restrições, base do teste);\n• Premissas e restrições do projeto de teste;\n• Stakeholders (p. ex., funções, responsabilidades, relevância para os testes, necessidades de contratação e treinamento);\n• Comunicação (p. ex., formas e frequência de comunicação, modelos de documentação);\n• Registro de riscos (p. ex., riscos do produto, riscos do projeto);\n• Abordagem de teste (p. ex., níveis de teste, tipos de teste, técnicas de teste, produtos de teste, critérios de entrada e de saída, independência do teste, métricas a serem coletadas, requisitos de dados de teste, requisitos de ambiente de teste, desvios da política de teste organizacional e da estratégia de teste);\n• Orçamento e cronograma."
+    },
+
+    {
+      "id": 549,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual é a relação entre os quadrantes de teste, os níveis de teste e os tipos de teste?",
+      "options": [
+        {
+          "option": "Os quadrantes de teste representam combinações específicas de níveis de teste e tipos de teste, definindo sua localização no ciclo de vida do desenvolvimento de software.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os quadrantes de teste descrevem o grau de granularidade dos tipos de teste individuais realizados em cada nível de teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os quadrantes de teste atribuem os tipos de teste que podem ser realizados aos níveis de teste.",
+          "isCorrect": false
+        },
+        {
+          "option": "Os quadrantes de teste agrupam níveis de teste e tipos de teste com base em vários critérios, como o direcionamento a partes interessadas específicas.",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Os quadrantes de teste agrupam níveis de teste e tipos de teste com base em vários critérios, como o direcionamento a partes interessadas específicas."
+    },
+    {
+      "id": 551,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes é um exemplo de como a análise de risco do produto pode influenciar a minuciosidade e o escopo dos testes?",
+      "options": [
+        {
+          "option": "O monitoramento contínuo de riscos permite identificar riscos emergentes o mais cedo possível.",
+          "isCorrect": false
+        },
+        {
+          "option": "A identificação de riscos permite implementar atividades de mitigação de riscos e reduzir o nível de risco.",
+          "isCorrect": false
+        },
+        {
+          "option": "O nível de risco avaliado ajuda a selecionar o rigor dos testes.",
+          "isCorrect": true
+        },
+        {
+          "option": "A análise de riscos permite derivar itens de cobertura.",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: O nível de risco avaliado ajuda a selecionar o rigor dos testes.\n\nA análise de risco do produto ajuda a determinar onde se deve concentrar mais esforço e recursos nos testes, com base no risco potencial de falhas em diferentes áreas do sistema. Quanto maior o risco associado a uma funcionalidade ou componente, mais rigorosos e abrangentes os testes deverão ser para mitigar a probabilidade de falhas graves.\n\nErrado: O monitoramento contínuo de riscos permite identificar riscos emergentes o mais cedo possível: Embora o monitoramento contínuo seja importante para identificar novos riscos, essa ação se refere mais à gestão de riscos ao longo do projeto, e não diretamente à definição do rigor e escopo dos testes com base na avaliação de risco. A análise de risco influencia a estratégia de teste no início, antes da execução, para determinar onde concentrar os testes.\n\nErrado: A identificação de riscos permite implementar atividades de mitigação de riscos e reduzir o nível de risco: Esta afirmação fala sobre a mitigação dos riscos, mas não trata diretamente de como a análise de risco influencia a minuciosidade e o escopo dos testes. A mitigação pode envolver ações de design, alterações de processo ou ajustes de arquitetura, mas a forma como a mitigação afeta os testes é mais indireta. A análise de risco específica ajuda a definir onde os testes devem ser mais profundos (ou não).\n\nErrado: A análise de riscos permite derivar itens de cobertura: Embora a análise de riscos ajude a identificar áreas de risco, que podem ser cobradas nos testes, a derivação dos itens de cobertura não é uma consequência direta da análise de risco. A cobertura dos testes é mais uma questão de especificação e planejamento dos testes, que pode ser influenciada por outros fatores além dos riscos identificados."
+    },
+    {
+      "id": 552,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual das seguintes atividades no processo de teste faz o MAIOR uso de relatórios de progresso de teste?",
+      "options": [
+        {
+          "option": "Design de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Conclusão do teste",
+          "isCorrect": true
+        },
+        {
+          "option": "Análise de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Planejamento de teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Conclusão do teste\n\nA conclusão de teste é onde os relatórios de progresso têm maior impacto, pois eles fornecem o panorama final e os dados para a avaliação do sucesso dos testes."
+    },
+    {
+      "id": 553,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Qual dos seguintes NÃO é um exemplo de como o gerenciamento de configuração suporta o teste?",
+      "options": [
+        {
+          "option": "Todos os commits no repositório são identificados de forma única e controlados por versão",
+          "isCorrect": false
+        },
+        {
+          "option": "Todas as mudanças nos elementos do ambiente de teste são rastreadas",
+          "isCorrect": false
+        },
+        {
+          "option": "Todas as especificações de requisitos são referenciadas de forma inequívoca nos planos de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Todos os defeitos identificados têm um status atribuído",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Todos os defeitos identificados têm um status atribuído\n\nO gerenciamento de configuração não trata diretamente do status dos defeitos. O gerenciamento de defeitos pode estar relacionado a outras práticas, como o gerenciamento de incidentes ou a ferramenta de rastreamento de defeitos, mas não é um exemplo típico de como o gerenciamento de configuração apoia o teste.\n\nAnalisando as outras opções:\n\nTodos os commits no repositório são identificados de forma única e controlados por versão: Isso é uma prática de gerenciamento de configuração, onde o controle de versão dos códigos e commits garante que cada alteração seja rastreada adequadamente.\n\nTodas as mudanças nos elementos do ambiente de teste são rastreadas: Isso também faz parte do gerenciamento de configuração, que garante que qualquer alteração no ambiente de teste seja documentada e controlada.\n\nTodas as especificações de requisitos são referenciadas de forma inequívoca nos planos de teste: Isso é um exemplo de rastreamento de requisitos, que é parte do gerenciamento de configuração, garantindo que todos os requisitos sejam seguidos nos planos de teste."
+    },
+    {
+      "id": 554,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "Considere o seguinte relatório de defeitos para um aplicativo de compras online:\n\nAplicação: WebShop v0.99\n\nDefeito: Botão de login não funciona\n\nPassos para Reproduzir:\n\nInicie o site\n\nClique no botão de login\n\nResultado Esperado:\n\nO usuário deve ser redirecionado para a página de login.\n\nResultado Real: O botão de login não responde quando clicado.\n\nSeveridade: Alta\n\nPrioridade: Urgente\n\nQual é a informação MAIS importante que está faltando neste relatório?",
+      "options": [
+        {
+          "option": "Nome do testador e data do relatório",
+          "isCorrect": false
+        },
+        {
+          "option": "Elementos do ambiente de teste e seus números de versão",
+          "isCorrect": true
+        },
+        {
+          "option": "Identificação do objeto de teste",
+          "isCorrect": false
+        },
+        {
+          "option": "Impacto nos interesses das partes interessadas",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Elementos do ambiente de teste e seus números de versão\n\nA informação mais importante faltando neste relatório é o ambiente de teste no qual o defeito foi encontrado, incluindo os números de versão da aplicação, sistema operacional, navegador, etc. Isso é crucial porque um defeito pode se comportar de maneira diferente dependendo do ambiente em que o software está sendo testado. Se o ambiente de teste não for especificado, fica mais difícil reproduzir e corrigir o defeito."
+    },
+    {
+      "id": 548,
+      "isMultipleChoice": false,
+      "tag": ["Capítulo 5"],
+      "question": "O modelo da pirâmide de testes mostra:",
+      "options": [
+        {
+          "option": "Que os testes podem ter diferentes prioridades",
+          "isCorrect": false
+        },
+        {
+          "option": "Que os testes podem ter granularidades diferentes",
+          "isCorrect": true
+        },
+        {
+          "option": "Que os testes podem requerer diferentes critérios de cobertura",
+          "isCorrect": false
+        },
+        {
+          "option": "Que os testes podem depender de outros testes",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Que os testes podem ter granularidades diferentes\n\nO modelo da pirâmide de testes ilustra a distribuição e a granularidade dos testes em um projeto de software. Na pirâmide, a base é composta por testes unitários, que são mais granulares e são executados em grande quantidade, enquanto a parte superior da pirâmide inclui testes de integração, funcionais e de interface, que são menos granulares e realizados em menor quantidade.\n\nA pirâmide sugere que a maior parte dos testes deve ser de baixo nível (unitários), pois são rápidos e fáceis de executar, enquanto os testes de níveis mais altos, como os testes de integração e de interface, são mais complexos e devem ser executados em menor quantidade."
+    },
+    //---Capitulo 6---
+    
+    
+{
+  "id": 601,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual dos seguintes é o MAIS provável que seja um benefício das ferramentas de execução de testes?",
+  "options": [
+    {
+      "option": "É fácil criar testes de regressão",
+      "isCorrect": false
+    },
+    {
+      "option": "É fácil projetar testes para testes de segurança",
+      "isCorrect": false
+    },
+    {
+      "option": "É fácil executar testes de regressão",
+      "isCorrect": true
+    },
+    {
+      "option": "É fácil manter o controle de versão dos ativos de teste",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: É fácil executar testes de regressão\n\nAs ferramentas de execução de testes são projetadas para automatizar a execução de testes, o que torna mais fácil e eficiente executar testes de regressão repetidamente. Isso ajuda a garantir que as alterações no código não introduzam novos defeitos em funcionalidades já testadas."
+},
+{
+  "id": 602,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual das seguintes ferramentas de teste é mais adequada para desenvolvedores do que para testadores?",
+  "options": [
+    {
+      "option": "Ferramentas de teste de desempenho",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramentas de gerenciamento da configuração",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramentas de gerenciamento de requisitos",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramentas de gerenciamento de defeitos",
+      "isCorrect": true
+    }
+  ],
+  "comments": "A resposta correta é: Ferramentas de gerenciamento de defeitos\n\nAs ferramentas de gerenciamento de requisitos, gerenciamento da configuração e gerenciamento de defeitos são usadas tanto por desenvolvedores quanto por testadores. Ferramentas de teste de desempenho são mais voltadas para testadores. Gerenciamento de defeitos está relacionado a uma ferramenta de análise estática, uma ferramenta específica que checa o código para identificar erros."
+},
+{
+  "id": 603,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Dadas as seguintes atividades de teste e ferramentas de teste:\n\n(1) Medição de desempenho e análise dinâmica\n(2) Execução de testes e registro\n(3) Gerenciamento de testes e tesouras\n(4) Projeto do teste\n\n(a) Ferramentas de cobertura de necessidades\n(b) Ferramentas de análise dinâmica\n(c) Ferramentas de preparação de dados de teste\n(d) Ferramentas de gerenciamento de defeitos\n\nQual dos seguintes MELHORES combina com as atividades e ferramentas?",
+  "options": [
+    {
+      "option": "1 - A, 2 - B, 3 - D, 4 - C",
+      "isCorrect": false
+    },
+    {
+      "option": "1 - B, 2 - C, 3 - D, 4 - A",
+      "isCorrect": false
+    },
+    {
+      "option": "1 - B, 2 - A, 3 - D, 4 - C",
+      "isCorrect": true
+    },
+    {
+      "option": "1 - B, 2 - A, 3 - C, 4 - D",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: 1 - B, 2 - A, 3 - D, 4 - C\n\nMedição de desempenho e análise dinâmica → (B) Ferramentas de análise dinâmica\nFerramentas de análise dinâmica ajudam a identificar problemas como vazamento de memória, consumo excessivo de CPU e gargalos de desempenho durante a execução do software.\n\nExecução de testes e registro → (A) Ferramentas de cobertura de necessidades\nFerramentas de cobertura analisam quais partes do código foram exercitadas pelos testes, garantindo que os testes cobrem os requisitos adequadamente.\n\nGerenciamento de testes e tesouras → (D) Ferramentas de gerenciamento de defeitos\nFerramentas de gerenciamento de defeitos, como JIRA e Bugzilla, auxiliam no rastreamento, priorização e resolução de defeitos encontrados durante o processo de teste.\n\nProjeto do teste → (C) Ferramentas de preparação de dados de teste\nFerramentas de preparação de dados ajudam a criar, manipular e gerenciar conjuntos de dados para garantir que os testes sejam executados com dados apropriados e realistas."
+},
+{
+  "id": 604,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual dos seguintes é o mais provável de ser usado como motivo para usar um projeto piloto para introduzir uma ferramenta em uma organização?",
+  "options": [
+    {
+      "option": "A necessidade de avaliar se a ferramenta fornece a funcionalidade necessária e não duplica as ferramentas de teste existentes",
+      "isCorrect": false
+    },
+    {
+      "option": "A necessidade de avaliar como a ferramenta se ajusta aos processos e práticas existentes e determinar o que precisaria mudar",
+      "isCorrect": true
+    },
+    {
+      "option": "A necessidade de avaliar as habilidades de automação de testes e as necessidades de treinamento, mentoria e coaching dos testadores que irão utilizar a ferramenta",
+      "isCorrect": false
+    },
+    {
+      "option": "A necessidade de avaliar o fornecedor de ferramentas em termos de treinamento e outros tipos de apoio que eles fornecem",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: A necessidade de avaliar como a ferramenta se ajusta aos processos e práticas existentes e determinar o que precisaria mudar\n\nUm projeto piloto é usado para testar a introdução de uma ferramenta em um ambiente controlado e limitado antes de uma adoção mais ampla. Ele ajuda a entender:\n🔹Como a ferramenta se encaixa nos processos atuais da organização.\n🔹Quais mudanças serão necessárias nos fluxos de trabalho.\n🔹Se há desafios na integração com outras ferramentas e sistemas já em uso.\nPor que as outras opções estão incorretas?\n🔹Embora avaliar a funcionalidade da ferramenta seja importante, isso normalmente é feito antes do projeto piloto, na fase de seleção da ferramenta.\n🔹A necessidade de avaliar habilidades e necessidades de treinamento pode ser um objetivo secundário, mas o foco principal do piloto é a integração da ferramenta no processo.\n🔹Avaliar o fornecedor pode ser relevante, mas isso geralmente acontece na fase de negociação e aquisição, e não no projeto piloto."
+},
+{
+  "id": 605,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Você acaba de concluir um projeto piloto para uma ferramenta de teste de regressão. Você entende muito melhor a ferramenta e adaptou seu processo de teste a ela. Você padronizou uma abordagem para usar a ferramenta e seus produtos de trabalho associados. Qual dos seguintes objetivos é um projeto piloto típico de automação de testes que ainda deve ser realizado?",
+  "options": [
+    {
+      "option": "Veja como a ferramenta se ajustaria aos processos e práticas existentes",
+      "isCorrect": false
+    },
+    {
+      "option": "Decidir sobre formas padrão de usar, gerenciar, armazenar e manter a ferramenta e os ativos de teste",
+      "isCorrect": false
+    },
+    {
+      "option": "Saiba mais detalhes sobre a ferramenta",
+      "isCorrect": false
+    },
+    {
+      "option": "Avaliar se os benefícios serão alcançados a um custo razoável",
+      "isCorrect": true
+    }
+  ],
+  "comments": "A resposta correta é: Avaliar se os benefícios serão alcançados a um custo razoável\n\nO projeto piloto já ajudou a entender a ferramenta, adaptar processos e padronizar a abordagem de uso. No entanto, um objetivo típico que ainda precisa ser alcançado é avaliar se os benefícios compensam os custos. Isso envolve verificar:\n🔹Se a ferramenta realmente reduz o esforço manual.\n🔹Se os custos de aquisição, manutenção e treinamento justificam o investimento.\n🔹Se o tempo de execução dos testes automatizados compensa o desenvolvimento e manutenção dos scripts.\nPor que as outras opções estão incorretas?\n\"Veja como a ferramenta se ajustaria aos processos e práticas existentes\" → Já foi realizado durante o piloto, quando os processos foram adaptados.\n\"Decidir sobre formas padrão de usar, gerenciar, armazenar e manter a ferramenta e os ativos de teste\" → Também já foi feito ao padronizar a abordagem.\n\"Saiba mais detalhes sobre a ferramenta\" → Durante o piloto, a equipe já adquiriu conhecimento suficiente sobre o uso da ferramenta."
+},
+{
+  "id": 606,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual das seguintes ferramentas é mais útil para relatar as métricas de teste?",
+  "options": [
+    {
+      "option": "Ferramentas de teste baseadas em modelos",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramenta de gerenciamento de testes",
+      "isCorrect": true
+    },
+    {
+      "option": "Ferramenta de cobertura",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramenta de análise estática",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: Ferramenta de gerenciamento de testes\n\nFerramentas de gerenciamento de testes são as mais adequadas para relatar métricas de teste, pois elas:\n🔹Acompanham o progresso dos testes (casos executados, pass/fail, bloqueios).\n🔹Geram relatórios e dashboards com estatísticas sobre cobertura de testes, defeitos e execução.\n🔹Facilitam a rastreabilidade entre requisitos, casos de teste e defeitos.\nPor que as outras opções estão incorretas?\nFerramentas de teste baseadas em modelos → Usadas para gerar testes automaticamente a partir de modelos, mas não são especializadas em métricas.\nFerramentas de cobertura → Medem a cobertura do código (ex.: linhas executadas), mas não gerenciam métricas de progresso e qualidade.\nFerramentas de análise estática → Identificam problemas no código sem executá-lo, mas não geram métricas gerais de teste."
+},
+{
+  "id": 607,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual atividade de teste é suportada por uma ferramenta de preparação de dados?",
+  "options": [
+    {
+      "option": "Implementação e execução de testes.",
+      "isCorrect": true
+    },
+    {
+      "option": "Conclusão do teste.",
+      "isCorrect": false
+    },
+    {
+      "option": "Monitoramento e controle de testes.",
+      "isCorrect": false
+    },
+    {
+      "option": "Análise e projeto de testes.",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: Implementação e execução de testes.\n\nFerramentas de preparação de dados de teste são usadas para criar, modificar ou gerenciar dados que serão usados na execução dos testes. Elas suportam diretamente a fase de implementação e execução de testes, pois:\n🔹Permitem gerar dados realistas para cenários de teste.\n🔹Automatizam a criação e limpeza de dados antes e depois da execução dos testes.\n🔹Ajudam a evitar dependências externas ao preparar dados de teste isolados.\nPor que as outras opções estão incorretas?\nConclusão do teste → Relaciona-se a avaliação dos resultados e lições aprendidas, não à preparação de dados.\nMonitoramento e controle de testes → Diz respeito ao acompanhamento do progresso dos testes e métricas, não à geração de dados.\nAnálise e projeto de testes → Envolve a criação dos casos de teste e definição de critérios, mas a preparação de dados ocorre depois dessa fase."
+},
+{
+  "id": 608,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual item identifica corretamente um risco potencial de realizar a automação de testes?",
+  "options": [
+    {
+      "option": "Esforços suficientes para manter o material de teste podem não ser alocados adequadamente.",
+      "isCorrect": true
+    },
+    {
+      "option": "Ele pode introduzir regressões desconhecidas na produção.",
+      "isCorrect": false
+    },
+    {
+      "option": "As ferramentas de teste e o material de teste associado podem não ser suficientemente confiáveis.",
+      "isCorrect": false
+    },
+    {
+      "option": "Pode reduzir o tempo alocado para testes manuais.",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: Esforços suficientes para manter o material de teste podem não ser alocados adequadamente.\n\nUm dos riscos mais comuns na automação de testes é a falta de alocação adequada de esforços para manter os testes automatizados. Com o tempo, os testes podem:\n🔹Quebrar devido a mudanças no sistema.\n🔹Tornar-se obsoletos se não forem atualizados.\n🔹Exigir ajustes para garantir que continuem cobrindo os cenários corretos.\n🔹Se não houver planejamento e recursos suficientes para a manutenção dos testes, a automação pode acabar sendo mais um problema do que uma solução.\nPor que as outras opções estão incorretas?\nEle pode introduzir regressões desconhecidas na produção.\nA automação não causa regressões, mas pode não detectá-las se os testes não forem bem projetados.\nAs ferramentas de teste e o material de teste associado podem não ser suficientemente confiáveis.\nEsse risco pode ocorrer, mas geralmente ferramentas bem estabelecidas são confiáveis. O maior problema está na manutenção dos scripts e atualização dos testes.\nPode reduzir o tempo alocado para testes manuais.\nIsso geralmente é um benefício, pois permite que testadores foquem em testes exploratórios e complexos."
+},
+{
+  "id": 609,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Dada às seguintes descrições:\n\n1. Suporte ao rastreamento de fluxo de trabalho\n2. Facilitar a comunicação\n3. Máquinas virtuais\n4. Suporte a revisões\n\nE as seguintes categorias de ferramentas de teste:\n\nA. Ferramentas de teste estático\nB. Ferramentas que suportam escalabilidade e padronização de implantação\nC. Ferramentas DevOps\nD. Ferramentas de colaboração\n\nQual das seguintes combinações corresponde MELHOR às descrições e categorias?",
+  "options": [
+    {
+      "option": "1D, 2C, 3A, 4B",
+      "isCorrect": false
+    },
+    {
+      "option": "1B, 2D, 3C, 4A",
+      "isCorrect": false
+    },
+    {
+      "option": "1C, 2D, 3B, 4A",
+      "isCorrect": true
+    },
+    {
+      "option": "1A, 2B, 3C, 4D",
+      "isCorrect": false
+    }
+  ],
+  "comments": "A resposta correta é: 1C, 2D, 3B, 4A\n\nSuporte ao rastreamento de fluxo de trabalho → (C) Ferramentas DevOps\nFerramentas DevOps, como Jenkins, GitLab CI/CD e Azure DevOps, ajudam no rastreamento de fluxo de trabalho ao gerenciar pipelines de CI/CD e automação de tarefas.\n\nFacilitar a comunicação → (D) Ferramentas de colaboração\nFerramentas como Slack, Microsoft Teams, Jira e Confluence são usadas para facilitar a comunicação entre equipes, permitindo discussões, compartilhamento de informações e documentação.\n\nMáquinas virtuais → (B) Ferramentas que suportam escalabilidade e padronização de implantação\nFerramentas como Docker, Kubernetes e VMware permitem a criação e gerenciamento de máquinas virtuais e contêineres, ajudando na escalabilidade e padronização.\n\nSuporte a revisões → (A) Ferramentas de teste estático\nFerramentas de análise estática, como SonarQube, ESLint e Checkstyle, ajudam na revisão de código, detectando defeitos antes da execução do software."
+},
+{
+  "id": 610,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual dos seguintes é MAIS provável de ser um benefício da automação de testes?",
+  "options": [
+    {
+      "option": "Gera casos de teste a partir de uma análise do código do programa",
+      "isCorrect": false
+    },
+    {
+      "option": "Remove a necessidade de pensamento crítico ao analisar os resultados dos testes",
+      "isCorrect": false
+    },
+    {
+      "option": "Compartilha a responsabilidade pelos testes com o fornecedor da ferramenta",
+      "isCorrect": false
+    },
+    {
+      "option": "Fornece medidas de cobertura que são muito complicadas para os humanos derivarem",
+      "isCorrect": true
+    }
+  ],
+  "comments": "A resposta correta é: Fornece medidas de cobertura que são muito complicadas para os humanos derivarem.\n\nFerramentas de automação podem calcular métricas complexas, como cobertura de código (linhas, ramos, caminhos, mutação, etc.), que seriam difíceis de medir manualmente.\n\nExplicação das alternativas:\nGera casos de teste a partir de uma análise do código do programa → ERRADO\nNão está correto. Nem os testadores nem as ferramentas podem gerar casos de teste simplesmente a partir de uma análise do código do programa, pois o código é a implementação e não fornece informações sobre os resultados esperados, que precisarão vir de outra parte da base de teste, como a especificação de design.\n\nRemove a necessidade de pensamento crítico ao analisar os resultados dos testes → ERRADO\nA automação não substitui o pensamento crítico dos testadores. Ainda é necessário analisar os resultados, interpretar falhas e garantir que os testes são relevantes.\n\nCompartilha a responsabilidade pelos testes com o fornecedor da ferramenta → ERRADO\nO fornecedor da ferramenta fornece suporte, mas a responsabilidade pelos testes continua sendo da equipe."
+},
+{
+  "id": 611,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Ferramentas de qual das seguintes categorias ajudam na organização de casos de teste, defeitos detectados e gerenciamento de configuração?",
+  "options": [
+    {
+      "option": "Ferramentas de execução de teste e cobertura",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramentas de design e implementação de teste",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramentas de gerenciamento de defeitos",
+      "isCorrect": false
+    },
+    {
+      "option": "Ferramentas de gerenciamento de teste",
+      "isCorrect": true
+    }
+  ],
+  "comments": "A resposta correta é: Ferramentas de gerenciamento de teste.\n\nFerramentas de gerenciamento de teste são projetadas para organizar todos os aspectos do processo de teste, incluindo casos de teste, defeitos detectados, e gerenciamento de configuração. Elas ajudam a planejar, rastrear e organizar as atividades de teste.\n\nFerramentas de execução de teste e cobertura → ERRADO\nFerramentas de execução de teste e cobertura são usadas para automatizar e medir a execução de testes, mas não focam no gerenciamento de casos de teste, defeitos ou configuração.\n\nFerramentas de design e implementação de teste → ERRADO\nFerramentas de design e implementação de teste são usadas para criar, implementar e até executar os testes, mas não se concentram na organização de casos de teste ou no gerenciamento de defeitos e configurações.\n\nFerramentas de gerenciamento de defeitos → ERRADO\nFerramentas de gerenciamento de defeitos são úteis para rastrear e controlar defeitos detectados, mas não gerenciam casos de teste ou a configuração como um todo."
+},
+{
+  "id": 612,
+  "isMultipleChoice": false,
+  "tag": ["Capítulo 6"],
+  "question": "Qual dos seguintes é MAIS provável de ser um benefício da automação de testes?",
+  "options": [
+    {
+      "option": "A capacidade de gerar casos de teste sem acesso à base de teste",
+      "isCorrect": false
+    },
+    {
+      "option": "O aumento da cobertura por meio de avaliação mais objetiva",
+      "isCorrect": false
+    },
+    {
+      "option": "O aumento do tempo de execução do teste com maior capacidade de processamento",
+      "isCorrect": false
+    },
+    {
+      "option": "A prevenção de erros humanos por meio de maior consistência e repetibilidade",
+      "isCorrect": true
+    }
+  ],
+  "comments": "A resposta correta é: A prevenção de erros humanos por meio de maior consistência e repetibilidade.\n\nUm dos principais benefícios da automação de testes é a redução dos erros humanos, já que os testes automatizados são executados de maneira consistente e repetitiva, garantindo que os testes sejam realizados da mesma forma todas as vezes, sem variações causadas por falhas humanas.\n\nA capacidade de gerar casos de teste sem acesso à base de teste → ERRADO\nA automação de testes pode ajudar na execução de testes repetitivos, mas não gera casos de teste sem a base de teste. Os casos de teste precisam ser projetados ou criados antes de serem automatizados.\n\nO aumento da cobertura por meio de avaliação mais objetiva → ERRADO\nA automação de testes pode aumentar a cobertura de testes ao permitir a execução de uma maior quantidade de testes, mas não necessariamente leva a uma avaliação mais objetiva. A objetividade depende de como os testes são projetados.\n\nO aumento do tempo de execução do teste com maior capacidade de processamento → ERRADO\nEmbora a automação de testes possa melhorar a eficiência, ela não aumenta diretamente o tempo de execução. Na verdade, a automação pode reduzir o tempo de execução, especialmente quando se trata de testes repetitivos."
+},
 
     //---Perguntas Variadas----
     {
@@ -4421,6 +5788,246 @@ const quizData = {
       ],
       "comments": "Ferramentas de captura e reprodução são amplamente usadas em testes de regressão para automatizar a execução de casos de teste e comparar os resultados com execuções anteriores."
     },
-    
+    //Perguntas com imagens
+    {
+      "id": 410,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Qual das seguintes afirmações sobre o diagrama de transição de estado dado e tabela de casos de teste é VERDADEIRA?",
+      "imagem": "Q410",
+      "options": [
+        {
+          "option": "Os casos de teste em questão representam pares de transições no diagrama de transição estatal",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste em questão cobrem transições válidas e inválidas no diagrama de transição estatal",
+          "isCorrect": false
+        },
+        {
+          "option": "Os casos de teste em questão representam todas as transições válidas possíveis no diagrama de transição estatal",
+          "isCorrect": true
+        },
+        {
+          "option": "Os casos de teste em questão representam algumas das transições válidas no diagrama de transição estatal",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: Os casos de teste em questão representam todas as transições válidas possíveis no diagrama de transição estatal.\nComo se trata de um sistema simples, todas as transições possíveis que poderiam existir estão sendo representadas, normalmente um diagrama não representa transições inválidas."
+    },
+
+    {
+      "id": 418,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Qual das seguintes sequências de transições proporciona o mais alto nível de cobertura de transição para o modelo?",
+      "imagem": "Q418",
+      "options": [
+        {
+          "option": "WAIT → TRICKLE → WAIT → OFF → WAIT → TRICKLE → CHARGE → LOW → CHARGE",
+          "isCorrect": false
+        },
+        {
+          "option": "OFF → WAIT → OFF → WAIT → TRICKLE → CHARGE → HIGH → CHARGE → LOW",
+          "isCorrect": false
+        },
+        {
+          "option": "WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT",
+          "isCorrect": true
+        },
+        {
+          "option": "HIGH → CHARGE → LOW → CHARGE → TRICKLE → WAIT → TRICKLE → WAIT → TRICKLE",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: WAIT → TRICKLE → CHARGE → HIGH → CHARGE → TRICKLE → WAIT → OFF → WAIT\nÉ a única opção onde não existe repetição de transições."
+    },
+
+    {
+      "id": 431,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Considere o seguinte diagrama de transição de estado apenas para uma bomba de gasolina sem supervisão, com cartão de crédito: Suponha que você queira desenvolver o número mínimo de testes para cobrir cada transição no diagrama de transição de estado. Suponha ainda que cada teste deve começar no estado inicial, esperando pelo cliente, e cada teste termina quando uma transição chega ao estado inicial. Quantos testes você precisa?",
+      "imagem": "Q431",
+      "options": [
+        {
+          "option": "4 testes",
+          "isCorrect": true
+        },
+        {
+          "option": "5 testes",
+          "isCorrect": false
+        },
+        {
+          "option": "7 testes",
+          "isCorrect": false
+        },
+        {
+          "option": "1 teste",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 4\nUma maneira de descobrir o número mínimo de testes para cobrir cada transição, que funciona na maioria das vezes, é contar quantas transições estão retornando ao ponto inicial. No caso da imagem, 4 transições retornam para o início."
+    },
+
+    {
+      "id": 436,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Você testa um sistema cujo ciclo de vida é modelado pelo diagrama de transição de estado mostrado abaixo. O sistema começa no estado INIT e termina sua operação no estado OFF. Qual é o número MÍNIMO de casos de teste para obter uma cobertura de transições válida?",
+      "imagem": "Q436",
+      "options": [
+        {
+          "option": "2",
+          "isCorrect": false
+        },
+        {
+          "option": "7",
+          "isCorrect": false
+        },
+        {
+          "option": "4",
+          "isCorrect": false
+        },
+        {
+          "option": "3",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: 3\nPara cobrir todas as transições válidas no diagrama de transição de estado, são necessários 3 casos de teste, garantindo que cada transição seja exercitada pelo menos uma vez."
+    },
+    {
+      "id": 449,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Um sistema de armazenamento pode armazenar até três elementos e é modelado pelo seguinte diagrama de transição de estados. A variável N representa o número de elementos atualmente armazenados.\n Qual dos seguintes casos de teste, representados como sequências de eventos, alcança o maior nível de cobertura de transições válidas?",
+      "imagem": "Q449",
+      "options": [
+        {
+          "option": "Add, Add, Add, Remove, Add",
+          "isCorrect": false
+        },
+        {
+          "option": "Add, Add, Add, Add, Remove, Remove",
+          "isCorrect": false
+        },
+        {
+          "option": "Add, Remove, Add, Add, Add",
+          "isCorrect": false
+        },
+        {
+          "option": "Add, Add, Add, Remove, Remove",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: Add, Add, Add, Remove, Remove\nEsta sequência cobre todas as transições válidas sem repetir transições desnecessárias, garantindo a cobertura máxima de transições."
+    },
+
+    {
+      "id": 460,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Você está projetando casos de teste com base no seguinte diagrama de transição de estados: Qual é o número MÍNIMO de casos de teste necessários para alcançar uma cobertura de transições válidas de 100%?",
+      "imagem": "Q460",
+      "options": [
+        {
+          "option": "3",
+          "isCorrect": true
+        },
+        {
+          "option": "2",
+          "isCorrect": false
+        },
+        {
+          "option": "5",
+          "isCorrect": false
+        },
+        {
+          "option": "6",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 3\nPara alcançar 100% de cobertura de transições válidas, é necessário projetar casos de teste que cubram todas as transições possíveis no diagrama de estados. Neste caso, três casos de teste são suficientes para cobrir todas as transições sem repetições desnecessárias."
+    },
+
+    {
+      "id": 461,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Você deseja aplicar teste de branch ao código representado pelo seguinte grafo de fluxo de controle. Quantos itens de cobertura você precisa testar?",
+      "imagem": "Q461",
+      "options": [
+        {
+          "option": "2",
+          "isCorrect": true
+        },
+        {
+          "option": "4",
+          "isCorrect": false
+        },
+        {
+          "option": "8",
+          "isCorrect": false
+        },
+        {
+          "option": "7",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: 2\nO teste de branch requer que cada decisão no código seja avaliada em ambas as direções possíveis (verdadeira e falsa). Neste caso, dois itens de cobertura são suficientes para garantir que todas as ramificações do grafo de fluxo de controle sejam testadas."
+    },
+
+    {
+      "id": 508,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Como gerente de testes, você é responsável por testar as seguintes partes dos requisitos: \n • R1 - Anomalias de processo \n• R2 - Sincronização \n• R3 - Aprovação \n• R4 - Solução de problemas \n• R5 - Dados financeiros \n• R6 - Dados do diagrama \n• R7 - Mudanças no perfil do usuário \n Qual das seguintes opções estrutura o cronograma de execução de testes de acordo com as dependências de requisitos?",
+      "imagem": "Q508",
+      "options": [
+        {
+          "option": "R1 → R3 → R4 → R7 → R2 → R5 → R6",
+          "isCorrect": false
+        },
+        {
+          "option": "R1 → R3 → R2 → R4 → R7 → R5 → R6",
+          "isCorrect": false
+        },
+        {
+          "option": "R1 → R2 → R5 → R6 → R3 → R4 → R7",
+          "isCorrect": false
+        },
+        {
+          "option": "R1 → R3 → R2 → R5 → R6 → R4 → R7",
+          "isCorrect": true
+        }
+      ],
+      "comments": "A resposta correta é: R1 → R3 → R2 → R5 → R6 → R4 → R7. \nO correto é eliminar as dependências antes de seguir com o próximo teste."
+    },
+    {
+      "id": 547,
+      "isMultipleChoice": false,
+      "tag": ["Questões com imagens"],
+      "question": "Qual caso de teste deve ser executado em sexto lugar?",
+      "imagem": "Q547",
+      "options": [
+        {
+          "option": "TC 3",
+          "isCorrect": true
+        },
+        {
+          "option": "TC 5",
+          "isCorrect": false
+        },
+        {
+          "option": "TC 6",
+          "isCorrect": false
+        },
+        {
+          "option": "TC 2",
+          "isCorrect": false
+        }
+      ],
+      "comments": "A resposta correta é: TC 3\n\nA caso tenha um teste prioritário em um encadeamento de testes esse encadeamento se torna prioritário."
+    },
   ]
 };

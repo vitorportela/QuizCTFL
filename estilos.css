@@ -25,6 +25,13 @@
       margin-bottom: 20px;
       font-size: 1.3rem;
     }
+    
+    #image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
     .options-container{
       display: flex;
       flex-direction: column;

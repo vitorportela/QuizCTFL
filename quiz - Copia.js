@@ -16,7 +16,6 @@ const commentsEl = document.getElementById('comments');
 const nextButton = document.getElementById('next-button');
 const resultEl = document.getElementById('result');
 const selectedTags = getSelectedTagsFromURL();
-const imageContainer = document.getElementById('image-container'); // Elemento para exibir a imagem
 
 // Pega a TAG na URL
 function getSelectedTagsFromURL() {
@@ -61,22 +60,13 @@ function shuffleArray(array) {
 function displayQuestion(question) {
   currentQuestion = question;
   questionEl.innerHTML = '';
-  imageContainer.innerHTML = ''; // Limpa qualquer imagem anterior
-
+  
   const sentences = question.question.split('\n').filter(sentence => sentence.trim() !== '');
   sentences.forEach(sentence => {
     const paragraph = document.createElement('p');
     paragraph.textContent = sentence.trim();
     questionEl.appendChild(paragraph);
   });
-
-  // Exibe a imagem se existir
-  if (question.imagem) {
-    const img = document.createElement('img');
-    img.src = `imagens/${question.imagem}.png`;
-    img.alt = "Imagem relacionada à pergunta";
-    imageContainer.appendChild(img);
-  }
 
   optionsContainer.innerHTML = '';
   resultEl.style.display = "none";
